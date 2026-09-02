@@ -3,7 +3,8 @@ Additional NPC mobs using the vanilla Villager Entity model. Mobs are setup to f
 
 ## Available Factions
 ### Bandits
-Highway men, forest dwellers, general no-good doers. The names these folk are called is numerous. They will hunt down the other factions, and will attack the player on sight.
+Highway men, forest dwellers, general no-good doers. The names these folk are called is numerous. They will hunt down the other factions, and will attack the player on sight.  
+Bandits additionally have an Axeman unit with and without a shield.
 ### Knight Errant
 Skilled freemen, mercenaries, and knights sworn to patrol the roads. These armed and armored fighters are generally neutral to those that don't break the law. Although no Errant will pass up the chance to take down a bandit or two.
 \
