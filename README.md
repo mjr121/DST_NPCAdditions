@@ -8,7 +8,8 @@ Highway men, forest dwellers, general no-good doers. The names these folk are ca
 Skilled freemen, mercenaries, and knights sworn to patrol the roads. These armed and armored fighters are generally neutral to those that don't break the law. Although no Errant will pass up the chance to take down a bandit or two.
 \
 \
-Unless otherwise stated, all factions have the same available entities, Spear, Sword, Sword/Shield, and a Line Leader unit (Bandits have Bosses, Knights have Captains).  
+Unless otherwise stated, all factions have the same available entities, which are;  
+Spear, Sword, Sword/Shield, and a Line Leader unit (Bandits have Bosses, Knights have Captains)  
 
 Future Plans\
 Additional Factions for more inter-faction fights\
