@@ -1,0 +1,14 @@
+{
+	"game:tabname-dstedits": "DST Edits",
+
+
+	"dstnpc:item-creature-knighterrant-*-*-grunt": "Knight Errant",
+	"dstnpc:item-creature-knighterrant-*-*-boss": "Knight Sergeant",
+	"dstnpc:item-dead-creature-knighterrant-*-*-grunt": "Knight Errant",
+	"dstnpc:item-dead-creature-knighterrant-*-*-boss": "Knight Sergeant",
+
+	"dstnpc:item-creature-bandit-*-*-grunt": "Bandit Grunt",
+	"dstnpc:item-creature-bandit-*-*-boss": "Bandit Boss",
+	"dstnpc:item-dead-creature-bandit-*-*-grunt": "Bandit Grunt",
+	"dstnpc:item-dead-creature-bandit-*-*-boss": "Bandit Boss"
+}

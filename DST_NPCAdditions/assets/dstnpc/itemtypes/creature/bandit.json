@@ -1,0 +1,58 @@
+{
+	code: "creature",
+	class: "ItemCreature",
+	maxstacksize: 64,
+	"variantgroups" :[
+		{"code": "type", "states": [
+			"bandit-male-spear-grunt","bandit-male-spear-boss",
+			"bandit-male-sword-grunt","bandit-male-sword-boss",
+			"bandit-male-swordshield-grunt","bandit-male-swordshield-boss"			
+
+		 ]
+		}
+	],
+	attributes: {
+		setGuardedEntityAttributeByType: {},
+		disableElementsByType: {
+			"creature-bandit-male-*": ["breasts"]
+		},
+		stepParentShapesByType: {
+			"creature-bandit-female-*": [ 
+				{ base: "game:entity/humanoid/villager/face/female/normal1" },
+				{ base: "game:entity/humanoid/villager/hair-base/00" },
+				{ base: "game:entity/humanoid/villageraccessories/upperbody/female/longsleeve" },
+				{ base: "game:entity/humanoid/villageraccessories/lowerbody/skirt" }
+			],
+			"creature-bandit-male-*": [ 
+				{ base: "game:entity/humanoid/villager/face/male/normal2" },
+				{ base: "game:entity/humanoid/villager/hair-base/12" },
+				{ base: "game:entity/humanoid/villageraccessories/upperbody/male/longsleeve" },
+				{ base: "game:entity/humanoid/villageraccessories/lowerbody/male/pants" }
+			]
+		},
+		handbook: {excludeByType: {}}
+	},
+	"shapebytype": {
+		"creature-bandit-male-*":{"base":"game:entity/humanoid/villager-male"},
+		"creature-bandit-female-*":{"base":"game:entity/humanoid/villager-female"}
+	},
+	heldTpIdleAnimationByType: {
+		"*": "holdunderarm"
+	},
+	guiTransformByType: {
+		"creature-bandit-*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: 0, y: -134, z: -180 },
+			origin: { x: 0.5, y: 0.9, z: 0.5 }
+		}
+	},
+	tpHandTransformByType: {
+		"creature-bandit-*": {
+			translation: { x: -0.64, y: -0.61, z: -0.69 },
+			rotation: { x: -94, y: 180, z: 98 },
+			scale: 0.56
+		}
+	},
+	creativeinventory: { "general": ["*"], "creatures": ["*"], "dstedits": ["*"] },
+	materialDensity: 600
+}

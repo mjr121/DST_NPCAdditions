@@ -1,0 +1,47 @@
+{
+	"components": [
+		{
+			"code": "start",
+			"owner": "guard",
+			"type": "talk",
+			"text": [
+				{ "value": "At your service." },
+				{ "value": "What are your orders?" },
+				{ "value": "I stand ready." }
+			],
+			"jumpTo": "main"
+		},
+		{
+			"code": "main",
+			"owner": "player",
+			"type": "talk",
+			"text": [
+				{ "value": "Show me your equipment.", "jumpTo": "gear" }
+			]
+		},
+		{
+			"code": "gear",
+			"owner": "guard",
+			"type": "talk",
+			"trigger": "gear",
+			"text": [ { "value": "Have a look." } ],
+			"jumpTo": "close"
+		},
+		{
+			"code": "bye",
+			"owner": "guard",
+			"type": "talk",
+			"text": [
+				{ "value": "Stay safe out there." },
+				{ "value": "I'll keep watch." }
+			],
+			"jumpTo": "close"
+		},
+		{
+			"code": "close",
+			"owner": "guard",
+			"type": "trigger",
+			"trigger": "closedialogue"
+		}
+	]
+}

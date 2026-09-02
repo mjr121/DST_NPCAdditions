@@ -1,0 +1,10 @@
+{
+  "type": "Code",
+  "modid": "dstnpc",
+  "name": "DST - NPC additions",
+  "authors": [
+    "mjr121"
+  ],
+  "description": "NPC additions",
+  "version": "0.0.3"
+}
