@@ -9,7 +9,7 @@ Skilled freemen, mercenaries, and knights sworn to patrol the roads. These armed
 \
 \
 Unless otherwise stated, all factions have the same available entities, which are;  
-Spear, Sword, Sword/Shield, and a Line Leader unit (Bandits have Bosses, Knights have Captains)  
+Spear, Sword, Sword/Shield, and a Line Leader unit (Bandits have Bosses, Knights have Sergeants)  
 
 Future Plans\
 Additional Factions for more inter-faction fights\
