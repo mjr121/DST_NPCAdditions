@@ -1,0 +1,18 @@
+﻿Replace harmony patch for EntityArmed with proper blocks from villager.
+Add inventory to units with money on hand.
+
+Bandit
+Add Berserker style unit (bear armor, "Two handed axe")
+
+Knights
+Add Skirmisher unit (Knife/dagger user)
+
+Add poacher faction
+
+possible - Allow user to make banners.
+
+Add faction camps to world spawn like traders
+edit lang file to better reflect unit types
+Fix Bannerman idle/hold anim for banner model. might be too close to body.
+
+Make images up for moddb, upload files to github proper, update github to reflect things.

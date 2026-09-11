@@ -9,7 +9,6 @@
       "weight": 1
     },
     "skin-face-innkeeper2": {
-      "base": "game:entity/humanoid/villager/face/male/innkeeper2",
       "weight": 1
     },
 
@@ -1476,13 +1475,45 @@
       "base": "held/item/tool/spear/metal-iron",
       "weight": 1
     },
-    "heldr-spear-meteoriciron": { "base": "held/item/tool/spear/metal-meteoriciron" },
+    "heldr-spear-meteoriciron": {
+      "base": "held/item/tool/spear/metal-meteoriciron",
+      "weight": 1
+    },
     "heldr-spear-steel": {
       "base": "held/item/tool/spear/metal-steel",
       "weight": 1
     },
     "heldr-spear-tinbronze": {
       "base": "held/item/tool/spear/metal-tinbronze",
+      "weight": 1
+    },
+
+    "heldr-axe-bismuthbronze": {
+      "base": "held/item/tool/axe/bismuthbronze",
+      "weight": 1
+    },
+    "heldr-axe-blackbronze": {
+      "base": "held/item/tool/axe/blackbronze",
+      "weight": 1
+    },
+    "heldr-axe-copper": {
+      "base": "held/item/tool/axe/copper",
+      "weight": 1
+    },
+    "heldr-axe-iron": {
+      "base": "held/item/tool/axe/iron",
+      "weight": 1
+    },
+    "heldr-axe-meteoriciron": {
+      "base": "held/item/tool/axe/meteoriciron",
+      "weight": 1
+    },
+    "heldr-axe-steel": {
+      "base": "held/item/tool/axe/steel",
+      "weight": 1
+    },
+    "heldr-axe-tinbronze": {
+      "base": "held/item/tool/axe/tinbronze",
       "weight": 1
     },
 
@@ -1502,7 +1533,10 @@
       "base": "held/item/tool/blade/falx/iron",
       "weight": 1
     },
-    "heldr-falx-meteoriciron": { "base": "held/item/tool/blade/falx/meteoriciron" },
+    "heldr-falx-meteoriciron": {
+      "base": "held/item/tool/blade/falx/meteoriciron",
+      "weight": 1
+    },
     "heldr-falx-steel": {
       "base": "held/item/tool/blade/falx/steel",
       "weight": 1
@@ -1516,6 +1550,33 @@
       "base": "held/item/tool/shield/rough",
       "weight": 1
     },
+
+    "heldl-bow-crude": {
+      "base": "held/item/tool/bow/crude",
+      "weight": 1
+    },
+
+    "heldl-bannerfish": {
+      "base": "held/item/tool/banner/bannerfish",
+      "weight": 1
+    },
+    "heldl-bannerkeys": {
+      "base": "held/item/tool/banner/bannerkeys",
+      "weight": 1
+    },
+    "heldl-bannerlargefish": {
+      "base": "held/item/tool/banner/bannerlargefish",
+      "weight": 1
+    },
+    "heldl-bannership": {
+      "base": "held/item/tool/banner/bannership",
+      "weight": 1
+    },
+    "heldl-bannertown": {
+      "base": "held/item/tool/banner/bannertown",
+      "weight": 1
+    },
+
 
     "equipBody-brigandine-body": {
       "base": "game:entity/humanoid/seraph/armor/brigandine/body",
@@ -1660,7 +1721,7 @@
       "base": "game:entity/humanoid/seraph/armor/plate/legs",
       "weight": 1
     },
-    
+
     "equipBody-scale-body": {
       "base": "game:entity/humanoid/seraph/armor/scale/body",
       "weight": 1
@@ -1803,15 +1864,24 @@
             "code": "waist",
             "variants": [ "waist-alchemist", "waist-barber", "waist-beekeeper", "waist-fisher", "waist-guard", "waist-hunter", "waist-innkeeper-accessories", "waist-innkeeper", "waist-miner-accessories", "waist-miner", "waist-musician", "waist-peasant1", "waist-peasant2", "waist-shepherd", "waist-tailor", "waist-winter1", "waist-winter2" ]
         },
-
         {
-            "code": "heldl",
-            "variants": ["nothing-w10","heldl-shield-rough"]
+          "code": "heldl",
+          "variants": [
+            "nothing-w10",
+            "heldl-shield-rough",
+            "heldl-bow-crude",
+            "heldl-bannerfish",
+            "heldl-bannerkeys",
+            "heldl-bannerlargefish",
+            "heldl-bannership",
+            "heldl-bannertown"
+          ]
         },
         {
             "code": "heldr",
             "variants": [
                 "nothing-w10", 
+                "heldr-axe-bismuthbronze","heldr-axe-blackbronze","heldr-axe-copper","heldr-axe-iron","heldr-axe-meteoriciron","heldr-axe-steel","heldr-axe-tinbronze",
                 "heldr-spear-bismuthbronze","heldr-spear-blackbronze","heldr-spear-copper","heldr-spear-iron","heldr-spear-meteoriciron","heldr-spear-steel","heldr-spear-tinbronze",
                 "heldr-falx-bismuthbronze","heldr-falx-blackbronze","heldr-falx-copper","heldr-falx-iron","heldr-falx-meteoriciron","heldr-falx-steel","heldr-falx-tinbronze"
             ]

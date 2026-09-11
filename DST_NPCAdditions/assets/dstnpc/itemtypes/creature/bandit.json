@@ -6,9 +6,11 @@
 		{"code": "type", "states": [
 			"bandit-male-spear-grunt","bandit-male-spear-boss",
 			"bandit-male-sword-grunt","bandit-male-sword-boss",
-			"bandit-male-swordshield-grunt","bandit-male-swordshield-boss"			
-
-		 ]
+			"bandit-male-swordshield-grunt","bandit-male-swordshield-boss",		
+			"bandit-male-axe-grunt","bandit-male-axe-boss",
+			"bandit-male-axeshield-grunt","bandit-male-axeshield-boss",
+			"bandit-male-archer-grunt","bandit-male-archer-boss"
+		]
 		}
 	],
 	attributes: {

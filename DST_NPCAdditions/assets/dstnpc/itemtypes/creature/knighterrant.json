@@ -6,7 +6,11 @@
 		{"code": "type", "states": [
 			"knighterrant-male-spear-grunt","knighterrant-male-spear-boss",
 			"knighterrant-male-sword-grunt","knighterrant-male-sword-boss",
-			"knighterrant-male-swordshield-grunt","knighterrant-male-swordshield-boss"			
+			"knighterrant-male-swordshield-grunt","knighterrant-male-swordshield-boss",
+			"knighterrant-male-axe-grunt","knighterrant-male-axe-boss",
+			"knighterrant-male-axeshield-grunt","knighterrant-male-axeshield-boss",
+			"knighterrant-male-archer-grunt","knighterrant-male-archer-boss",
+			"knighterrant-male-bannerman-boss"
 			]
 		}
 	],
