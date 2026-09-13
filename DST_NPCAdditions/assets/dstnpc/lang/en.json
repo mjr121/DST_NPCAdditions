@@ -38,6 +38,15 @@
 	"dstnpc:item-dead-creature-bandit-male-axe-boss": "Dead Bandit Axeman",
 	"dstnpc:item-dead-creature-bandit-male-archer-boss": "Dead Bandit Archer",
 	"dstnpc:item-dead-creature-bandit-male-axeshield-boss": "Dead Bandit Axeman",
-	"dstnpc:item-dead-creature-bandit-male-bannerman-boss": "Dead Bandit Bannerman"
+	"dstnpc:item-dead-creature-bandit-male-bannerman-boss": "Dead Bandit Bannerman",
+
+	"dstnpc:item-creature-poacher-male-spear-grunt": "Poacher Spearman",
+	"dstnpc:item-creature-poacher-male-spear-boss": "Poacher Spearman",
+	"dstnpc:item-creature-poacher-male-archer-grunt": "Poacher Archer",
+	"dstnpc:item-creature-poacher-male-archer-boss": "Poacher Archer",
+	"dstnpc:item-dead-creature-poacher-male-spear-grunt": "Dead Poacher Spearman",
+	"dstnpc:item-dead-creature-poacher-male-spear-boss": "Dead Poacher Spearman",
+	"dstnpc:item-dead-creature-poacher-male-archer-grunt": "Dead Poacher Archer",
+	"dstnpc:item-dead-creature-poacher-male-archer-boss": "Dead Poacher Archer"
 
 }

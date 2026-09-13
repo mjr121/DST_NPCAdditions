@@ -8,6 +8,7 @@
 		"x": 0.6,
 		"y": 1.75
 	},
+	"eyeHeight": 1.8,
 	"deadHitboxSize": {
 		"x": 0.75,
 		"y": 0.5
@@ -19,7 +20,7 @@
 		},
 		{
 			"code": "gear",
-			"states": [ "spear", "sword", "swordshield", "axe", "axeshield", "archer","bannerman" ]
+			"states": [ "spear", "sword", "swordshield", "axe", "axeshield", "archer", "bannerman" ]
 		},
 		{
 			"code": "status",
@@ -2621,7 +2622,7 @@
 				"aitasks": [
 					{
 						"code": "stayinrange",
-						"entityCodes": [ "bandit-*", "drifter-*", "shiver-*", "bowtorn-*" ],
+						"entityCodes": [ "bandit-*", "poacher-*", "drifter-*", "shiver-*", "bowtorn-*" ],
 						"enabledByType": {
 							"*-archer-*": true,
 							"*": false
@@ -2656,7 +2657,7 @@
 					},
 					{
 						"code": "bowturretmode",
-						"entityCodes": [ "bandit-*", "drifter-*", "shiver-*", "bowtorn-*" ],
+						"entityCodes": [ "bandit-*", "drifter-*", "poacher-*", "shiver-*", "bowtorn-*" ],
 						"priority": 2.25,
 						"enabledByType": {
 							"*-archer-*": true,
@@ -2751,7 +2752,7 @@
 					},
 					{
 						"code": "meleeattack",
-						"entityCodes": [ "bandit-*" ],
+						"entityCodes": [ "bandit-*", "poacher-*" ],
 						"priority": 2.25,
 						"enabledByType": {
 							"*-archer-*": false,
@@ -2786,7 +2787,7 @@
 					},
 					{
 						"code": "seekentity",
-						"entityCodes": [ "bandit-*" ],
+						"entityCodes": [ "bandit-*", "poacher-*" ],
 						"priority": 1.25,
 						"enabledByType": {
 							"*-archer-*": false,

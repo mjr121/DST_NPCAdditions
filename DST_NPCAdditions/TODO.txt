@@ -4,10 +4,9 @@ Add Berserker style unit (bear armor, "Two handed axe")
 Knights
 Add Skirmisher unit (Knife/dagger user)
 
-Add poacher faction
+Poacher
+Potentially add "tamed" wolf as companion for boss unit.
+
 
 Add faction camps to world spawn like traders
-
-Fix Bannerman idle/hold anim for banner model. might be too close to body.
-
 Make images up for moddb, upload files to github proper, update github to reflect things.
