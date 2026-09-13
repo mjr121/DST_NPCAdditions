@@ -56,6 +56,10 @@
 			scale: 0.56
 		}
 	},
-	creativeinventory: { "general": ["*"], "creatures": ["*"], "dstedits": ["*"] },
+	creativeinventory: {
+		"general": [ "*" ],
+		"creatures": [ "*" ],
+		"dstedits-npc": [ "*" ]
+	},
 	materialDensity: 600
 }

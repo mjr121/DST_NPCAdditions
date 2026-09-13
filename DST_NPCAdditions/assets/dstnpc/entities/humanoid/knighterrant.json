@@ -2621,7 +2621,7 @@
 				"aitasks": [
 					{
 						"code": "stayinrange",
-						"entityCodes": ["bandit-*", "drifter-*", "shiver-*", "bowtorn-*" ],
+						"entityCodes": [ "bandit-*", "drifter-*", "shiver-*", "bowtorn-*" ],
 						"enabledByType": {
 							"*-archer-*": true,
 							"*": false
@@ -3026,73 +3026,71 @@
 			},
 			{ "code": "entitystatetags" }
 		],
-		"spawnconditionsByType": {
-			"knighterrant-*-*-boss": {
-				"worldgen": {
-					"TriesPerChunk": {
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunkByType": {
+					"knighterrant-*-*-boss": {
 						"avg": 0.000015,
 						"var": 0
 					},
-					"tryOnlySurface": true,
-					"minLightLevel": 5,
-					"groupSize": {
+					"knighterrant-*-*-grunt": {
+						"avg": 0.000015,
+						"var": 0
+					}
+				},
+				"maxQuantity": 1,
+				"minLightLevel": 5,
+				"groupSizeByType": {
+					"knighterrant-*-*-boss": {
 						"dist": "verynarrowgaussian",
 						"avg": 3,
 						"var": 2
 					},
-					"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:fern-*", "game:tallfern", "game:leaves-*", "game:wildvine-*", "game:mushroom-*", "game:crop-*", "game:loosestones-*", "game:looseboulders-*", "game:loosestick-*" ],
-					"companions": [ "knighterrant-{gender}-{gear}-grunt", "knighterrant-{gender}-{gear}-grunt", "knighterrant-{gender}-{gear}-grunt" ]
+					"knighterrant-*-*-grunt": {
+						"dist": "verynarrowgaussian",
+						"avg": 3,
+						"var": 2
+					}
 				},
-				"runtime": {
-					"group": "neutral",
-					"tryOnlySurface": true,
-					"chance": 0.000015,
-					//Chance is equal to what the bear is. this should allow for a lower chance to spawn like it should.
-					"maxQuantity": 1,
-					"minLightLevel": 5,
-					"groupSize": {
+				"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:fern-*", "game:tallfern", "game:leaves-*", "game:wildvine-*", "game:mushroom-*", "game:crop-*", "game:loosestones-*", "game:looseboulders-*", "game:loosestick-*" ],
+				"minTemp": -10,
+				"minRain": 0,
+				"companionsByType": {
+					"knighterrant-*-*-boss": [ "knighterrant-{gender}-{type}-grunt", "knighterrant-{gender}-{type}-grunt", "knighterrant-{gender}-{type}-grunt" ],
+					"knighterrant-*-*-grunt": []
+				}
+			},
+			"runtime": {
+				"group": "neutral",
+				"tryOnlySurface": true,
+				"maxQuantityByType": {
+					"*-boss": 1,
+					"*-grunt": 1
+				},
+				"chance": 0.000015,
+				//Chance is equal to what the bear is. this should allow for a lower chance to spawn like it should.
+				"maxQuantity": 1,
+				"minLightLevel": 5,
+				"groupSizeByType": {
+					"knighterrant-*-*-boss": {
 						"dist": "verynarrowgaussian",
 						"avg": 3,
 						"var": 2
 					},
-					"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:fern-*", "game:tallfern", "game:leaves-*", "game:wildvine-*", "game:mushroom-*", "game:crop-*", "game:loosestones-*", "game:looseboulders-*", "game:loosestick-*" ],
-					"minTemp": -10,
-					"minRain": 0,
-					"companions": [ "knighterrant-{gender}-{gear}-grunt", "knighterrant-{gender}-{gear}-grunt", "knighterrant-{gender}-{gear}-grunt" ]
-				}
-			},
-			"knighterrant-*-*-grunt": {
-				"worldgen": {
-					"TriesPerChunk": {
-						"avg": 0.000015,
-						"var": 0
-					},
-					"tryOnlySurface": true,
-					"minLightLevel": 5,
-					"groupSize": {
+					"knighterrant-*-*-grunt": {
 						"dist": "verynarrowgaussian",
-						"avg": 1,
+						"avg": 3,
 						"var": 2
-					},
-					"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:fern-*", "game:tallfern", "game:leaves-*", "game:wildvine-*", "game:mushroom-*", "game:crop-*", "game:loosestones-*", "game:looseboulders-*", "game:loosestick-*" ]
+					}
 				},
-				"runtime": {
-					"group": "neutral",
-					"tryOnlySurface": true,
-					"chance": 0.000015,
-					"maxQuantity": 2,
-					"minLightLevel": 5,
-					"groupSize": {
-						"dist": "verynarrowgaussian",
-						"avg": 1,
-						"var": 2
-					},
-					"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:fern-*", "game:tallfern", "game:leaves-*", "game:wildvine-*", "game:mushroom-*", "game:crop-*", "game:loosestones-*", "game:looseboulders-*", "game:loosestick-*" ],
-					"minTemp": -10,
-					"minRain": 0
+				"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:fern-*", "game:tallfern", "game:leaves-*", "game:wildvine-*", "game:mushroom-*", "game:crop-*", "game:loosestones-*", "game:looseboulders-*", "game:loosestick-*" ],
+				"minTemp": -10,
+				"minRain": 0,
+				"companionsByType": {
+					"knighterrant-*-*-boss": [ "knighterrant-{gender}-{type}-grunt", "knighterrant-{gender}-{type}-grunt", "knighterrant-{gender}-{type}-grunt" ],
+					"knighterrant-*-*-grunt": []
 				}
-			},
-			"*": null
+			}
 		}
 	},
 	"sounds": {

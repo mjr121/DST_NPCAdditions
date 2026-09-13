@@ -1,14 +1,43 @@
 {
-	"game:tabname-dstedits": "DST Edits",
+	"game:tabname-dstedits-npc": "DST NPCs",
 
 
 	"dstnpc:item-creature-knighterrant-*-*-grunt": "Knight Errant",
+	"dstnpc:item-creature-knighterrant-*-bannerman-boss": "Knight Bannerman",
 	"dstnpc:item-creature-knighterrant-*-*-boss": "Knight Sergeant",
-	"dstnpc:item-dead-creature-knighterrant-*-*-grunt": "Knight Errant",
-	"dstnpc:item-dead-creature-knighterrant-*-*-boss": "Knight Sergeant",
 
-	"dstnpc:item-creature-bandit-*-*-grunt": "Bandit Grunt",
-	"dstnpc:item-creature-bandit-*-*-boss": "Bandit Boss",
-	"dstnpc:item-dead-creature-bandit-*-*-grunt": "Bandit Grunt",
-	"dstnpc:item-dead-creature-bandit-*-*-boss": "Bandit Boss"
+	"dstnpc:item-dead-creature-knighterrant-*-*-grunt": "Dead Knight Errant",
+	"dstnpc:item-dead-creature-knighterrant-*-bannerman-boss": "Dead Knight Bannerman",
+	"dstnpc:item-dead-creature-knighterrant-*-*-boss": "Dead Knight Sergeant",
+
+	"dstnpc:item-creature-bandit-male-spear-grunt": "Bandit Spearman",
+	"dstnpc:item-creature-bandit-male-sword-grunt": "Bandit Swordsman",
+	"dstnpc:item-creature-bandit-male-swordshield-grunt": "Bandit Swordsman",
+	"dstnpc:item-creature-bandit-male-axe-grunt": "Bandit Axeman",
+	"dstnpc:item-creature-bandit-male-archer-grunt": "Bandit Archer",
+	"dstnpc:item-creature-bandit-male-axeshield-grunt": "Bandit Axeman",
+
+	"dstnpc:item-dead-creature-bandit-male-spear-grunt": "Dead Bandit Spearman",
+	"dstnpc:item-dead-creature-bandit-male-sword-grunt": "Dead Bandit Swordsman",
+	"dstnpc:item-dead-creature-bandit-male-swordshield-grunt": "Dead Bandit Swordsman",
+	"dstnpc:item-dead-creature-bandit-male-axe-grunt": "Dead Bandit Axeman",
+	"dstnpc:item-dead-creature-bandit-male-archer-grunt": "Dead Bandit Archer",
+	"dstnpc:item-dead-creature-bandit-male-axeshield-grunt": "Dead Bandit Axeman",
+
+	"dstnpc:item-creature-bandit-male-spear-boss": "Bandit Spearman",
+	"dstnpc:item-creature-bandit-male-sword-boss": "Bandit Swordsman",
+	"dstnpc:item-creature-bandit-male-swordshield-boss": "Bandit Swordsman",
+	"dstnpc:item-creature-bandit-male-axe-boss": "Bandit Axeman",
+	"dstnpc:item-creature-bandit-male-archer-boss": "Bandit Archer",
+	"dstnpc:item-creature-bandit-male-axeshield-boss": "Bandit Axeman",
+	"dstnpc:item-creature-bandit-male-bannerman-boss": "Bandit Bannerman",
+
+	"dstnpc:item-dead-creature-bandit-male-spear-boss": "Dead Bandit Spearman",
+	"dstnpc:item-dead-creature-bandit-male-sword-boss": "Dead Bandit Swordsman",
+	"dstnpc:item-dead-creature-bandit-male-swordshield-boss": "Dead Bandit Swordsman",
+	"dstnpc:item-dead-creature-bandit-male-axe-boss": "Dead Bandit Axeman",
+	"dstnpc:item-dead-creature-bandit-male-archer-boss": "Dead Bandit Archer",
+	"dstnpc:item-dead-creature-bandit-male-axeshield-boss": "Dead Bandit Axeman",
+	"dstnpc:item-dead-creature-bandit-male-bannerman-boss": "Dead Bandit Bannerman"
+
 }

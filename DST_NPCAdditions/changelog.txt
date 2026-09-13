@@ -1,3 +1,7 @@
+9/12/2026
+Changed lang file to better reflect different bandit types.
+Added drop inventory to bandits. Grunts generally carry 1 rusty gear +/- 1, bosses carry 5 +/- 2.5. Value is modified by rustyGearDropRate like lore monsters (drifters, bowtorn etc)
+
 8/22/2026 - V0.0.1
 Init creation.
 Mod purpose is to make a balanced and thoughtout method of "ore roasting" or "ore purification" to gain more ore per raw ore compared to base game.
