@@ -1577,30 +1577,34 @@
       "weight": 1
     },
 
-
     "equipBody-brigandine-body": {
       "base": "game:entity/humanoid/seraph/armor/brigandine/body",
       "weight": 1
     },
     "equipHead-brigandine-bronze": {
       "base": "game:entity/humanoid/seraph/armor/brigandine/head-bronze",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-brigandine-copper": {
       "base": "game:entity/humanoid/seraph/armor/brigandine/head-copper",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-brigandine-iron": {
       "base": "game:entity/humanoid/seraph/armor/brigandine/head-iron",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-brigandine-meteoriciron": {
       "base": "game:entity/humanoid/seraph/armor/brigandine/head-meteoriciron",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-brigandine-steel": {
       "base": "game:entity/humanoid/seraph/armor/brigandine/head-steel",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-brigandine-legs": {
       "base": "game:entity/humanoid/seraph/armor/brigandine/legs",
@@ -1613,23 +1617,28 @@
     },
     "equipHead-chain-bronze": {
       "base": "game:entity/humanoid/seraph/armor/chain/head-bronze",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-chain-copper": {
       "base": "game:entity/humanoid/seraph/armor/chain/head-copper",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-chain-iron": {
       "base": "game:entity/humanoid/seraph/armor/chain/head-iron",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-chain-meteoriciron": {
       "base": "game:entity/humanoid/seraph/armor/chain/head-meteoriciron",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-chain-steel": {
       "base": "game:entity/humanoid/seraph/armor/chain/head-steel",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-chain-legs": {
       "base": "game:entity/humanoid/seraph/armor/chain/legs",
@@ -1642,7 +1651,8 @@
     },
     "equipHead-gambeson-head": {
       "base": "game:entity/humanoid/seraph/armor/gambeson/head",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-gambeson-legs": {
       "base": "game:entity/humanoid/seraph/armor/gambeson/legs",
@@ -1664,7 +1674,8 @@
     },
     "equipHead-lamellar-head": {
       "base": "game:entity/humanoid/seraph/armor/lamellar/head",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-lamellar-legs": {
       "base": "game:entity/humanoid/seraph/armor/lamellar/legs",
@@ -1677,7 +1688,8 @@
     },
     "equipHead-leather-head": {
       "base": "game:entity/humanoid/seraph/armor/leather/head",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-leather-legs": {
       "base": "game:entity/humanoid/seraph/armor/leather/legs",
@@ -1699,23 +1711,28 @@
     },
     "equipHead-plate-bronze": {
       "base": "game:entity/humanoid/seraph/armor/plate/head-bronze",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-plate-copper": {
       "base": "game:entity/humanoid/seraph/armor/plate/head-copper",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-plate-iron": {
       "base": "game:entity/humanoid/seraph/armor/plate/head-iron",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-plate-meteoriciron": {
       "base": "game:entity/humanoid/seraph/armor/plate/head-meteoriciron",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-plate-steel": {
       "base": "game:entity/humanoid/seraph/armor/plate/head-steel",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-plate-legs": {
       "base": "game:entity/humanoid/seraph/armor/plate/legs",
@@ -1728,23 +1745,28 @@
     },
     "equipHead-scale-bronze": {
       "base": "game:entity/humanoid/seraph/armor/scale/head-bronze",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-scale-copper": {
       "base": "game:entity/humanoid/seraph/armor/scale/head-copper",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-scale-iron": {
       "base": "game:entity/humanoid/seraph/armor/scale/head-iron",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-scale-meteoriciron": {
       "base": "game:entity/humanoid/seraph/armor/scale/head-meteoriciron",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-scale-steel": {
       "base": "game:entity/humanoid/seraph/armor/scale/head-steel",
-      "weight": 1
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-scale-legs": {
       "base": "game:entity/humanoid/seraph/armor/scale/legs",

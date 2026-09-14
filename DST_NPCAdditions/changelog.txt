@@ -1,12 +1,15 @@
-9/13/20206
+9/13/2026 - Addendum
+Edited Bandit faction loot tables to include reed poultice, copper nugget, silver nuggets to all entities. Added gold nugget to boss entity loot table.
+Edited Poacher faction loot tables. They drop gears, hides, fat, raw meat (both types), and copper arrows.
+Bandits, Poachers no longer are harvestable, but drop their loot table on death. which is a bit cooler imo.
+
+9/13/2026
 Removed harmony patch
 Added poacher faction
 added proper config, and allowed user editable entries for spawn chance, and if the faction was enabled or not.
 Added user bool for notification entries.
 Corrected Bannerman anim poses.
 Fixed Archers not shooting from proper location. They are now much more dangerous.
-
-
 
 Poacher Faction
 Primarily hunt local wildlife. Spawn in neutral. Boss units come in with +1 companion.

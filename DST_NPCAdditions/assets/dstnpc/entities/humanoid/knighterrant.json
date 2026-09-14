@@ -2731,11 +2731,17 @@
 							"knighterrant-*-sword-boss": 4.5,
 							"knighterrant-*-swordshield-grunt": 3.75,
 							"knighterrant-*-swordshield-boss": 4.5,
+							"knighterrant-*-axe-grunt": 2,
+							"knighterrant-*-axe-boss": 2.5,
+							"knighterrant-*-axeshield-grunt": 2,
+							"knighterrant-*-axeshield-boss": 2.5,
 							"*": 2.75
 						},
 						"minDistByType": {
 							"knighterrant-*-spear-*": 3.5,
 							"knighterrant-*-sword-*": 2.5,
+							"knighterrant-*-axe-*": 2,
+							"knighterrant-*-axeshield-*": 2,
 							"*": 2.5
 						},
 						"mincooldown": 2500,
@@ -2745,7 +2751,10 @@
 						"animationByType": {
 							"knighterrant-*-spear-*": "spear-attack",
 							"knighterrant-*-sword-*": "sword-attack1",
-							"knighterrant-*-swordshield-*": "sword-attack1"
+							"knighterrant-*-swordshield-*": "sword-attack1",
+							"knighterrant-*-axe-*": "sword-attack2",
+							"knighterrant-*-axeshield-*": "sword-attack2",
+							"knighterrant-*-bannerman-*": "sword-attack1"
 						},
 						"animationSpeed": 2,
 						"whenInEmotionState": "aggressiveondamage"
@@ -2765,12 +2774,18 @@
 							"knighterrant-*-sword-boss": 4.5,
 							"knighterrant-*-swordshield-grunt": 3.75,
 							"knighterrant-*-swordshield-boss": 4.5,
+							"knighterrant-*-axe-grunt": 2,
+							"knighterrant-*-axe-boss": 2.5,
+							"knighterrant-*-axeshield-grunt": 2,
+							"knighterrant-*-axeshield-boss": 2.5,
 							"knighterrant-*-bannerman-boss": 4.5,
 							"*": 2.75
 						},
 						"minDistByType": {
 							"knighterrant-*-spear-*": 3.5,
 							"knighterrant-*-sword-*": 2.5,
+							"knighterrant-*-axe-*": 2,
+							"knighterrant-*-axeshield-*": 2,
 							"*": 2.5
 						},
 						"mincooldown": 500,
@@ -2781,6 +2796,8 @@
 							"knighterrant-*-spear-*": "spear-attack",
 							"knighterrant-*-sword-*": "sword-attack1",
 							"knighterrant-*-swordshield-*": "sword-attack1",
+							"knighterrant-*-axe-*": "sword-attack2",
+							"knighterrant-*-axeshield-*": "sword-attack2",
 							"knighterrant-*-bannerman-*": "sword-attack1"
 						},
 						"animationSpeed": 2
@@ -2831,6 +2848,8 @@
 							"knighterrant-*-spear-*": "spear-attack",
 							"knighterrant-*-sword-*": "sword-attack1",
 							"knighterrant-*-swordshield-*": "sword-attack1",
+							"knighterrant-*-axe-*": "sword-attack2",
+							"knighterrant-*-axeshield-*": "sword-attack2",
 							"knighterrant-*-bannerman-*": "sword-attack1"
 						},
 						"animationSpeed": 2
