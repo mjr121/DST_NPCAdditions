@@ -4,13 +4,14 @@ Additional NPC mobs using the vanilla Villager Entity model. Mobs are setup to f
 ## Available Factions
 ### Bandits
 Highway men, forest dwellers, general no-good doers. The names these folk are called is numerous. They will hunt down the other factions, and will attack the player on sight.  
-Bandits additionally have an Axeman unit with and without a shield.
 ### Knight Errant
 Skilled freemen, mercenaries, and knights sworn to patrol the roads. These armed and armored fighters are generally neutral to those that don't break the law. Although no Errant will pass up the chance to take down a bandit or two.
+### Poachers
+Historically hunters of the kings forests without permission, these outlaws will hunt wildlife around them. They are neutral to the player, believing them to be of like mind. 
 \
 \
 Unless otherwise stated, all factions have the same available entities, which are;  
-Spear, Sword, Sword/Shield, and a Line Leader unit (Bandits have Bosses, Knights have Sergeants)  
+Spear, Sword, Sword/Shield, Axe, Axe/Shield, Bow, and a Line Leader unit (Bandits have Bosses, Knights have Sergeants).
 
 Future Plans\
 Additional Factions for more inter-faction fights\
