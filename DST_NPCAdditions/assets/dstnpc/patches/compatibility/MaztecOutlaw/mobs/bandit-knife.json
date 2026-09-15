@@ -1,0 +1,32 @@
+[
+	{
+		"op": "replace",
+		"path": "/server/behaviors/9/aitasks/2/damage",
+		"value": 2,
+		"file": "game:entities/mobs/bandit-knife.json",
+		"dependsOn": [
+			{ "modid": "outlawmod122" },
+			{
+				"condition": {
+					"when": "PatchOutlawByMaztecToThisMod",
+					"isValue": "true"
+				}
+			}
+		]
+	},
+	{
+		"op": "replace",
+		"path": "/server/behaviors/9/aitasks/2/damageTier",
+		"value": 0,
+		"file": "game:entities/mobs/bandit-knife.json",
+		"dependsOn": [
+			{ "modid": "outlawmod122" },
+			{
+				"condition": {
+					"when": "PatchOutlawByMaztecToThisMod",
+					"isValue": "true"
+				}
+			}
+		]
+	}
+]

@@ -1,0 +1,81 @@
+[
+	{
+		"op": "replace",
+		"path": "/server/behaviors/9/aitasks/3/damage",
+		"value": 2.75,
+		"file": "game:entities/mobs/deserter-archer.json",
+		"dependsOn": [
+			{ "modid": "outlawmod122" },
+			{
+				"condition": {
+					"when": "PatchOutlawByMaztecToThisMod",
+					"isValue": "true"
+				}
+			}
+		]
+	},
+	{
+		"file": "game:entities/mobs/deserter-archer.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/2/entityCodes",
+		"value": [
+      "bandit-*-*-grunt",
+      "bandit-*-*-boss",
+      "poacher-*-*-grunt",
+      "poacher-*-*-boss",
+      "knighterrant-*-*-grunt",
+      "knighterrant-*-*-boss"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	},
+	{
+		"file": "game:entities/mobs/deserter-archer.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/3/entityCodes",
+		"value": [
+      "bandit-*-*-grunt",
+      "bandit-*-*-boss",
+      "poacher-*-*-grunt",
+      "poacher-*-*-boss",
+      "knighterrant-*-*-grunt",
+      "knighterrant-*-*-boss"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	},
+	{
+		"file": "game:entities/mobs/deserter-archer.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/5/entityCodes",
+		"value": [
+      "bandit-*-*-grunt",
+      "bandit-*-*-boss",
+      "poacher-*-*-grunt",
+      "poacher-*-*-boss",
+      "knighterrant-*-*-grunt",
+      "knighterrant-*-*-boss"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	},
+	{
+		"file": "game:entities/mobs/deserter-archer.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/7/entityCodes",
+		"value": [
+      "bandit-*-*-grunt",
+      "bandit-*-*-boss",
+      "poacher-*-*-grunt",
+      "poacher-*-*-boss",
+      "knighterrant-*-*-grunt",
+      "knighterrant-*-*-boss"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	}
+]

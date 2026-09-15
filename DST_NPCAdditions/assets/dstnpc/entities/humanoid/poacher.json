@@ -1317,7 +1317,7 @@
 					},
 					{
 						"code": "meleeattack",
-						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*" ],
+						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
 						"priority": 2.5,
 						"enabledByType": {
 							"*-archer-*": false,
@@ -1343,7 +1343,7 @@
 					},
 					{
 						"code": "seekentity",
-						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*" ],
+						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
 						"enabledByType": {
 							"*-archer-*": false,
 							"*": true

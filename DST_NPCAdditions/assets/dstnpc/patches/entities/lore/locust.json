@@ -1,0 +1,24 @@
+[
+  {
+    "side": "server",
+    "op": "addmerge",
+    "path": "/server/behaviors/7/aitasks/0/entityCodes",
+    "value": [
+      "bandit-*",
+      "poacher-*",
+      "knighterrant-*"
+    ],
+    "file": "game:entities/lore/locust.json"
+  },
+  {
+    "side": "server",
+    "op": "addmerge",
+    "path": "/server/behaviors/7/aitasks/2/entityCodes",
+    "value": [
+      "bandit-*",
+      "poacher-*",
+      "knighterrant-*"
+    ],
+    "file": "game:entities/lore/locust.json"
+  }
+]

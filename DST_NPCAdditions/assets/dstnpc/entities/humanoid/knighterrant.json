@@ -2622,7 +2622,7 @@
 				"aitasks": [
 					{
 						"code": "stayinrange",
-						"entityCodes": [ "bandit-*", "poacher-*", "drifter-*", "shiver-*", "bowtorn-*" ],
+						"entityCodes": [ "bandit-*", "poacher-*", "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
 						"enabledByType": {
 							"*-archer-*": true,
 							"*": false
@@ -2657,7 +2657,7 @@
 					},
 					{
 						"code": "bowturretmode",
-						"entityCodes": [ "bandit-*", "drifter-*", "poacher-*", "shiver-*", "bowtorn-*" ],
+						"entityCodes": [ "bandit-*", "drifter-*", "poacher-*", "shiver-*", "bowtorn-*", "locust-*" ],
 						"priority": 2.25,
 						"enabledByType": {
 							"*-archer-*": true,
@@ -2819,7 +2819,7 @@
 					},
 					{
 						"code": "meleeattack",
-						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*" ],
+						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
 						"priority": 2.5,
 						"enabledByType": {
 							"*-archer-*": false,
@@ -2856,7 +2856,7 @@
 					},
 					{
 						"code": "seekentity",
-						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*" ],
+						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
 						"priority": 1.5,
 						"enabledByType": {
 							"*-archer-*": false,

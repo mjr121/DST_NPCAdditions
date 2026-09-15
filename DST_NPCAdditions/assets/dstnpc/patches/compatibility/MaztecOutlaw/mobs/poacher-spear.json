@@ -1,0 +1,126 @@
+[
+	{
+		"op": "replace",
+		"path": "/server/behaviors/9/aitasks/2/damage",
+		"value": 2.75,
+		"file": "game:entities/mobs/poacher-spear.json",
+		"dependsOn": [
+			{ "modid": "outlawmod122" },
+			{
+				"condition": {
+					"when": "PatchOutlawByMaztecToThisMod",
+					"isValue": "true"
+				}
+			}
+		]
+	},
+	{
+		"op": "replace",
+		"path": "/server/behaviors/9/aitasks/3/damage",
+		"value": 2.75,
+		"file": "game:entities/mobs/poacher-spear.json",
+		"dependsOn": [
+			{ "modid": "outlawmod122" },
+			{
+				"condition": {
+					"when": "PatchOutlawByMaztecToThisMod",
+					"isValue": "true"
+				}
+			}
+		]
+	},
+	{
+		"op": "replace",
+		"path": "/server/behaviors/9/aitasks/2/damageTier",
+		"value": 0,
+		"file": "game:entities/mobs/poacher-spear.json",
+		"dependsOn": [
+			{ "modid": "outlawmod122" },
+			{
+				"condition": {
+					"when": "PatchOutlawByMaztecToThisMod",
+					"isValue": "true"
+				}
+			}
+		]
+	},
+	{
+		"op": "replace",
+		"path": "/server/behaviors/9/aitasks/3/damageTier",
+		"value": 0,
+		"file": "game:entities/mobs/poacher-spear.json",
+		"dependsOn": [
+			{ "modid": "outlawmod122" },
+			{
+				"condition": {
+					"when": "PatchOutlawByMaztecToThisMod",
+					"isValue": "true"
+				}
+			}
+		]
+	},
+	{
+		"file": "game:entities/mobs/poacher-spear.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/2/entityCodes",
+		"value": [
+      "bandit-*-*-grunt",
+      "bandit-*-*-boss",
+      "poacher-*-*-grunt",
+      "poacher-*-*-boss",
+      "knighterrant-*-*-grunt",
+      "knighterrant-*-*-boss"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	},
+	{
+		"file": "game:entities/mobs/poacher-spear.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/3/entityCodes",
+		"value": [
+      "bandit-*-*-grunt",
+      "bandit-*-*-boss",
+      "poacher-*-*-grunt",
+      "poacher-*-*-boss",
+      "knighterrant-*-*-grunt",
+      "knighterrant-*-*-boss"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	},
+	{
+		"file": "game:entities/mobs/poacher-spear.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/4/entityCodes",
+		"value": [
+      "bandit-*-*-grunt",
+      "bandit-*-*-boss",
+      "poacher-*-*-grunt",
+      "poacher-*-*-boss",
+      "knighterrant-*-*-grunt",
+      "knighterrant-*-*-boss"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	},
+	{
+		"file": "game:entities/mobs/poacher-spear.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/8/entityCodes",
+		"value": [
+      "bandit-*-*-grunt",
+      "bandit-*-*-boss",
+      "poacher-*-*-grunt",
+      "poacher-*-*-boss",
+      "knighterrant-*-*-grunt",
+      "knighterrant-*-*-boss"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	}
+]

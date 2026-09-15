@@ -1,0 +1,86 @@
+[
+  //Bandits
+  {
+    "side": "Server",
+    "file": "entities/humanoid/bandit.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "value": {
+      "*": {
+        "biorealm": [
+          "pacific nearctic",
+          "atlantic nearctic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern palearctic",
+          "pacific palearctic",
+          "pacific neotropic",
+          "atlantic neotropic",
+          "atlantic afrotropic",
+          "eastern afrotropic",
+          "australasian",
+          "oceanic"
+        ]
+      }
+    },
+    "dependsOn": [
+      { "modid": "biomes" }
+    ]
+  },
+  //Knight Errants
+  {
+    "side": "Server",
+    "file": "entities/humanoid/knighterrant.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "value": {
+      "*": {
+        "biorealm": [
+          "pacific nearctic",
+          "atlantic nearctic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern palearctic",
+          "pacific palearctic",
+          "pacific neotropic",
+          "atlantic neotropic",
+          "atlantic afrotropic",
+          "eastern afrotropic",
+          "australasian",
+          "oceanic"
+        ]
+      }
+    },
+    "dependsOn": [
+      { "modid": "biomes" }
+    ]
+  },
+  //Poachers
+  {
+    "side": "Server",
+    "file": "entities/humanoid/poacher.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "value": {
+      "*": {
+        "biorealm": [
+          "pacific nearctic",
+          "atlantic nearctic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern palearctic",
+          "pacific palearctic",
+          "pacific neotropic",
+          "atlantic neotropic",
+          "atlantic afrotropic",
+          "eastern afrotropic",
+          "australasian",
+          "oceanic"
+        ]
+      }
+    },
+    "dependsOn": [
+      { "modid": "biomes" }
+    ]
+  }
+]
