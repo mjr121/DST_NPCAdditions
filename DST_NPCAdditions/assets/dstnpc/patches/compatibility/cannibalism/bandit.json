@@ -1,65 +1,81 @@
 [
 	{
-		"op": "add",
-		"path": "/client/behaviors/-",
-		"value": {
-			"code": "harvestable"
-		},
-		"file": "entities/humanoid/bandit.json",
-		"dependsOn": [ { "modid": "cannibalism" } ]
-	},
-	{
-		"op": "add",
-		"path": "/server/behaviors/-",
-		"value": {
-			"code": "harvestable",
-			"drops": [
-				{
-					"type": "item",
-					"code": "game:redmeat-raw",
-					"quantity": {
-						"avg": 9,
-						"var": 1.5
-					}
-				},
-				{
-					"type": "item",
-					"code": "cannibalism:heart-raw",
-					"quantity": {
-						"avg": 1,
-						"var": 0
-					}
-				},
-				{
-					"type": "item",
-					"code": "cannibalism:hide-human-raw-medium",
-					"quantity": {
-						"avg": 1.5,
-						"var": 0
-					}
-				},
-				{
-					"type": "item",
-					"code": "game:fat",
-					"quantity": {
-						"avg": 1,
-						"var": 0
-					}
+		"op": "addmerge",
+		"path": "/server/behaviors/12/dropsByType/*-grunt",
+		"value": [
+			{
+				"type": "item",
+				"code": "game:redmeat-raw",
+				"quantity": {
+					"avg": 9,
+					"var": 1.5
 				}
-			]
-		},
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:heart-raw",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:hide-human-raw-medium",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:fat",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			}
+		],
 		"file": "entities/humanoid/bandit.json",
 		"dependsOn": [ { "modid": "cannibalism" } ]
 	},
 	{
-		"enabled": false,
-		"op": "add",
-		"path": "/server/behaviors/-",
-		"value": {
-			"code": "deaddecay",
-			"hoursToDecay": 96,
-			"decayedBlock": "cannibalism:seraphcarcass"
-		},
+		"op": "addmerge",
+		"path": "/server/behaviors/12/dropsByType/*-boss",
+		"value": [
+			{
+				"type": "item",
+				"code": "game:redmeat-raw",
+				"quantity": {
+					"avg": 9,
+					"var": 1.5
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:heart-raw",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:hide-human-raw-medium",
+				"quantity": {
+					"avg": 1.5,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:fat",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			}
+		],
 		"file": "entities/humanoid/bandit.json",
 		"dependsOn": [ { "modid": "cannibalism" } ]
 	}

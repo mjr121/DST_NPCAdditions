@@ -836,150 +836,6 @@
 			"*": "villageraccessories-{gender}"
 		}
 	},
-	"dropsByType": {
-		"*-grunt": [
-			{
-				"type": "item",
-				"code": "game:gear-rusty",
-				"dropModbyStat": "rustyGearDropRate",
-				"quantity": {
-					"avg": 1,
-					"var": 2
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:hide-raw-small",
-				"quantity": {
-					"avg": 1.5,
-					"var": 0.5
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:hide-raw-medium",
-				"quantity": {
-					"avg": 0.5,
-					"var": 0.5
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:hide-raw-large",
-				"quantity": {
-					"avg": 0.125,
-					"var": 0
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:bushmeat-raw",
-				"quantity": {
-					"avg": 2,
-					"var": 1
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:redmeat-raw",
-				"quantity": {
-					"avg": 3,
-					"var": 1
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:fat",
-				"quantity": {
-					"avg": 1,
-					"var": 0.25
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:arrow-copper",
-				"quantity": {
-					"avg": 1,
-					"var": 2
-				}
-			}
-		],
-		"*-boss": [
-			{
-				"type": "item",
-				"code": "game:gear-temporal",
-				"quantity": {
-					"avg": 0.05332,
-					"var": 0
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:gear-rusty",
-				"dropModbyStat": "rustyGearDropRate",
-				"quantity": {
-					"avg": 5,
-					"var": 2.5
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:hide-raw-small",
-				"quantity": {
-					"avg": 1.5,
-					"var": 0.5
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:hide-raw-medium",
-				"quantity": {
-					"avg": 0.5,
-					"var": 0.5
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:hide-raw-large",
-				"quantity": {
-					"avg": 0.125,
-					"var": 0
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:bushmeat-raw",
-				"quantity": {
-					"avg": 2,
-					"var": 1
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:redmeat-raw",
-				"quantity": {
-					"avg": 3,
-					"var": 1
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:fat",
-				"quantity": {
-					"avg": 1,
-					"var": 0.25
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:arrow-copper",
-				"quantity": {
-					"avg": 1,
-					"var": 2
-				}
-			}
-		]
-	},
 	"AllowedVariants": [
 		"poacher-male-*"
 	],
@@ -1005,6 +861,10 @@
 				"code": "despawn",
 				"minPlayerDistance": 32,
 				"minSeconds": 300
+			},
+			{
+				"code": "harvestable",
+				"duration": 2
 			}
 		],
 		"animations": [
@@ -1447,7 +1307,282 @@
 					}
 				]
 			},
-			{ "code": "entitystatetags" }
+			{ "code": "entitystatetags" },
+			{ 
+				"code": "harvestable", 
+				"duration": 2, 
+				"fixedweight": true, 
+				"dropsByType": {
+					"*-spear-grunt": [
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 1,
+								"var": 2
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:hide-raw-small",
+							"quantity": {
+								"avg": 1.5,
+								"var": 0.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:hide-raw-medium",
+							"quantity": {
+								"avg": 0.5,
+								"var": 0.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:hide-raw-large",
+							"quantity": {
+								"avg": 0.125,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:bushmeat-raw",
+							"quantity": {
+								"avg": 2,
+								"var": 1
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:redmeat-raw",
+							"quantity": {
+								"avg": 3,
+								"var": 1
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:fat",
+							"quantity": {
+								"avg": 1,
+								"var": 0.25
+							}
+						}
+					],
+					"*-spear-boss": [
+						{
+							"type": "item",
+							"code": "game:gear-temporal",
+							"quantity": {
+								"avg": 0.05332,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 5,
+								"var": 2.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:hide-raw-small",
+							"quantity": {
+								"avg": 1.5,
+								"var": 0.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:hide-raw-medium",
+							"quantity": {
+								"avg": 0.5,
+								"var": 0.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:hide-raw-large",
+							"quantity": {
+								"avg": 0.125,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:bushmeat-raw",
+							"quantity": {
+								"avg": 2,
+								"var": 1
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:redmeat-raw",
+							"quantity": {
+								"avg": 3,
+								"var": 1
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:fat",
+							"quantity": {
+								"avg": 1,
+								"var": 0.25
+							}
+						}
+					],
+					"*-archer-grunt": [
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 1,
+								"var": 2
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:hide-raw-small",
+							"quantity": {
+								"avg": 1.5,
+								"var": 0.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:hide-raw-medium",
+							"quantity": {
+								"avg": 0.5,
+								"var": 0.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:hide-raw-large",
+							"quantity": {
+								"avg": 0.125,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:bushmeat-raw",
+							"quantity": {
+								"avg": 2,
+								"var": 1
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:redmeat-raw",
+							"quantity": {
+								"avg": 3,
+								"var": 1
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:fat",
+							"quantity": {
+								"avg": 1,
+								"var": 0.25
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:arrow-copper",
+							"quantity": {
+								"avg": 1,
+								"var": 2
+							}
+						}
+					],
+					"*-archer-boss": [
+						{
+							"type": "item",
+							"code": "game:gear-temporal",
+							"quantity": {
+								"avg": 0.05332,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 5,
+								"var": 2.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:hide-raw-small",
+							"quantity": {
+								"avg": 1.5,
+								"var": 0.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:hide-raw-medium",
+							"quantity": {
+								"avg": 0.5,
+								"var": 0.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:hide-raw-large",
+							"quantity": {
+								"avg": 0.125,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:bushmeat-raw",
+							"quantity": {
+								"avg": 2,
+								"var": 1
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:redmeat-raw",
+							"quantity": {
+								"avg": 3,
+								"var": 1
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:fat",
+							"quantity": {
+								"avg": 1,
+								"var": 0.25
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:arrow-copper",
+							"quantity": {
+								"avg": 1,
+								"var": 2
+							}
+						}
+					]
+				}
+			}	
 		],
 		"spawnconditions": {
 			"worldgen": {

@@ -26,7 +26,7 @@
 			{
 				"type": "item",
 				"code": "cannibalism:hide-human-raw-medium",
-				"quantity": { "avg": 1.5, "var": 0 }
+				"quantity": { "avg": 1, "var": 0 }
 			},
 			{
 				"type": "item",

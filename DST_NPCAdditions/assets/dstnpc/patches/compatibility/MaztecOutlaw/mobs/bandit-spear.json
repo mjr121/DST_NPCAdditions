@@ -34,12 +34,9 @@
 		"op": "addmerge",
 		"path": "/server/behaviors/9/aitasks/2/entityCodes",
 		"value": [
-      "bandit-*-*-grunt",
-      "bandit-*-*-boss",
-      "poacher-*-*-grunt",
-      "poacher-*-*-boss",
-      "knighterrant-*-*-grunt",
-      "knighterrant-*-*-boss"
+			"bandit-*",
+			"poacher-*",
+			"knighterrant-*"
 		],
 		"dependsOn": [
 			{ "modid": "outlawmod122" }
@@ -50,12 +47,9 @@
 		"op": "addmerge",
 		"path": "/server/behaviors/9/aitasks/3/entityCodes",
 		"value": [
-      "bandit-*-*-grunt",
-      "bandit-*-*-boss",
-      "poacher-*-*-grunt",
-      "poacher-*-*-boss",
-      "knighterrant-*-*-grunt",
-      "knighterrant-*-*-boss"
+			"bandit-*",
+			"poacher-*",
+			"knighterrant-*"
 		],
 		"dependsOn": [
 			{ "modid": "outlawmod122" }
@@ -66,12 +60,9 @@
 		"op": "addmerge",
 		"path": "/server/behaviors/9/aitasks/4/entityCodes",
 		"value": [
-      "bandit-*-*-grunt",
-      "bandit-*-*-boss",
-      "poacher-*-*-grunt",
-      "poacher-*-*-boss",
-      "knighterrant-*-*-grunt",
-      "knighterrant-*-*-boss"
+			"bandit-*",
+			"poacher-*",
+			"knighterrant-*"
 		],
 		"dependsOn": [
 			{ "modid": "outlawmod122" }
@@ -82,12 +73,9 @@
 		"op": "addmerge",
 		"path": "/server/behaviors/9/aitasks/7/entityCodes",
 		"value": [
-      "bandit-*-*-grunt",
-      "bandit-*-*-boss",
-      "poacher-*-*-grunt",
-      "poacher-*-*-boss",
-      "knighterrant-*-*-grunt",
-      "knighterrant-*-*-boss"
+			"bandit-*",
+			"poacher-*",
+			"knighterrant-*"
 		],
 		"dependsOn": [
 			{ "modid": "outlawmod122" }

@@ -2578,86 +2578,6 @@
 			"*": "villageraccessories-{gender}"
 		}
 	},
-	"dropsByType": {
-		"*-grunt": [
-			{
-				"type": "item",
-				"code": "game:poultice-reed-horsetail",
-				"quantity": {
-					"avg": 0.4,
-					"var": 0
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:gear-rusty",
-				"dropModbyStat": "rustyGearDropRate",
-				"quantity": {
-					"avg": 1,
-					"var": 2
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:nugget-nativecopper",
-				"quantity": {
-					"avg": 0.125,
-					"var": 0
-				}
-			}
-		],
-		"*-boss": [
-			{
-				"type": "item",
-				"code": "game:gear-temporal",
-				"quantity": {
-					"avg": 0.05332,
-					"var": 0
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:poultice-reed-horsetail",
-				"quantity": {
-					"avg": 0.4,
-					"var": 0
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:gear-rusty",
-				"dropModbyStat": "rustyGearDropRate",
-				"quantity": {
-					"avg": 5,
-					"var": 2.5
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:nugget-nativecopper",
-				"quantity": {
-					"avg": 0.125,
-					"var": 0
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:nugget-nativesilver",
-				"quantity": {
-					"avg": 0.025,
-					"var": 0
-				}
-			},
-			{
-				"type": "item",
-				"code": "game:nugget-nativegold",
-				"quantity": {
-					"avg": 0.005,
-					"var": 0
-				}
-			}
-		]
-	},
 	"AllowedVariants": [
 		"bandit-male-*"
 	],
@@ -2683,7 +2603,8 @@
 				"code": "despawn",
 				"minPlayerDistance": 32,
 				"minSeconds": 300
-			}
+			},
+			{ "code": "harvestable", "duration": 2 }
 		],
 		"animations": [
 			{
@@ -3158,8 +3079,92 @@
 					}
 				]
 			},
-
-			{ "code": "entitystatetags" }
+			{ "code": "entitystatetags" },
+			{ 
+				"code": "harvestable", 
+				"duration": 2, 
+				"fixedweight": true, 
+				"dropsByType": {
+					"*-grunt": [
+						{
+							"type": "item",
+							"code": "game:poultice-reed-horsetail",
+							"quantity": {
+								"avg": 0.4,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 1,
+								"var": 2
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:nugget-nativecopper",
+							"quantity": {
+								"avg": 0.125,
+								"var": 0
+							}
+						}
+					],
+					"*-boss": [
+						{
+							"type": "item",
+							"code": "game:gear-temporal",
+							"quantity": {
+								"avg": 0.05332,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:poultice-reed-horsetail",
+							"quantity": {
+								"avg": 0.4,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 5,
+								"var": 2.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:nugget-nativecopper",
+							"quantity": {
+								"avg": 0.125,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:nugget-nativesilver",
+							"quantity": {
+								"avg": 0.025,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:nugget-nativegold",
+							"quantity": {
+								"avg": 0.005,
+								"var": 0
+							}
+						}
+					]
+				}
+			}			
 		],
 		"spawnconditions": {
 			"worldgen": {

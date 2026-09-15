@@ -4,9 +4,9 @@
     "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/3/entityCodes",
     "value": [
-      "dstnpc:bandit-*",
-      "dstnpc:poacher-*",
-      "dstnpc:knighterrant-*"
+      "bandit-*",
+      "poacher-*",
+      "knighterrant-*"
     ],
     "dependsOn": [
       { "modid": "outlawmod122" }
@@ -17,9 +17,9 @@
     "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/4/entityCodes",
     "value": [
-      "dstnpc:bandit-*",
-      "dstnpc:poacher-*",
-      "dstnpc:knighterrant-*"
+      "bandit-*",
+      "poacher-*",
+      "knighterrant-*"
     ],
     "dependsOn": [
       { "modid": "outlawmod122" }
@@ -30,9 +30,9 @@
     "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/6/entityCodes",
     "value": [
-      "dstnpc:bandit-*",
-      "dstnpc:poacher-*",
-      "dstnpc:knighterrant-*"
+      "bandit-*",
+      "poacher-*",
+      "knighterrant-*"
     ],
     "dependsOn": [
       { "modid": "outlawmod122" }
@@ -43,9 +43,9 @@
     "op": "addmerge",
     "path": "/server/behaviors/9/aitasks/7/entityCodes",
     "value": [
-      "dstnpc:bandit-*",
-      "dstnpc:poacher-*",
-      "dstnpc:knighterrant-*"
+      "bandit-*",
+      "poacher-*",
+      "knighterrant-*"
     ],
     "dependsOn": [
       { "modid": "outlawmod122" }

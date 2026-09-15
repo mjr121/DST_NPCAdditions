@@ -1,0 +1,52 @@
+9/15/2026 - V1.0.2
+Correct missing text for Bandit bannerman, how that managed to get through I dont know.
+Corrected Poacher Spearmen dropping copper arrows when killed.
+Changed the way drop tables are being handled. Instead of dropping them to the floor, they will require you to harvest like other creatures. Unless I find/make a different method, this will be how it will be moving forward.
+
+Mod Compat
+Outlaw Mod
+Fixed Outlaw NPCs not initate fights against the NPCs added by this mod.
+xSkills Fork
+Added Combat XP to NPCs added by this mod.
+
+9/14/2026 - V1.0.1
+Corrected Vanilla monsters (Drifters, bowtorn etc) not seeking and attacking NPCs added by this mod.
+Corrected NPCs added by this mod not attacking Locust mobs and their variants.
+Added some additional debug output if the config option is enabled.
+
+Compatability
+Cannibalism: 
+Bandits, Poachers, and knights can be harvested for Red Meat, Human Skin and Fat like traders do.
+No Protected Zones:
+Fixed hard incompatability where killing bandits, poachers, or Knights would cause traders to become angry. Althoguh NPZ is using a check for traders via classname, its not stopping at just that classname and pulling all classes inheriting from it, which I was using. This has been solved.
+Outlaws Mod (Maztec): 
+Poachers, Knights, and Bandits from this mod will now attack and can be attacked from mobs from Outlaws Mod.
+Added a config option to change damage and damage tier values on Outlaw NPCs to make them match values from this mod for parity reasons. This is false by default.
+Biomes Mod:
+NPCs added by this mod spawn in all biomes for now. If i add more themed factions, I'll most likely split up the factions based on biome.
+
+9/13/2026 - Addendum
+Edited Bandit faction loot tables to include reed poultice, copper nugget, silver nuggets to all entities. Added gold nugget to boss entity loot table.
+Edited Poacher faction loot tables. They drop gears, hides, fat, raw meat (both types), and copper arrows.
+Bandits, Poachers no longer are harvestable, but drop their loot table on death. which is a bit cooler imo.
+
+9/13/2026
+Removed harmony patch
+Added poacher faction
+added proper config, and allowed user editable entries for spawn chance, and if the faction was enabled or not.
+Added user bool for notification entries.
+Corrected Bannerman anim poses.
+Fixed Archers not shooting from proper location. They are now much more dangerous.
+
+Poacher Faction
+Primarily hunt local wildlife. Spawn in neutral. Boss units come in with +1 companion.
+Equipped with either spears or bows. Spear users leave wildlife alone generally.
+Armor wise, they have leather jerkins, making them very distinct in the wild.
+
+9/12/2026
+Changed lang file to better reflect different bandit types.
+Added drop inventory to bandits. Grunts generally carry 1 rusty gear +/- 1, bosses carry 5 +/- 2.5. Value is modified by rustyGearDropRate like lore monsters (drifters, bowtorn etc)
+
+8/22/2026 - V0.0.1
+Init creation.
+Mod purpose is to make a balanced and thoughtout method of "ore roasting" or "ore purification" to gain more ore per raw ore compared to base game.

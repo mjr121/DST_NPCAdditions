@@ -1,0 +1,12 @@
+[
+	{
+		"op": "addmerge",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 1.2
+		},
+		"dependsOn": [ { "modid": "xskillsfork" } ],
+		"file": "entities/humanoid/knighterrant.json"
+	}
+]

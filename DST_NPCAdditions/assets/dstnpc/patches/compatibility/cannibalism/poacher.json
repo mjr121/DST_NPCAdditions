@@ -1,51 +1,162 @@
 [
-  {
-	"op": "add",
-	"path": "/client/behaviors/-",
-	"value": { 
-		"code": "harvestable"
-	},
-	"file": "entities/humanoid/poacher.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/-",
-    "value": {
-      "code": "harvestable",
-	  "drops": [
+	{
+		"op": "addmerge",
+		"path": "/server/behaviors/12/dropsByType/*-spear-grunt",
+		"value": [
 			{
 				"type": "item",
 				"code": "game:redmeat-raw",
-				"quantity": { "avg": 9, "var": 1.5 }
+				"quantity": {
+					"avg": 9,
+					"var": 1.5
+				}
 			},
 			{
 				"type": "item",
 				"code": "cannibalism:heart-raw",
-				"quantity": { "avg": 1, "var": 0 }
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
 			},
 			{
 				"type": "item",
 				"code": "cannibalism:hide-human-raw-medium",
-				"quantity": { "avg": 1.5, "var": 0 }
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
 			},
 			{
 				"type": "item",
 				"code": "game:fat",
-				"quantity": { "avg": 1, "var": 0 }
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
 			}
-		]
-    },
-    "file": "entities/humanoid/poacher.json"
-  },
-  {
-	"enabled": false,
-    "op": "add",
-    "path": "/server/behaviors/-",
-    "value": {
-      "code": "deaddecay",
-	  "hoursToDecay": 96,
-	  "decayedBlock": "cannibalism:seraphcarcass"
-    },
-    "file": "entities/humanoid/poacher.json"
-  }
+		],
+		"file": "entities/humanoid/poacher.json",
+		"dependsOn": [ { "modid": "cannibalism" } ]
+	},
+	{
+		"op": "addmerge",
+		"path": "/server/behaviors/12/dropsByType/*-spear-boss",
+		"value": [
+			{
+				"type": "item",
+				"code": "game:redmeat-raw",
+				"quantity": {
+					"avg": 9,
+					"var": 1.5
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:heart-raw",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:hide-human-raw-medium",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:fat",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			}
+		],
+		"file": "entities/humanoid/poacher.json",
+		"dependsOn": [ { "modid": "cannibalism" } ]
+	},
+	{
+		"op": "addmerge",
+		"path": "/server/behaviors/12/dropsByType/*-archer-grunt",
+		"value": [
+			{
+				"type": "item",
+				"code": "game:redmeat-raw",
+				"quantity": {
+					"avg": 9,
+					"var": 1.5
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:heart-raw",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:hide-human-raw-medium",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:fat",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			}
+		],
+		"file": "entities/humanoid/poacher.json",
+		"dependsOn": [ { "modid": "cannibalism" } ]
+	},
+	{
+		"op": "addmerge",
+		"path": "/server/behaviors/12/dropsByType/*-archer-boss",
+		"value": [
+			{
+				"type": "item",
+				"code": "game:redmeat-raw",
+				"quantity": {
+					"avg": 9,
+					"var": 1.5
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:heart-raw",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:hide-human-raw-medium",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:fat",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			}
+		],
+		"file": "entities/humanoid/poacher.json",
+		"dependsOn": [ { "modid": "cannibalism" } ]
+	}
 ]
