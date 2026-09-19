@@ -992,7 +992,7 @@
 				"aitasks": [
 					{
 						"code": "stayinrange",
-						"entityCodes": [ "player", "knighterrant-*", "drifter-*", "shiver-*", "bowtorn-*" ],
+						"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*", "drifter-*", "shiver-*", "bowtorn-*" ],
 						"enabledByType": {
 							"*-archer-*": true,
 							"*": false
@@ -1009,7 +1009,7 @@
 					},
 					{
 						"code": "bowturretmode",
-						"entityCodes": [ "player", "knighterrant-*", "drifter-*", "shiver-*", "bowtorn-*" ],
+						"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*", "drifter-*", "shiver-*", "bowtorn-*" ],
 						"priority": 2.25,
 						"enabledByType": {
 							"*-archer-*": true,
@@ -1136,7 +1136,7 @@
 					},
 					{
 						"code": "meleeattack",
-						"entityCodes": [ "player", "knighterrant-*" ],
+						"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*" ],
 						"priority": 2.25,
 						"enabledByType": {
 							"*-archer-*": false,
@@ -1162,7 +1162,7 @@
 					},
 					{
 						"code": "seekentity",
-						"entityCodes": [ "player", "knighterrant-*" ],
+						"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*" ],
 						"enabledByType": {
 							"*-archer-*": false,
 							"*": true
@@ -1215,6 +1215,96 @@
 						"seekingRange": 20,
 						"animationSpeed": 1.75,
 						"animation": "Run"
+					},
+					{
+						"code": "attackplayeronly",
+						"priority": 2.25,
+						"enabledByType": {
+							"*-archer-*": false,
+							"*": true
+						},
+						"damageByType": {
+							"poacher-*-spear-grunt": 2.75,
+							"poacher-*-spear-boss": 3.25,
+							"*": 2.75
+						},
+						"minDistByType": {
+							"poacher-*-spear-*": 3.5,
+							"*": 2.5
+						},
+						"mincooldown": 500,
+						"maxcooldown": 1750,
+						"attackDurationMs": 1000,
+						"damagePlayerAtMs": 400,
+						"animationByType": {
+							"poacher-*-spear-*": "spear-attack"
+						},
+						"animationSpeed": 2,
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "seekplayeronly",
+						"enabledByType": {
+							"*-archer-*": false,
+							"*": true
+						},
+						"priority": 1.25,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"seekingRange": 20,
+						"animationSpeed": 1.75,
+						"animation": "Run",
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "stayinrangeplayeronly",
+						"entityCodes": [ "player" ],
+						"enabledByType": {
+							"*-archer-*": true,
+							"*": false
+						},
+						"priority": 2.3,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"searchRange": 30,
+						"targetRange": 10,
+						"targetRangeTolerance": 5,
+						"animationSpeed": 1.75,
+						"animation": "Run",
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "bowturretmode",
+						"entityCodes": [ "player" ],
+						"priority": 2.25,
+						"enabledByType": {
+							"*-archer-*": true,
+							"*": false
+						},
+						"projectileDamageByType": {
+							"poacher-*-archer-grunt": 2.75,
+							"poacher-*-archer-boss": 3.25
+						},
+						"projectileDamageTierByType": {
+							"poacher-*-archer-grunt": 0,
+							"poacher-*-archer-boss": 0
+						},
+						"reloadTimeByType": {
+							"poacher-*-archer-grunt": 2.5,
+							"poacher-*-archer-boss": 1.75
+						},
+						"projectileCodeByType": {
+							"poacher-*-archer-grunt": "game:arrow-flint",
+							"poacher-*-archer-boss": "game:arrow-copper"
+						},
+						"priorityForCancel": 3.5,
+						"sensingRange": 25,
+						"firingRangeMin": 5,
+						"firingRangeMax": 24,
+						"abortRange": 5,
+						"whenInEmotionState": "aggressiveondamage"
 					},
 					{
 						"code": "fleeentity",
@@ -1597,7 +1687,8 @@
 					}
 				},
 				"maxQuantity": 1,
-				"minLightLevel": 5,
+				"maxLightLevel": 7,
+				"lightLevelType": "OnlyBlockLight",
 				"groupSizeByType": {
 					"poacher-*-*-boss": {
 						"dist": "verynarrowgaussian",
@@ -1628,7 +1719,8 @@
 				"chance": 0.000015,
 				//Chance is equal to what the bear is. this should allow for a lower chance to spawn like it should.
 				"maxQuantity": 1,
-				"minLightLevel": 5,
+				"maxLightLevel": 7,
+				"lightLevelType": "OnlyBlockLight",
 				"groupSizeByType": {
 					"poacher-*-*-boss": {
 						"dist": "verynarrowgaussian",
@@ -1645,7 +1737,7 @@
 				"minTemp": -10,
 				"minRain": 0,
 				"companionsByType": {
-					"poacher-*-*-boss": [ "poacher-{gender}-{type}-grunt" ],
+					"poacher-*-*-boss": [ "poacher-{gender}-{gear}-grunt" ],
 					"poacher-*-*-grunt": []
 				}
 			}

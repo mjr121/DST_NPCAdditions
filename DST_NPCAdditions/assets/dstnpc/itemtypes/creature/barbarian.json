@@ -1,0 +1,111 @@
+{
+	"code": "creature",
+	"class": "ItemCreature",
+	"maxstacksize": 64,
+	"variantgroups" :[
+		{
+			"code": "type",
+			"states": [
+				"barbarian-male-black-spearshield-grunt",
+				"barbarian-male-black-spearshield-boss",
+				"barbarian-male-black-twohandaxe-grunt",
+				"barbarian-male-black-twohandaxe-boss",
+				"barbarian-male-brown-spearshield-grunt",
+				"barbarian-male-brown-spearshield-boss",
+				"barbarian-male-brown-twohandaxe-grunt",
+				"barbarian-male-brown-twohandaxe-boss",
+				"barbarian-male-sun-spearshield-grunt",
+				"barbarian-male-sun-spearshield-boss",
+				"barbarian-male-sun-twohandaxe-grunt",
+				"barbarian-male-sun-twohandaxe-boss",
+				"barbarian-male-panda-spearshield-grunt",
+				"barbarian-male-panda-spearshield-boss",
+				"barbarian-male-panda-twohandaxe-grunt",
+				"barbarian-male-panda-twohandaxe-boss",
+				"barbarian-male-polar-spearshield-grunt",
+				"barbarian-male-polar-spearshield-boss",
+				"barbarian-male-polar-twohandaxe-grunt",
+				"barbarian-male-polar-twohandaxe-boss",
+
+				"barbarianbear-black-adult-male",
+				"barbarianbear-brown-adult-male",
+				"barbarianbear-sun-adult-male",
+				"barbarianbear-panda-adult-male",
+				"barbarianbear-polar-adult-male"
+			]
+		}
+	],
+	"attributes": {
+		"setGuardedEntityAttributeByType": {},
+		"disableElementsByType": {
+			"creature-barbarian-male-*": ["breasts"]
+		},
+		"stepParentShapesByType": {
+			"creature-barbarian-female-*": [ 
+				{ base: "game:entity/humanoid/villager/face/female/normal1" },
+				{ base: "game:entity/humanoid/villager/hair-base/00" },
+				{ base: "game:entity/humanoid/villageraccessories/upperbody/female/longsleeve" },
+				{ base: "game:entity/humanoid/villageraccessories/lowerbody/skirt" }
+			],
+			"creature-barbarian-male-*": [ 
+				{ base: "game:entity/humanoid/villager/face/male/normal2" },
+				{ base: "game:entity/humanoid/villager/hair-base/12" },
+				{ base: "game:entity/humanoid/villageraccessories/upperbody/male/longsleeve" },
+				{ base: "game:entity/humanoid/villageraccessories/lowerbody/male/pants" }
+			]
+		},
+		"handbook": {"excludeByType": {}}
+	},
+	"shapebytype": {
+		"creature-barbarian-male-*": { "base": "game:entity/humanoid/villager-male" },
+		"creature-barbarian-female-*": { "base": "game:entity/humanoid/villager-female" },
+
+		"creature-barbarianbear-black-adult-male": { "base": "game:entity/animal/mammal/bear/black-adult" },
+		"creature-barbarianbear-brown-adult-male": { "base": "game:entity/animal/mammal/bear/brown-adult" },
+		"creature-barbarianbear-sun-adult-male": { "base": "game:entity/animal/mammal/bear/sun-adult" },
+		"creature-barbarianbear-panda-adult-male": { "base": "game:entity/animal/mammal/bear/panda-adult" },
+		"creature-barbarianbear-polar-adult-male": { "base": "game:entity/animal/mammal/bear/polar-adult" }
+	},
+	"texturesByType": {
+		"creature-barbarianbear-black-adult-male": { "skin": { "base": "game:entity/animal/mammal/bear/black-adult1" } },
+		"creature-barbarianbear-brown-adult-male": { "skin": { "base": "game:entity/animal/mammal/bear/brown-adult1" } },
+		"creature-barbarianbear-sun-adult-male": { "skin": { "base": "game:entity/animal/mammal/bear/sun-adult1" } },
+		"creature-barbarianbear-panda-adult-male": { "skin": { "base": "game:entity/animal/mammal/bear/panda-adult1" } },
+		"creature-barbarianbear-polar-adult-male": { "skin": { "base": "game:entity/animal/mammal/bear/polar-adult1" } }
+	},
+	"heldTpIdleAnimationByType": {
+		"*": "holdunderarm"
+	},
+	"guiTransformByType": {
+		"creature-barbarian-*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: 0, y: -134, z: -180 },
+			origin: { x: 0.5, y: 0.9, z: 0.5 }
+		},
+		"creature-barbarianbear-*": {
+			rotate: true,
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: 180, y: -115, z: 6 },
+			origin: { x: 0.5, y: 0.74, z: 0.5 },
+			scale: 0.8
+		}
+	},
+	"tpHandTransformByType": {
+		"creature-barbarian-*": {
+			translation: { x: -0.64, y: -0.61, z: -0.69 },
+			rotation: { x: -94, y: 180, z: 98 },
+			scale: 0.56
+		},
+		"creature-barbarianbear-*": 	{
+			translation: { x: -0.7, y: -0.8, z: -0.6 },
+			rotation: { x: 1, y: 172, z: 26 },
+			scale: 0.44
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"creatures": [ "*" ],
+		"dstedits-npc": [ "*" ]
+	},
+	"materialDensity": 600
+}

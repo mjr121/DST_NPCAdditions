@@ -6,7 +6,9 @@
     "value": [
       "bandit-*",
       "poacher-*",
-      "knighterrant-*"
+      "knighterrant-*",
+      "barbarian-*",
+      "barbarianbear-*"
     ],
     "file": "game:entities/lore/locust.json"
   },
@@ -17,7 +19,9 @@
     "value": [
       "bandit-*",
       "poacher-*",
-      "knighterrant-*"
+      "knighterrant-*",
+      "barbarian-*",
+      "barbarianbear-*"
     ],
     "file": "game:entities/lore/locust.json"
   }

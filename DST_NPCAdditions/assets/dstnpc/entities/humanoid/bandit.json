@@ -2730,8 +2730,25 @@
 				"aiCreatureType": "LandCreature",
 				"aitasks": [
 					{
+						"code": "stayinrangeplayeronly",
+						"entityCodes": [ "player" ],
+						"enabledByType": {
+							"*-archer-*": true,
+							"*": false
+						},
+						"priority": 2.3,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"searchRange": 30,
+						"targetRange": 10,
+						"targetRangeTolerance": 5,
+						"animationSpeed": 1.75,
+						"animation": "Run"
+					},
+					{
 						"code": "stayinrange",
-						"entityCodes": [ "player", "knighterrant-*", "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
+						"entityCodes": [ "knighterrant-*", "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
 						"enabledByType": {
 							"*-archer-*": true,
 							"*": false
@@ -2748,7 +2765,37 @@
 					},
 					{
 						"code": "bowturretmode",
-						"entityCodes": [ "player", "knighterrant-*", "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
+						"entityCodes": [ "player" ],
+						"priority": 2.25,
+						"enabledByType": {
+							"*-archer-*": true,
+							"*": false
+						},
+						"projectileDamageByType": {
+							"bandit-*-archer-grunt": 2.75,
+							"bandit-*-archer-boss": 3.25
+						},
+						"projectileDamageTierByType": {
+							"bandit-*-archer-grunt": 0,
+							"bandit-*-archer-boss": 0
+						},
+						"reloadTimeByType": {
+							"bandit-*-archer-grunt": 2.5,
+							"bandit-*-archer-boss": 1.75
+						},
+						"projectileCodeByType": {
+							"bandit-*-archer-grunt": "game:arrow-flint",
+							"bandit-*-archer-boss": "game:arrow-copper"
+						},
+						"priorityForCancel": 3.5,
+						"sensingRange": 25,
+						"firingRangeMin": 5,
+						"firingRangeMax": 24,
+						"abortRange": 5
+					},
+					{
+						"code": "bowturretmode",
+						"entityCodes": [ "knighterrant-*", "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
 						"priority": 2.25,
 						"enabledByType": {
 							"*-archer-*": true,
@@ -2778,7 +2825,7 @@
 					},
 					{
 						"code": "meleeattack",
-						"entityCodes": [ "player", "knighterrant-*" ],
+						"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*" ],
 						"priority": 2.25,
 						"enabledByType": {
 							"*-archer-*": false,
@@ -2795,6 +2842,8 @@
 							"bandit-*-axe-boss": 2.5,
 							"bandit-*-axeshield-grunt": 2,
 							"bandit-*-axeshield-boss": 2.5,
+							"bandit-*-bannerman-grunt": 2,
+							"bandit-*-bannerman-boss": 2.5,
 							"*": 2.75
 						},
 						"minDistByType": {
@@ -2802,6 +2851,7 @@
 							"bandit-*-sword-*": 2.5,
 							"bandit-*-axe-*": 2,
 							"bandit-*-axeshield-*": 2,
+							"bandit-*-bannerman-*": 2,
 							"*": 2.5
 						},
 						"mincooldown": 500,
@@ -2813,13 +2863,14 @@
 							"bandit-*-sword-*": "sword-attack1",
 							"bandit-*-swordshield-*": "sword-attack1",
 							"bandit-*-axe-*": "sword-attack2",
-							"bandit-*-axeshield-*": "sword-attack2"
+							"bandit-*-axeshield-*": "sword-attack2",
+							"bandit-*-bannerman-*": "sword-attack1"
 						},
 						"animationSpeed": 2
 					},
 					{
 						"code": "seekentity",
-						"entityCodes": [ "player", "knighterrant-*" ],
+						"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*" ],
 						"enabledByType": {
 							"*-archer-*": false,
 							"*-bannerman-*": false,
@@ -2834,8 +2885,51 @@
 						"animation": "Run"
 					},
 					{
-						"code": "seekentity",
-						"entityCodes": [ "player" ],
+						"code": "attackplayeronly",
+						"priority": 2.25,
+						"enabledByType": {
+							"*-archer-*": false,
+							"*": true
+						},
+						"damageByType": {
+							"bandit-*-spear-grunt": 2.75,
+							"bandit-*-spear-boss": 3.25,
+							"bandit-*-sword-grunt": 3.75,
+							"bandit-*-sword-boss": 4.5,
+							"bandit-*-swordshield-grunt": 3.75,
+							"bandit-*-swordshield-boss": 4.5,
+							"bandit-*-axe-grunt": 2,
+							"bandit-*-axe-boss": 2.5,
+							"bandit-*-axeshield-grunt": 2,
+							"bandit-*-axeshield-boss": 2.5,
+							"bandit-*-bannerman-grunt": 2,
+							"bandit-*-bannerman-boss": 2.5,
+							"*": 2.75
+						},
+						"minDistByType": {
+							"bandit-*-spear-*": 3.5,
+							"bandit-*-sword-*": 2.5,
+							"bandit-*-axe-*": 2,
+							"bandit-*-axeshield-*": 2,
+							"bandit-*-bannerman-*": 2,
+							"*": 2.5
+						},
+						"mincooldown": 500,
+						"maxcooldown": 1750,
+						"attackDurationMs": 1000,
+						"damagePlayerAtMs": 400,
+						"animationByType": {
+							"bandit-*-spear-*": "spear-attack",
+							"bandit-*-sword-*": "sword-attack1",
+							"bandit-*-swordshield-*": "sword-attack1",
+							"bandit-*-axe-*": "sword-attack2",
+							"bandit-*-axeshield-*": "sword-attack2",
+							"bandit-*-bannerman-*": "sword-attack1"
+						},
+						"animationSpeed": 2
+					},
+					{
+						"code": "seekplayeronly",
 						"enabledByType": {
 							"*-bannerman-*": true,
 							"*": false
@@ -2867,6 +2961,8 @@
 							"bandit-*-axe-boss": 2.5,
 							"bandit-*-axeshield-grunt": 2,
 							"bandit-*-axeshield-boss": 2.5,
+							"bandit-*-bannerman-grunt": 2,
+							"bandit-*-bannerman-boss": 2.5,
 							"*": 2.75
 						},
 						"minDistByType": {
@@ -2874,6 +2970,7 @@
 							"bandit-*-sword-*": 2.5,
 							"bandit-*-axe-*": 2,
 							"bandit-*-axeshield-*": 2,
+							"bandit-*-bannerman-*": 2,
 							"*": 2.5
 						},
 						"mincooldown": 500,
@@ -2885,7 +2982,8 @@
 							"bandit-*-sword-*": "sword-attack1",
 							"bandit-*-swordshield-*": "sword-attack1",
 							"bandit-*-axe-*": "sword-attack2",
-							"bandit-*-axeshield-*": "sword-attack2"
+							"bandit-*-axeshield-*": "sword-attack2",
+							"bandit-*-bannerman-*": "sword-attack1"
 						},
 						"animationSpeed": 2
 					},
@@ -3179,7 +3277,8 @@
 					}
 				},
 				"maxQuantity": 1,
-				"minLightLevel": 5,
+				"maxLightLevel": 7,
+				"lightLevelType": "OnlyBlockLight",
 				"groupSizeByType": {
 					"bandit-*-*-boss": {
 						"dist": "verynarrowgaussian",
@@ -3196,7 +3295,7 @@
 				"minTemp": -10,
 				"minRain": 0,
 				"companionsByType": {
-					"bandit-*-*-boss": [ "bandit-{gender}-{type}-grunt", "bandit-{gender}-{type}-grunt", "bandit-{gender}-{type}-grunt" ],
+					"bandit-*-*-boss": [ "bandit-{gender}-{gear}-grunt", "bandit-{gender}-{gear}-grunt", "bandit-{gender}-{gear}-grunt" ],
 					"bandit-*-*-grunt": []
 				}
 			},
@@ -3210,7 +3309,8 @@
 				"chance": 0.000015,
 				//Chance is equal to what the bear is. this should allow for a lower chance to spawn like it should.
 				"maxQuantity": 1,
-				"minLightLevel": 5,
+				"maxLightLevel": 7,
+				"lightLevelType": "OnlyBlockLight",
 				"groupSizeByType": {
 					"bandit-*-*-boss": {
 						"dist": "verynarrowgaussian",
@@ -3227,7 +3327,7 @@
 				"minTemp": -10,
 				"minRain": 0,
 				"companionsByType": {
-					"bandit-*-*-boss": [ "bandit-{gender}-{type}-grunt", "bandit-{gender}-{type}-grunt", "bandit-{gender}-{type}-grunt" ],
+					"bandit-*-*-boss": [ "bandit-{gender}-{gear}-grunt", "bandit-{gender}-{gear}-grunt", "bandit-{gender}-{gear}-grunt" ],
 					"bandit-*-*-grunt": []
 				}
 			}

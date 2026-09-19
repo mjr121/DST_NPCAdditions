@@ -82,5 +82,103 @@
     "dependsOn": [
       { "modid": "biomes" }
     ]
+  },
+  //Barbarian
+  {
+    "side": "Server",
+    "file": "entities/humanoid/barbarian/barbarian.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "value": {
+      "barbarian-*-black-*": {
+        "biorealm": [
+          "atlantic nearctic",
+          "pacific nearctic"
+        ]
+      },
+      "barbarian-*-brown-*": {
+        "biorealm": [
+          "atlantic nearctic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern palearctic",
+          "pacific nearctic",
+          "pacific palearctic"
+        ]
+      },
+      "barbarian-*-panda-*": {
+        "biorealm": [
+          "eastern palearctic"
+        ]
+      },
+      "barbarian-*-polar-*": {
+        "biorealm": [
+          "atlantic nearctic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern palearctic",
+          "pacific nearctic",
+          "pacific palearctic"
+        ]
+      },
+      "barbarian-*-sun-*": {
+        "biorealm": [
+          "eastern palearctic",
+          "pacific palearctic"
+        ]
+      }
+    },
+    "dependsOn": [
+      { "modid": "biomes" }
+    ]
+  },
+  //BarbarianBear
+  {
+    "side": "Server",
+    "file": "entities/humanoid/barbarian/bear-adult.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "value": {
+      "barbarianbear-black-*": {
+        "biorealm": [
+          "atlantic nearctic",
+          "pacific nearctic"
+        ]
+      },
+      "barbarianbear-brown-*": {
+        "biorealm": [
+          "atlantic nearctic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern palearctic",
+          "pacific nearctic",
+          "pacific palearctic"
+        ]
+      },
+      "barbarianbear-*-panda-*": {
+        "biorealm": [
+          "eastern palearctic"
+        ]
+      },
+      "barbarianbear-polar-*": {
+        "biorealm": [
+          "atlantic nearctic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern palearctic",
+          "pacific nearctic",
+          "pacific palearctic"
+        ]
+      },
+      "barbarianbear-*-sun-*": {
+        "biorealm": [
+          "eastern palearctic",
+          "pacific palearctic"
+        ]
+      }
+    },
+    "dependsOn": [
+      { "modid": "biomes" }
+    ]
   }
 ]

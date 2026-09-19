@@ -1,0 +1,1073 @@
+{
+	"code": "barbarianbear",
+	"class": "EntityAgent",
+	"tags": [ "animal", "barbarian", "huntable", "adult", "predator", "ferocious", "habitat-land" ],
+	"weightByType": {
+		"barbarianbear-black-*": 252,
+		"barbarianbear-brown-*": 505,
+		"barbarianbear-polar-*": 705
+	},
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "black", "brown", "sun", "panda", "polar" ]
+		},
+		{
+			"code": "age",
+			"states": [ "adult" ]
+		},
+		{
+			"code": "gender",
+			"states": [ "male" ]
+		}
+	],
+	"canClimbByType": {
+		"barbarianbear-polar-*": false,
+		"*": true
+	},
+	"collisionBoxSizeByType": {
+		"*-polar-adult-male": {
+			"x": 1.6,
+			"y": 1.3
+		},
+		"*-polar-adult-female": {
+			"x": 1.4,
+			"y": 1.2
+		},
+
+		"*-sun-adult-male": {
+			"x": 1.15,
+			"y": 1.1
+		},
+		"*-sun-adult-female": {
+			"x": 1.0,
+			"y": 0.9
+		},
+
+		"*-male": {
+			"x": 1.3,
+			"y": 1.2
+		},
+		"*-female": {
+			"x": 1.25,
+			"y": 1.1
+		}
+	},
+	"deadCollisionBoxSizeByType": {
+		"*-polar-adult-male": {
+			"x": 1.2,
+			"y": 0.75
+		},
+		"*-polar-adult-female": {
+			"x": 1.1,
+			"y": 0.7
+		},
+
+		"*-sun-adult-male": {
+			"x": 0.7,
+			"y": 0.5
+		},
+		"*-sun-adult-female": {
+			"x": 0.7,
+			"y": 0.5
+		},
+
+		"*-male": {
+			"x": 1,
+			"y": 0.7
+		},
+		"*-female": {
+			"x": 0.9,
+			"y": 0.7
+		}
+	},
+	"selectionBoxSizeByType": {
+		"barbarianbear-black-*": {
+			"x": 1.5,
+			"y": 1.8
+		},
+		"barbarianbear-brown-*": {
+			"x": 1.5,
+			"y": 1.8
+		},
+		"barbarianbear-sun-*": {
+			"x": 1.2,
+			"y": 1.2
+		},
+		"barbarianbear-panda-*": {
+			"x": 1.5,
+			"y": 1.8
+		},
+		"barbarianbear-polar-*": {
+			"x": 2.1,
+			"y": 2.9
+		}
+	},
+	"deadSelectionBoxSizeByType": {
+		"barbarianbear-black-*": {
+			"x": 1.2,
+			"y": 1.0
+		},
+		"barbarianbear-brown-*": {
+			"x": 1.2,
+			"y": 1.0
+		},
+		"barbarianbear-sun-*": {
+			"x": 1.1,
+			"y": 1.0
+		},
+		"barbarianbear-panda-*": {
+			"x": 1.2,
+			"y": 1.0
+		},
+		"barbarianbear-polar-*": {
+			"x": 1.7,
+			"y": 1.5
+		}
+	},
+	"knockbackResistanceByType": {
+		"barbarianbear-black-*": 0.5,
+		"barbarianbear-brown-*": 0.9,
+		"barbarianbear-sun-*": 0.5,
+		"barbarianbear-panda-*": 0.5,
+		"barbarianbear-polar-*": 1
+	},
+	"eyeHeightByType": {
+		"barbarianbear-sun-*": 0.625,
+		"barbarianbear-panda-*": 0.9,
+		"barbarianbear-black-*": 1.1,
+		"barbarianbear-brown-*": 1.25,
+		"barbarianbear-polar-*": 1.66
+	},
+	"swimmingEyeHeight": 1.1,
+	"drops": [],
+	"attributes": {
+		"newWorldSpawnDelayHours": 24,
+		"killedByInfoText": "deadcreature-eaten-large",
+		"creatureDietByType": {
+			"*": {
+				"weightedFoodTags": [
+					{
+						"weight": 1,
+						"code": "meat"
+					}
+				]
+			}
+		},
+		"trappable": {
+			"small": {
+				"trapChance": 0,
+				"trapDestroyChance": 0.95
+			},
+			"large": {
+				"trapChance": 0,
+				"trapDestroyChance": 0.5
+			}
+		}
+	},
+	"client": {
+		"renderer": "Shape",
+		"shape": { "base": "game:entity/animal/mammal/bear/{type}-{age}" },
+		"texture": { "base": "game:entity/animal/mammal/bear/{type}-{age}*" },
+		"sizeByType": {
+			"*-female": 0.95,
+			"*-male": 1.05
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeightByType": {
+					"barbarianbear-polar-*": 2.8751,
+					"*": 3.1251
+				}
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{ "code": "harvestable" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 16,
+				"belowLightLevel": 8,
+				"minSeconds": 300,
+				"afterDays": 14
+			}
+		],
+		"animations": [
+			{
+				"code": "hurt",
+				"animation": "hurt",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "die",
+				"animation": "die",
+				"animationSpeed": 1.25,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4,
+				"animationSpeedByType": {
+					"barbarianbear-black-*": 0.6,
+					"barbarianbear-brown-*": 0.6,
+					"barbarianbear-sun-*": 0.8,
+					"barbarianbear-panda-*": 0.5,
+					"barbarianbear-polar-*": 0.4
+				},
+				"triggeredBy": { "defaultAnim": true }
+			},
+			{
+				"code": "sleep",
+				"animation": "sleep",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"weight": 1.25,
+				"blendMode": "Average"
+			},
+			{
+				"code": "sit",
+				"animation": "sit",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 3,
+				"animationSpeedByType": {
+					"barbarianbear-black-*": 0.6,
+					"barbarianbear-brown-*": 0.6,
+					"barbarianbear-sun-*": 0.8,
+					"barbarianbear-panda-*": 0.5,
+					"barbarianbear-polar-*": 0.4
+				},
+				"supressDefaultAnimation": true,
+				"blendMode": "Average"
+			},
+			{
+				"code": "stand",
+				"animation": "stand",
+				"easeOutSpeed": 2,
+				"weight": 1,
+				"blendMode": "Average"
+			},
+			{
+				"code": "lie",
+				"animation": "lie",
+				"animationSpeedByType": {
+					"barbarianbear-black-*": 0.3,
+					"barbarianbear-brown-*": 0.3,
+					"barbarianbear-sun-*": 0.4,
+					"barbarianbear-panda-*": 0.25,
+					"barbarianbear-polar-*": 0.2
+				},
+				"blendMode": "Average"
+			},
+			{
+				"code": "walk",
+				"animation": "walk",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage",
+				"animationSounds": [
+					{
+						"frame": 4,
+						"range": 15,
+						"location": "game:creature/bear/footsteps/dirt/bear-footstep-dirt*",
+						"pitch": {
+							"avg": 1.0,
+							"var": 0.15
+						}
+					},
+					{
+						"frame": 16,
+						"range": 15,
+						"location": "game:creature/bear/footsteps/dirt/bear-footstep-dirt*",
+						"pitch": {
+							"avg": 1.0,
+							"var": 0.15
+						}
+					},
+					{
+						"frame": 19,
+						"range": 15,
+						"location": "game:creature/bear/footsteps/dirt/bear-footstep-dirt*",
+						"pitch": {
+							"avg": 1.0,
+							"var": 0.15
+						}
+					},
+					{
+						"frame": 30,
+						"range": 15,
+						"location": "game:creature/bear/footsteps/dirt/bear-footstep-dirt*",
+						"pitch": {
+							"avg": 1.0,
+							"var": 0.15
+						}
+					}
+				]
+			},
+			{
+				"code": "run",
+				"animation": "run",
+				"animationSounds": [
+					{
+						"frame": 14,
+						"range": 25,
+						"location": "game:creature/bear/footsteps/dirt/bear-footstep-dirt*",
+						"pitch": {
+							"avg": 1.0,
+							"var": 0.15
+						}
+					},
+					{
+						"frame": 15,
+						"range": 25,
+						"location": "game:creature/bear/footsteps/dirt/bear-footstep-dirt*",
+						"pitch": {
+							"avg": 1.0,
+							"var": 0.15
+						}
+					},
+					{
+						"frame": 22,
+						"range": 25,
+						"location": "game:creature/bear/footsteps/dirt/bear-footstep-dirt*",
+						"pitch": {
+							"avg": 1.0,
+							"var": 0.15
+						}
+					},
+					{
+						"frame": 26,
+						"range": 25,
+						"location": "game:creature/bear/footsteps/dirt/bear-footstep-dirt*",
+						"pitch": {
+							"avg": 1.0,
+							"var": 0.15
+						}
+					}
+				]
+			}
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 350,
+				"maxTurnAnglePerSec": 650
+			}
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeightByType": {
+					"barbarianbear-polar-*": 2.8751,
+					"barbarianbear-sun-*": 2.1251,
+					"*": 3.1251
+				}
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 16,
+				"belowLightLevel": 8,
+				"minSeconds": 300,
+				"afterDays": 21
+			},
+			{
+				"code": "health",
+				"maxhealthByType": {
+					"barbarianbear-black-*": 44,
+					"barbarianbear-brown-*": 64,
+					"barbarianbear-sun-*": 34,
+					"barbarianbear-panda-*": 38,
+					"barbarianbear-polar-*": 66
+				}
+			},
+			{
+				"code": "deaddecay",
+				"hoursToDecay": 96,
+				"decayedBlock": "carcass-large"
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "harvestable",
+				"drops": [
+					{
+						"type": "item",
+						"code": "bushmeat-raw",
+						"quantityByType": {
+							"barbarianbear-black-*": {
+								"avg": 12,
+								"var": 2
+							},
+							"barbarianbear-brown-*": {
+								"avg": 16,
+								"var": 2
+							},
+							"barbarianbear-sun-*": {
+								"avg": 9,
+								"var": 2
+							},
+							"barbarianbear-panda-*": {
+								"avg": 10,
+								"var": 2
+							},
+							"barbarianbear-polar-*": {
+								"avg": 22,
+								"var": 2
+							}
+						}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-bear-{type}-complete",
+						"quantity": {
+							"avg": 1,
+							"var": 0
+						}
+					},
+					{
+						"type": "item",
+						"code": "fat",
+						"quantityByType": {
+							"barbarianbear-black-*": {
+								"avg": 2,
+								"var": 1
+							},
+							"barbarianbear-brown-*": {
+								"avg": 3,
+								"var": 1
+							},
+							"barbarianbear-sun-*": {
+								"avg": 1,
+								"var": 1
+							},
+							"barbarianbear-panda-*": {
+								"avg": 2,
+								"var": 1
+							},
+							"barbarianbear-polar-*": {
+								"avg": 4,
+								"var": 1
+							}
+						}
+					}
+				]
+			},
+			{ "code": "breathe" },
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "fleeondamage",
+						"duration": 30,
+						"chanceByType": {
+							"barbarianbear-black-*": 0.1,
+							"barbarianbear-brown-*": 0.05,
+							"barbarianbear-sun-*": 0.05,
+							"barbarianbear-panda-*": 0.3,
+							"barbarianbear-polar-*": 0.05
+						},
+						"slot": 2,
+						"priority": 5,
+						"accumType": "max",
+						"whenHealthRelBelow": 0.3
+					},
+					{
+						"code": "saturated",
+						"duration": 1200,
+						"chance": 1,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "sum",
+						"belowTempDuration": 600,
+						"belowTempThreshold": -5
+					},
+					{
+						"code": "aggressiveondamage",
+						"duration": 30,
+						"chance": 1,
+						"slot": 2,
+						"priority": 2,
+						"accumType": "noaccum"
+					},
+					{
+						"code": "alarmherdondamage",
+						"chance": 1,
+						"slot": 1,
+						"priority": 1,
+						"accumType": "max"
+					}
+				]
+			},
+			{
+				"code": "taskai",
+				"aiCreatureType": "LandCreature",
+				"aitasks": [
+					{
+						"code": "attackplayeronly",
+						"priority": 2,
+						"damageTier": 2,
+						"damageByType": {
+							"barbarianbear-black-*": 10,
+							"barbarianbear-brown-*": 12,
+							"barbarianbear-sun-*": 4,
+							"barbarianbear-panda-*": 8,
+							"barbarianbear-polar-*": 16
+						},
+						"damageType": "SlashingAttack",
+						"minDistByType": {
+							"barbarianbear-black-*": 1.7,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-polar-*": 2.3,
+							"*": 1.2
+						},
+						"minVerDist": 1.5,
+						"slot": 1,
+						"mincooldown": 1500,
+						"maxcooldown": 1500,
+						"attackDurationMs": 800,
+						"damagePlayerAtMs": 500,
+						"animation": "Attack",
+						"animationSpeed": 1,
+						"sound": "game:creature/bear/attack",
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "meleeattack",
+						"priority": 1.65,
+						"entityCodes": ["knighterrant-*", "bandit-*", "poacher-*", "chicken-*", "hare-*", "fox-*", "raccoon-*", "pig-*", "sheep-*", "deer-*", "goat-*" ],
+						"damageByType": {
+							"barbarianbear-black-*": 10,
+							"barbarianbear-brown-*": 12,
+							"barbarianbear-sun-*": 4,
+							"barbarianbear-panda-*": 8,
+							"barbarianbear-polar-*": 16
+						},
+						"damageTier": 2,
+						"damageType": "SlashingAttack",
+						"minDistByType": {
+							"barbarianbear-black-*": 1.7,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-polar-*": 2.3,
+							"*": 1.2
+						},
+						"minVerDist": 1.5,
+						"slot": 1,
+						"mincooldown": 1500,
+						"maxcooldown": 1500,
+						"attackDurationMs": 800,
+						"damagePlayerAtMs": 500,
+						"animation": "Attack",
+						"animationSpeed": 1,
+						"sound": "game:creature/bear/attack"
+					},
+					{
+						"code": "attackplayeronly",
+						"priority": 1.65,
+						"damageByType": {
+							"barbarianbear-black-*": 10,
+							"barbarianbear-brown-*": 12,
+							"barbarianbear-sun-*": 4,
+							"barbarianbear-panda-*": 8,
+							"barbarianbear-polar-*": 16
+						},
+						"damageTier": 2,
+						"damageType": "SlashingAttack",
+						"minDistByType": {
+							"barbarianbear-black-*": 1.7,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-polar-*": 2.3,
+							"*": 1.2
+						},
+						"minVerDist": 1.5,
+						"slot": 1,
+						"mincooldown": 1500,
+						"maxcooldown": 1500,
+						"attackDurationMs": 800,
+						"damagePlayerAtMs": 500,
+						"animation": "Attack",
+						"animationSpeed": 1,
+						"sound": "game:creature/bear/attack"
+					},
+					{
+						"code": "seekentity",
+						"priority": 1.6,
+						"entityCodes": ["knighterrant-*", "bandit-*", "poacher-*", "chicken-*", "hare-*", "fox-*", "raccoon-*", "pig-*", "sheep-*", "deer-*", "goat-*" ],
+						"skipEntityCodesByType": {
+							"barbarianbear-brown-*": [ "chicken-baby", "hare-*-baby-*" ],
+							"barbarianbear-polar-*": [ "chicken-baby", "hare-*-baby-*" ]
+						},
+						"extraTargetDistance": 0.5,
+						"seekingRange": 16,
+						"belowTempSeekingRange": 20,
+						"belowTempThreshold": -10,
+						"animation": "Run",
+						"sound": "game:creature/bear/aggro",
+						"whenNotInEmotionState": "saturated",
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 2.3,
+							"barbarianbear-panda-*": 1.9,
+							"barbarianbear-polar-*": 1.8,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-black-*": 2
+						},
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.025,
+							"barbarianbear-panda-*": 0.025,
+							"barbarianbear-black-*": 0.04,
+							"barbarianbear-brown-*": 0.055,
+							"barbarianbear-polar-*": 0.06
+						}
+					},
+					{
+						"code": "seekplayeronly",
+						"priority": 1.45,
+						"seekingRange": 30,
+						"animation": "Run",
+						"leapAtTarget": true,
+						"leapAnimation": null,
+						"leapChance": 0.01,
+						"sound": "game:creature/bear/aggro",
+						"whenInEmotionState": "aggressiveondamage",
+						"animationSpeedByType": {
+							"barbarianbear-polar-*": 1.8,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-black-*": 2
+						},
+						"movespeedByType": {
+							"barbarianbear-black-*": 0.04,
+							"barbarianbear-brown-*": 0.055,
+							"barbarianbear-polar-*": 0.06
+						}
+					},
+					{
+						"code": "seekfoodandeat",
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.01,
+							"barbarianbear-black-*": 0.013,
+							"barbarianbear-polar-*": 0.017,
+							"barbarianbear-brown-*": 0.015,
+							"barbarianbear-panda-*": 0.011
+						},
+						"priority": 1.3,
+						"eatSound": "game:creature/animal-eat1",
+						"eatTime": 1.5,
+						"minduration": 4000,
+						"maxduration": 4000,
+						"animation": "Walk",
+						"eatAnimation": "Eat",
+						"eatAnimationLooseItems": "Eat",
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 1.1,
+							"barbarianbear-black-*": 0.9,
+							"barbarianbear-brown-*": 1.15,
+							"barbarianbear-panda-*": 1,
+							"barbarianbear-polar-*": 0.9
+						},
+						"mincooldownHours": 1,
+						"maxcooldownHours": 4
+					},
+					{
+						"code": "getoutofwater",
+						"priority": 1.4,
+						"movespeedByType": {
+							"barbarianbear-polar-*": 0.035,
+							"*": 0.015
+						},
+						"animation": "Swim",
+						"animationSpeedByType": {
+							"barbarianbear-polar-*": 0.8,
+							"*": 1
+						}
+					},
+					{
+						"code": "idle",
+						"priority": 1.3,
+						"priorityForCancel": 1.35,
+						"minduration": 200000,
+						"maxduration": 800000,
+						"mincooldown": 10000,
+						"maxcooldown": 30000,
+						"animation": "Sleep",
+						"animationSpeed": 0.3,
+						"whenNotInEmotionState": "aggressiveondamage",
+						"duringDayTimeFrames": [
+							{
+								"fromHour": 10,
+								"toHour": 18
+							},
+							{
+								"fromHour": 1,
+								"toHour": 3
+							}
+						],
+						"stopOnNearbyEntityCodes": [ "player" ],
+						"stopRange": 10,
+						"stopOnHurt": true
+					},
+					{
+						"code": "idle",
+						"priority": 1.2,
+						"priorityForCancel": 1.35,
+						"minduration": 4667,
+						"maxduration": 4667,
+						"mincooldown": 80000,
+						"maxcooldown": 500000,
+						"animation": "Stand",
+						"whenNotInEmotionState": "aggressiveondamage",
+						"animationSpeed": 0.5
+					},
+					{
+						"code": "idle",
+						"priority": 1.1,
+						"priorityForCancel": 1.35,
+						"minduration": 2500,
+						"maxduration": 2500,
+						"mincooldown": 6000,
+						"maxcooldown": 20000,
+						"animation": "Stand",
+						"whenNotInEmotionState": "aggressiveondamage",
+						"animationSpeed": 1.25
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"animation": "Walk",
+						"preferredLightLevel": 20,
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 1.1,
+							"barbarianbear-black-*": 0.9,
+							"barbarianbear-brown-*": 1.15,
+							"barbarianbear-panda-*": 1,
+							"barbarianbear-polar-*": 0.9
+						},
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.01,
+							"barbarianbear-black-*": 0.013,
+							"barbarianbear-polar-*": 0.017,
+							"barbarianbear-brown-*": 0.015,
+							"barbarianbear-panda-*": 0.011
+						}
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"barbarianbear-sun-*": true,
+							"*": false
+						},
+						"priority": 1.4,
+						"entityCode": "barbarian-male-sun-spearshield-boss",
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 2.3,
+							"barbarianbear-panda-*": 1.9,
+							"barbarianbear-polar-*": 1.8,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-black-*": 2
+						},
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.025,
+							"barbarianbear-panda-*": 0.025,
+							"barbarianbear-black-*": 0.04,
+							"barbarianbear-brown-*": 0.055,
+							"barbarianbear-polar-*": 0.06
+						},
+						"maxDistance": 10,
+						"searchRange": 30,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"barbarianbear-sun-*": true,
+							"*": false
+						},
+						"priority": 1.4,
+						"entityCode": "barbarian-male-sun-twohandaxe-boss",
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 2.3,
+							"barbarianbear-panda-*": 1.9,
+							"barbarianbear-polar-*": 1.8,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-black-*": 2
+						},
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.025,
+							"barbarianbear-panda-*": 0.025,
+							"barbarianbear-black-*": 0.04,
+							"barbarianbear-brown-*": 0.055,
+							"barbarianbear-polar-*": 0.06
+						},
+						"maxDistance": 10,
+						"searchRange": 30,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"barbarianbear-panda-*": true,
+							"*": false
+						},
+						"priority": 1.4,
+						"entityCode": "barbarian-male-panda-spearshield-boss",
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 2.3,
+							"barbarianbear-panda-*": 1.9,
+							"barbarianbear-polar-*": 1.8,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-black-*": 2
+						},
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.025,
+							"barbarianbear-panda-*": 0.025,
+							"barbarianbear-black-*": 0.04,
+							"barbarianbear-brown-*": 0.055,
+							"barbarianbear-polar-*": 0.06
+						},
+						"maxDistance": 10,
+						"searchRange": 30,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"barbarianbear-panda-*": true,
+							"*": false
+						},
+						"priority": 1.4,
+						"entityCode": "barbarian-male-panda-twohandaxe-boss",
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 2.3,
+							"barbarianbear-panda-*": 1.9,
+							"barbarianbear-polar-*": 1.8,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-black-*": 2
+						},
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.025,
+							"barbarianbear-panda-*": 0.025,
+							"barbarianbear-black-*": 0.04,
+							"barbarianbear-brown-*": 0.055,
+							"barbarianbear-polar-*": 0.06
+						},
+						"maxDistance": 10,
+						"searchRange": 30,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"barbarianbear-polar-*": true,
+							"*": false
+						},
+						"priority": 1.4,
+						"entityCode": "barbarian-male-polar-spearshield-boss",
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 2.3,
+							"barbarianbear-panda-*": 1.9,
+							"barbarianbear-polar-*": 1.8,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-black-*": 2
+						},
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.025,
+							"barbarianbear-panda-*": 0.025,
+							"barbarianbear-black-*": 0.04,
+							"barbarianbear-brown-*": 0.055,
+							"barbarianbear-polar-*": 0.06
+						},
+						"maxDistance": 10,
+						"searchRange": 30,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"barbarianbear-polar-*": true,
+							"*": false
+						},
+						"priority": 1.4,
+						"entityCode": "barbarian-male-polar-twohandaxe-boss",
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 2.3,
+							"barbarianbear-panda-*": 1.9,
+							"barbarianbear-polar-*": 1.8,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-black-*": 2
+						},
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.025,
+							"barbarianbear-panda-*": 0.025,
+							"barbarianbear-black-*": 0.04,
+							"barbarianbear-brown-*": 0.055,
+							"barbarianbear-polar-*": 0.06
+						},
+						"maxDistance": 10,
+						"searchRange": 30,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"barbarianbear-brown-*": true,
+							"*": false
+						},
+						"priority": 1.4,
+						"entityCode": "barbarian-male-brown-spearshield-boss",
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 2.3,
+							"barbarianbear-panda-*": 1.9,
+							"barbarianbear-polar-*": 1.8,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-black-*": 2
+						},
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.025,
+							"barbarianbear-panda-*": 0.025,
+							"barbarianbear-black-*": 0.04,
+							"barbarianbear-brown-*": 0.055,
+							"barbarianbear-polar-*": 0.06
+						},
+						"maxDistance": 10,
+						"searchRange": 30,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"barbarianbear-brown-*": true,
+							"*": false
+						},
+						"priority": 1.4,
+						"entityCode": "barbarian-male-brown-twohandaxe-boss",
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 2.3,
+							"barbarianbear-panda-*": 1.9,
+							"barbarianbear-polar-*": 1.8,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-black-*": 2
+						},
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.025,
+							"barbarianbear-panda-*": 0.025,
+							"barbarianbear-black-*": 0.04,
+							"barbarianbear-brown-*": 0.055,
+							"barbarianbear-polar-*": 0.06
+						},
+						"maxDistance": 10,
+						"searchRange": 30,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"barbarianbear-black-*": true,
+							"*": false
+						},
+						"priority": 1.4,
+						"entityCode": "barbarian-male-black-spearshield-boss",
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 2.3,
+							"barbarianbear-panda-*": 1.9,
+							"barbarianbear-polar-*": 1.8,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-black-*": 2
+						},
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.025,
+							"barbarianbear-panda-*": 0.025,
+							"barbarianbear-black-*": 0.04,
+							"barbarianbear-brown-*": 0.055,
+							"barbarianbear-polar-*": 0.06
+						},
+						"maxDistance": 10,
+						"searchRange": 30,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"barbarianbear-black-*": true,
+							"*": false
+						},
+						"priority": 1.4,
+						"entityCode": "barbarian-male-black-twohandaxe-boss",
+						"animationSpeedByType": {
+							"barbarianbear-sun-*": 2.3,
+							"barbarianbear-panda-*": 1.9,
+							"barbarianbear-polar-*": 1.8,
+							"barbarianbear-brown-*": 2,
+							"barbarianbear-black-*": 2
+						},
+						"movespeedByType": {
+							"barbarianbear-sun-*": 0.025,
+							"barbarianbear-panda-*": 0.025,
+							"barbarianbear-black-*": 0.04,
+							"barbarianbear-brown-*": 0.055,
+							"barbarianbear-polar-*": 0.06
+						},
+						"maxDistance": 10,
+						"searchRange": 30,
+						"animation": "Run"
+					},
+					{
+						"code": "idle",
+						"priority": 0.9,
+						"priorityForCancel": 1.35,
+						"minduration": 5000,
+						"maxduration": 30000,
+						"mincooldown": 2000,
+						"maxcooldown": 120000,
+						"animation": "Sit",
+						"supressDefaultAnimation": true,
+						"whenNotInEmotionState": "aggressiveondamage",
+						"stopOnNearbyEntityCodes": [ "player" ],
+						"stopRange": 5
+					},
+					{
+						"code": "idle",
+						"priority": 0.6,
+						"priorityForCancel": 1.35,
+						"minduration": 5000,
+						"maxduration": 30000,
+						"mincooldown": 2000,
+						"maxcooldown": 120000,
+						"animation": "Lie",
+						"whenNotInEmotionState": "aggressiveondamage",
+						"stopOnNearbyEntityCodes": [ "player" ],
+						"stopRange": 5
+					},
+					{
+						"code": "lookaround",
+						"turnSpeedMul": 0.2,
+						"priority": 0.5
+					}
+				]
+			},
+			{ "code": "entitystatetags" }
+		]
+	},
+	"sounds": {
+		"hurt": "game:creature/bear/hurt",
+		"death": "game:creature/bear/flee",
+		"idle": {
+			"path": "game:creature/bear/growl*",
+			"pitch": {
+				"avg": 1,
+				"var": 0.25
+			}
+		}
+	},
+	"idleSoundChance": 0.1
+}

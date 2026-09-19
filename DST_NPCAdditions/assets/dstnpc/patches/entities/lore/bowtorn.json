@@ -5,7 +5,9 @@
     "value": [
       "bandit-*",
       "poacher-*",
-      "knighterrant-*"
+      "knighterrant-*",
+      "barbarian-*",
+      "barbarianbear-*"
     ],
     "file": "game:entities/lore/bowtorn.json"
   },
@@ -15,7 +17,9 @@
     "value": [
       "bandit-*",
       "poacher-*",
-      "knighterrant-*"
+      "knighterrant-*",
+      "barbarian-*",
+      "barbarianbear-*"
     ],
     "file": "game:entities/lore/bowtorn.json"
   },
@@ -25,7 +29,9 @@
     "value": [
       "bandit-*",
       "poacher-*",
-      "knighterrant-*"
+      "knighterrant-*",
+      "barbarian-*",
+      "barbarianbear-*"
     ],
     "file": "game:entities/lore/bowtorn.json"
   },
@@ -35,7 +41,9 @@
     "value": [
       "bandit-*",
       "poacher-*",
-      "knighterrant-*"
+      "knighterrant-*",
+      "barbarian-*",
+      "barbarianbear-*"
     ],
     "file": "game:entities/lore/bowtorn.json"
   }

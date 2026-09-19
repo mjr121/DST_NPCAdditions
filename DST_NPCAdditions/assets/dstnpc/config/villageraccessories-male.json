@@ -11,7 +11,6 @@
     "skin-face-innkeeper2": {
       "weight": 1
     },
-
     "skin-face-normal1": {
       "base": "game:entity/humanoid/villager/face/male/normal1",
       "weight": 1
@@ -635,7 +634,6 @@
     },
     "head-barber": {
       "base": "game:entity/humanoid/villageraccessories/head/barber",
-      "weight": 1,
       "disableElements": [ "hair-base-Hair-Upper" ]
     },
     "head-beekeeper": {
@@ -1517,6 +1515,37 @@
       "weight": 1
     },
 
+    "heldl-axe-bismuthbronze": {
+      "base": "held/item/tool/axe/left/bismuthbronze",
+      "weight": 1
+    },
+    "heldl-axe-blackbronze": {
+      "base": "held/item/tool/axe/left/blackbronze",
+      "weight": 1
+    },
+    "heldl-axe-copper": {
+      "base": "held/item/tool/axe/left/copper",
+      "weight": 1
+    },
+    "heldl-axe-iron": {
+      "base": "held/item/tool/axe/left/iron",
+      "weight": 1
+    },
+    "heldl-axe-meteoriciron": {
+      "base": "held/item/tool/axe/left/meteoriciron",
+      "weight": 1
+    },
+    "heldl-axe-steel": {
+      "base": "held/item/tool/axe/left/steel",
+      "weight": 1
+    },
+    "heldl-axe-tinbronze": {
+      "base": "held/item/tool/axe/left/tinbronze",
+      "weight": 1
+    },
+
+
+
     "heldr-falx-bismuthbronze": {
       "base": "held/item/tool/blade/falx/bismuthbronze",
       "weight": 1
@@ -1771,7 +1800,83 @@
     "equipLegs-scale-legs": {
       "base": "game:entity/humanoid/seraph/armor/scale/legs",
       "weight": 1
+    },
+
+    "equipBody-hide-blackbear-body": {
+      "base": "entity/humanoid/armor/hide/bear/black/body",
+      "weight": 1
+    },
+    "equipHead-hide-blackbear-head": {
+      "base": "entity/humanoid/armor/hide/bear/black/head",
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+    },
+    "equipLegs-hide-blackbear-legs": {
+      "base": "entity/humanoid/armor/hide/bear/black/legs",
+      "weight": 1
+    },
+    "equipBody-hide-brownbear-body": {
+      "base": "entity/humanoid/armor/hide/bear/brown/body",
+      "weight": 1
+    },
+    "equipHead-hide-brownbear-head": {
+      "base": "entity/humanoid/armor/hide/bear/brown/head",
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+    },
+    "equipLegs-hide-brownbear-legs": {
+      "base": "entity/humanoid/armor/hide/bear/brown/legs",
+      "weight": 1
+    },
+    "equipBody-hide-polarbear-body": {
+      "base": "entity/humanoid/armor/hide/bear/polar/body",
+      "weight": 1
+    },
+    "equipHead-hide-polarbear-head": {
+      "base": "entity/humanoid/armor/hide/bear/polar/head",
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+    },
+    "equipLegs-hide-polarbear-legs": {
+      "base": "entity/humanoid/armor/hide/bear/polar/legs",
+      "weight": 1
+    },
+    "equipBody-hide-pandabear-body": {
+      "base": "entity/humanoid/armor/hide/bear/panda/body",
+      "weight": 1
+    },
+    "equipHead-hide-pandabear-head": {
+      "base": "entity/humanoid/armor/hide/bear/panda/head",
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+    },
+    "equipLegs-hide-pandabear-legs": {
+      "base": "entity/humanoid/armor/hide/bear/panda/legs",
+      "weight": 1
+    },
+    "equipBody-hide-sunbear-body": {
+      "base": "entity/humanoid/armor/hide/bear/sun/body",
+      "weight": 1
+    },
+    "equipHead-hide-sunbear-head": {
+      "base": "entity/humanoid/armor/hide/bear/sun/head",
+      "weight": 1,
+      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+    },
+    "equipLegs-hide-sunbear-legs": {
+      "base": "entity/humanoid/armor/hide/bear/sun/legs",
+      "weight": 1
     }
+
+
+
+
+
+
+
+
+
+
   },
     "byslot": [
         {
@@ -1896,7 +2001,14 @@
             "heldl-bannerkeys",
             "heldl-bannerlargefish",
             "heldl-bannership",
-            "heldl-bannertown"
+            "heldl-bannertown",
+            "heldl-axe-bismuthbronze",
+            "heldl-axe-blackbronze",
+            "heldl-axe-copper",
+            "heldl-axe-iron",
+            "heldl-axe-meteoriciron",
+            "heldl-axe-steel",
+            "heldl-axe-tinbronze"
           ]
         },
         {
@@ -1910,28 +2022,77 @@
         },
         {
             "code": "equipBody",
-            "variants": [ 
-              "nothing-w10",
-              "equipBody-brigandine-body","equipBody-chain-body","equipBody-gambeson-body","equipBody-jerkin-body","equipBody-lamellar-body","equipBody-leather-body","equipBody-padded-body","equipBody-plate-body","equipBody-scale-body"
-            ]
+          "variants": [
+            "nothing-w10",
+            "equipBody-brigandine-body",
+            "equipBody-chain-body",
+            "equipBody-gambeson-body",
+            "equipBody-jerkin-body",
+            "equipBody-lamellar-body",
+            "equipBody-leather-body",
+            "equipBody-padded-body",
+            "equipBody-plate-body",
+            "equipBody-scale-body",
+            "equipBody-hide-blackbear-body",
+            "equipBody-hide-brownbear-body",
+            "equipBody-hide-polarbear-body",
+            "equipBody-hide-pandabear-body",
+            "equipBody-hide-sunbear-body"
+          ]
         },  
         {
             "code": "equipHead",
-            "variants": [ 
-              "nothing-w10",
-              "equipHead-brigandine-bronze","equipHead-brigandine-copper","equipHead-brigandine-iron","equipHead-brigandine-meteoriciron","equipHead-brigandine-steel",
-              "equipHead-gambeson-head","equipHead-lamellar-head","equipHead-leather-head",
-              "equipHead-chain-bronze","equipHead-chain-copper","equipHead-chain-iron","equipHead-chain-meteoriciron","equipHead-chain-steel",
-              "equipHead-plate-bronze","equipHead-plate-copper","equipHead-plate-iron","equipHead-plate-meteoriciron","equipHead-plate-steel",
-              "equipHead-scale-bronze","equipHead-scale-copper","equipHead-scale-iron","equipHead-scale-meteoriciron","equipHead-scale-steel"
-            ]
+          "variants": [
+            "nothing-w10",
+            "equipHead-brigandine-bronze",
+            "equipHead-brigandine-copper",
+            "equipHead-brigandine-iron",
+            "equipHead-brigandine-meteoriciron",
+            "equipHead-brigandine-steel",
+            "equipHead-gambeson-head",
+            "equipHead-lamellar-head",
+            "equipHead-leather-head",
+            "equipHead-chain-bronze",
+            "equipHead-chain-copper",
+            "equipHead-chain-iron",
+            "equipHead-chain-meteoriciron",
+            "equipHead-chain-steel",
+            "equipHead-plate-bronze",
+            "equipHead-plate-copper",
+            "equipHead-plate-iron",
+            "equipHead-plate-meteoriciron",
+            "equipHead-plate-steel",
+            "equipHead-scale-bronze",
+            "equipHead-scale-copper",
+            "equipHead-scale-iron",
+            "equipHead-scale-meteoriciron",
+            "equipHead-scale-steel",
+            "equipHead-hide-blackbear-head",
+            "equipHead-hide-brownbear-head",
+            "equipHead-hide-polarbear-head",
+            "equipHead-hide-pandabear-head",
+            "equipHead-hide-sunbear-head"
+          ]
         },
         {
             "code": "equipLegs",
-            "variants": [ 
-              "nothing-w10",
-              "equipLegs-brigandine-legs","equipLegs-chain-legs","equipLegs-gambeson-legs","equipLegs-jerkin-legs","equipLegs-lamellar-legs","equipLegs-leather-legs","equipLegs-padded-legs","equipLegs-plate-legs","equipLegs-scale-legs"
-            ]
+          "variants": [
+            "nothing-w10",
+            "equipLegs-brigandine-legs",
+            "equipLegs-chain-legs",
+            "equipLegs-gambeson-legs",
+            "equipLegs-jerkin-legs",
+            "equipLegs-lamellar-legs",
+            "equipLegs-leather-legs",
+            "equipLegs-padded-legs",
+            "equipLegs-plate-legs",
+            "equipLegs-scale-legs",
+            "equipLegs-hide-blackbear-legs",
+            "equipLegs-hide-brownbear-legs",
+            "equipLegs-hide-polarbear-legs",
+            "equipLegs-hide-pandabear-legs",
+            "equipLegs-hide-sunbear-legs"
+          ]
         }    
     ]
 }

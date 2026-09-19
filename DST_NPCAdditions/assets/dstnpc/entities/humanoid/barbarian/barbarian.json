@@ -1,0 +1,3555 @@
+{
+	"code": "barbarian",
+	"class": "EntityArmed",
+	"tags": [ "humanoid", "barbarian", "human", "hostile", "habitat-land" ],
+	"weight": 80,
+	"canClimb": true,
+	"hitboxSize": {
+		"x": 0.6,
+		"y": 1.75
+	},
+	"eyeHeight": 1.8,
+	"deadHitboxSize": {
+		"x": 0.75,
+		"y": 0.5
+	},
+	"variantgroups": [
+		{
+			"code": "gender",
+			"states": [ "male", "female" ]
+		},
+		{
+			"code": "type",
+			"states": [ "black", "brown", "sun", "panda", "polar" ]
+		},
+		{
+			"code": "gear",
+			"states": [ "spear", "spearshield", "twohandaxe" ]
+		},
+		{
+			"code": "status",
+			"states": [ "grunt", "boss" ]
+		}
+	],
+	"attributes": {
+		"killedByInfoTextByType": {
+			"barbarian-*-*-spearshield-*": "Pierced to death",
+			"barbarian-*-*-twohandaxe-*": "Slashed to death"
+		},
+		"personalityByType": {
+			"*-boss": "balanced",
+			"*-grunt": "balanced"
+		},
+		"personalities": {
+			"balanced": {
+				"chordDelayMul": 1.3,
+				"pitchModifier": 0.7,
+				"volumneModifier": 1.1
+			},
+			"elderbalanced": {
+				"chordDelayMul": 1.8,
+				"pitchModifier": 0.6,
+				"volumneModifier": 1
+			},
+			"bannerman": {
+				"chordDelayMul": 1.3,
+				"pitchModifier": 0.7,
+				"volumneModifier": 1.1
+			}
+		},
+		"partialRandomOutfitsByType": {
+			"barbarian-*-black-spear-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-spear-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-blackbear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-blackbear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-blackbear-legs" } ]
+			},
+			"barbarian-*-black-spearshield-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-spear-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "heldl-shield-rough",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-blackbear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-blackbear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-blackbear-legs" } ]
+			},
+			"barbarian-*-black-twohandaxe-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-axe-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "heldl-axe-copper",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-blackbear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-blackbear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-blackbear-legs" } ]
+			},
+			"barbarian-*-brown-spear-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-spear-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-brownbear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-brownbear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-brownbear-legs" } ]
+			},
+			"barbarian-*-brown-spearshield-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-spear-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "heldl-shield-rough",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-brownbear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-brownbear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-brownbear-legs" } ]
+			},
+			"barbarian-*-brown-twohandaxe-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-axe-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "heldl-axe-copper",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-brownbear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-brownbear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-brownbear-legs" } ]
+			},
+			"barbarian-*-sun-spear-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-spear-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-sunbear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-sunbear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-sunbear-legs" } ]
+			},
+			"barbarian-*-sun-spearshield-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-spear-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "heldl-shield-rough",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-sunbear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-sunbear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-sunbear-legs" } ]
+			},
+			"barbarian-*-sun-twohandaxe-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-axe-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "heldl-axe-copper",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-sunbear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-sunbear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-sunbear-legs" } ]
+			},
+			"barbarian-*-panda-spear-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-spear-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-pandabear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-pandabear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-pandabear-legs" } ]
+			},
+			"barbarian-*-panda-spearshield-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-spear-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "heldl-shield-rough",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-pandabear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-pandabear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-pandabear-legs" } ]
+			},
+			"barbarian-*-panda-twohandaxe-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-axe-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "heldl-axe-copper",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-pandabear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-pandabear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-pandabear-legs" } ]
+			},
+			"barbarian-*-polar-spear-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-spear-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-polarbear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-polarbear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-polarbear-legs" } ]
+			},
+			"barbarian-*-polar-spearshield-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-spear-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "heldl-shield-rough",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-polarbear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-polarbear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-polarbear-legs" } ]
+			},
+			"barbarian-*-polar-twohandaxe-*": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-axe-copper",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{
+						"Code": "heldl-axe-copper",
+						"Weight": 5.0
+					}
+				],
+				"equipHead": [ { "Code": "equipHead-hide-polarbear-head" } ],
+				"equipBody": [ { "Code": "equipBody-hide-polarbear-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-hide-polarbear-legs" } ]
+			}
+		},
+		"voiceSoundsByType": {
+			"barbarian-male-*": [
+				"game:sounds/voice/duduk/",
+				"game:sounds/voice/harp/",
+				"game:sounds/voice/oboe/",
+				"game:sounds/voice/ocarina/",
+				"game:sounds/voice/trumpet/",
+				"game:sounds/voice/tuba/"
+			],
+			"barbarian-female-*": [
+				"game:sounds/voice/altoflute/",
+				"game:sounds/voice/harp/",
+				"game:sounds/voice/oboe/"
+			]
+		},
+		"outfitConfigFileNameByType": {
+			"*": "villageraccessories-{gender}"
+		}
+	},
+	"AllowedVariants": [
+		"barbarian-male-*"
+	],
+	"client": {
+		"renderer": "Shape",
+		"shapeByType": {
+			"barbarian-*": { "base": "entity/humanoid/villager-{gender}" }
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.01
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": false
+			},
+			{ "code": "aimingaccuracy" },
+			{ "code": "villagerinventory" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 32,
+				"minSeconds": 300
+			},
+			{ "code": "harvestable", "duration": 2 }
+		],
+		"animations": [
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "Average",
+				"triggeredBy": { "defaultAnim": true }
+			},
+			{
+				"code": "idleyawn",
+				"animation": "idleyawn",
+				"blendMode": "Average"
+			},
+			{
+				"code": "sleep",
+				"animation": "lie",
+				"blendMode": "Add"
+			},
+			{
+				"code": "die",
+				"animation": "die",
+				"animationSpeed": 1.75,
+				"weight": 10,
+				"blendMode": "AddAverage",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "hurt",
+				"animation": "hurt",
+				"animationSpeed": 2,
+				"blendMode": "AddAverage"
+			}
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 720,
+				"maxTurnAnglePerSec": 1440
+			}
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "health",
+				"currenthealthByType": {
+					"*-boss": 20,
+					"*-grunt": 15
+				},
+				"maxhealthByType": {
+					"*-boss": 20,
+					"*-grunt": 15
+				}
+			},
+			{
+				"code": "deaddecay",
+				"hoursToDecay": 12
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 32,
+				"minSeconds": 300
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": false
+			},
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.01
+			},
+			{ "code": "aimingaccuracy" },
+			{ "code": "villagerinventory" },
+			{ "code": "breathe" },
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "aggressiveondamage",
+						"duration": 6,
+						"chance": 0.6,
+						"slot": 0,
+						"priority": 2,
+						"accumType": "noaccum"
+					},
+					{
+						"code": "fleeondamage",
+						"duration": 10,
+						"chance": 0.4,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "max"
+					}
+				]
+			},
+			{
+				"code": "taskai",
+				"aiCreatureType": "LandCreature",
+				"aitasks": [
+					{
+						"code": "meleeattack",
+						"entityCodes": ["knighterrant-*", "bandit-*", "poacher-*" ],
+						"priority": 2.25,
+						"enabledByType": {
+							"*": true
+						},
+						"damageByType": {
+							"barbarian-*-spearshield-grunt": 2.75,
+							"barbarian-*-spearshield-boss": 3.25,
+							"barbarian-*-twohandaxe-grunt": 2,
+							"barbarian-*-twohandaxe-boss": 2.5,
+							"*": 2.75
+						},
+						"minDistByType": {
+							"barbarian-*-spearshield-*": 3.5,
+							"barbarian-*-twohandaxe-*": 2,
+							"*": 2.5
+						},
+						"mincooldown": 500,
+						"maxcooldown": 1750,
+						"attackDurationMs": 1000,
+						"damagePlayerAtMs": 400,
+						"animationByType": {
+							"barbarian-*-spearshield-*": "spear-attack",
+							"barbarian-*-twohandaxe-*": "axe2handedright"
+						},
+						"animationSpeed": 2
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": ["knighterrant-*", "bandit-*", "poacher-*" ],
+						"enabledByType": {
+							"*": true
+						},
+						"priority": 1.25,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"seekingRange": 20,
+						"animationSpeed": 1.75,
+						"animation": "Run"
+					},
+					{
+						"code": "meleeattack",
+						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*", "locust-*", "bandit-*", "poacher-*" ],
+						"priority": 2.5,
+						"enabledByType": {
+							"*": true
+						},
+						"damageByType": {
+							"barbarian-*-spearshield-grunt": 2.75,
+							"barbarian-*-spearshield-boss": 3.25,
+							"barbarian-*-twohandaxe-grunt": 2,
+							"barbarian-*-twohandaxe-boss": 2.5,
+							"*": 2.75
+						},
+						"minDistByType": {
+							"barbarian-*-spearshield-*": 3.5,
+							"barbarian-*-twohandaxe-*": 2,
+							"*": 2.5
+						},
+						"mincooldown": 500,
+						"maxcooldown": 1750,
+						"attackDurationMs": 1000,
+						"damagePlayerAtMs": 400,
+						"animationByType": {
+							"barbarian-*-spearshield-*": "spear-attack",
+							"barbarian-*-twohandaxe-*": "axe2handedright"
+						},
+						"animationSpeed": 2
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*", "locust-*", "bandit-*", "poacher-*" ],
+						"enabledByType": {
+							"*": true
+						},
+						"priority": 1.5,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"seekingRange": 20,
+						"animationSpeed": 1.75,
+						"animation": "Run"
+					},
+					{
+						"code": "attackplayeronly",
+						"priority": 2.25,
+						"enabledByType": {
+							"*": true
+						},
+						"damageByType": {
+							"barbarian-*-spearshield-grunt": 2.75,
+							"barbarian-*-spearshield-boss": 3.25,
+							"barbarian-*-twohandaxe-grunt": 2,
+							"barbarian-*-twohandaxe-boss": 2.5,
+							"*": 2.75
+						},
+						"minDistByType": {
+							"barbarian-*-spearshield-*": 3.5,
+							"barbarian-*-twohandaxe-*": 2,
+							"*": 2.5
+						},
+						"mincooldown": 500,
+						"maxcooldown": 1750,
+						"attackDurationMs": 1000,
+						"damagePlayerAtMs": 400,
+						"animationByType": {
+							"barbarian-*-spearshield-*": "spear-attack",
+							"barbarian-*-twohandaxe-*": "axe2handedright"
+						},
+						"animationSpeed": 2
+					},
+					{
+						"code": "seekplayeronly",
+						"enabledByType": {
+							"*": true
+						},
+						"priority": 1.25,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"seekingRange": 20,
+						"animationSpeed": 1.75,
+						"animation": "Run"
+					},
+					{
+						"code": "idle",
+						"enabledByType": {
+							"*-boss": true,
+							"*": false
+						},
+						"animation": "idleyawn",
+						"priority": 1.25,
+						"priorityForCancel": 1.35,
+						"minduration": 4667,
+						"maxduration": 4667,
+						"mincooldown": 80000,
+						"maxcooldown": 500000,
+						"animationSpeed": 0.7,
+						"sound": "game:creature/bear/growl*",
+						"soundRange": 25
+					},
+					{
+						"code": "idle",
+						"enabledByType": {
+							"*-grunt": true,
+							"*": false
+						},
+						"animation": "idleyawn",
+						"priority": 1.25,
+						"priorityForCancel": 1.35,
+						"minduration": 4667,
+						"maxduration": 4667,
+						"mincooldown": 80000,
+						"maxcooldown": 500000,
+						"animationSpeed": 0.7,
+						"sound": "game:creature/wolf/howl*",
+						"soundRange": 25
+					},
+					{
+						"code": "idle",
+						"priority": 1.2,
+						"minduration": 2500,
+						"maxduration": 2500,
+						"mincooldown": 2000,
+						"maxcooldown": 10000,
+						"animation": "idle"
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"movespeed": 0.01,
+						"animation": "Walk",
+						"executionChance": 0.005,
+						"maxDistanceToSpawn": 15,
+						"wanderRangeMin": 5,
+						"wanderRangeMax": 30
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"*-grunt": true,
+							"*": false
+						},
+						"priority": 1.3,
+						"entityCode": "barbarian-male-black-spearshield-boss",
+						"movespeed": 0.035,
+						"animationSpeed": 1.75,
+						"maxDistance": 5,
+						"searchRange": 50,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"*-grunt": true,
+							"*": false
+						},
+						"priority": 1.3,
+						"entityCode": "barbarian-male-brown-spearshield-boss",
+						"movespeed": 0.035,
+						"animationSpeed": 1.75,
+						"maxDistance": 5,
+						"searchRange": 50,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"*-grunt": true,
+							"*": false
+						},
+						"priority": 1.3,
+						"entityCode": "barbarian-male-polar-spearshield-boss",
+						"movespeed": 0.035,
+						"animationSpeed": 1.75,
+						"maxDistance": 5,
+						"searchRange": 50,
+						"animation": "Run"
+					}
+				]
+			},
+			{ "code": "entitystatetags" },
+			{ 
+				"code": "harvestable", 
+				"duration": 2, 
+				"fixedweight": true, 
+				"dropsByType": {
+					"*-grunt": [
+						{
+							"type": "item",
+							"code": "game:poultice-reed-horsetail",
+							"quantity": {
+								"avg": 0.4,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 1,
+								"var": 2
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:nugget-nativecopper",
+							"quantity": {
+								"avg": 0.125,
+								"var": 0
+							}
+						}
+					],
+					"*-boss": [
+						{
+							"type": "item",
+							"code": "game:gear-temporal",
+							"quantity": {
+								"avg": 0.05332,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:poultice-reed-horsetail",
+							"quantity": {
+								"avg": 0.4,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 5,
+								"var": 2.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:nugget-nativecopper",
+							"quantity": {
+								"avg": 0.125,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:nugget-nativesilver",
+							"quantity": {
+								"avg": 0.025,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:nugget-nativegold",
+							"quantity": {
+								"avg": 0.005,
+								"var": 0
+							}
+						}
+					]
+				}
+			}			
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunkByType": {
+					"barbarian-*-*-*-boss": {
+						"avg": 0.000015,
+						"var": 0
+					},
+					"barbarian-*-*-*-grunt": {
+						"avg": 0.000015,
+						"var": 0
+					}
+				},
+				"maxQuantity": 1,
+				"maxLightLevel": 7,
+				"groupSizeByType": {
+					"barbarian-*-*-*-boss": {
+						"dist": "verynarrowgaussian",
+						"avg": 3,
+						"var": 2
+					},
+					"barbarian-*-*-*-grunt": {
+						"dist": "verynarrowgaussian",
+						"avg": 3,
+						"var": 2
+					}
+				},
+				"insideBlockCodesByType": {
+					"barbarian-*-panda-*": [ "air", "tallgrass-*", "snowlayer-*", "flower-*", "leaves-*", "bambooleaves-*", "tallfern", "fern-*" ],
+					"barbarian-*": [ "air", "tallgrass-*", "snowlayer-*", "flower-*" ]
+				},
+				"companionsByType": {
+					"barbarian-*-black-boss": [ "barbarianbear-black-adult-male" ],
+					"barbarian-*-brown-boss": [ "barbarianbear-brown-adult-male" ],
+					"barbarian-*-sun-boss": [ "barbarianbear-sun-adult-male" ],
+					"barbarian-*-panda-boss": [ "barbarianbear-panda-adult-male" ],
+					"barbarian-*-polar-boss": [ "barbarianbear-polar-adult-male" ]
+				}
+			},
+			"runtime": {
+				"group": "hostile",
+				"tryOnlySurface": true,
+				"maxQuantityByType": {
+					"*-boss": 1,
+					"*-grunt": 1
+				},
+				"chance": 0.000015,
+				//Chance is equal to what the bear is. this should allow for a lower chance to spawn like it should.
+				"maxQuantity": 1,
+				"maxLightLevel": 7,
+				"lightLevelType": "onlyBlockLight",
+				"groupSizeByType": {
+					"barbarian-*-*-*-boss": {
+						"dist": "verynarrowgaussian",
+						"avg": 3,
+						"var": 2
+					},
+					"barbarian-*-*-*-grunt": {
+						"dist": "verynarrowgaussian",
+						"avg": 3,
+						"var": 2
+					}
+				},
+				"insideBlockCodesByType": {
+					"barbarian-*-panda-*": [ "air", "tallgrass-*", "snowlayer-*", "flower-*", "leaves-*", "bambooleaves-*", "tallfern", "fern-*" ],
+					"barbarian-*": [ "air", "tallgrass-*", "snowlayer-*", "flower-*" ]
+				},
+				"companionsByType": {
+					"barbarian-*-black-boss": [ "barbarianbear-black-adult-male" ],
+					"barbarian-*-brown-boss": [ "barbarianbear-brown-adult-male" ],
+					"barbarian-*-sun-boss": [ "barbarianbear-sun-adult-male" ],
+					"barbarian-*-panda-boss": [ "barbarianbear-panda-adult-male" ],
+					"barbarian-*-polar-boss": [ "barbarianbear-polar-adult-male" ]
+				}
+			},
+			"climate": {
+				"maxY": 1.6,
+				"minTempByType": {
+					"barbarian-*-polar-*": -48,
+					"barbarian-*-brown-*": -15,
+					"barbarian-*-sun-*": 24,
+					"barbarian-*-panda-*": 25,
+					"barbarian-*-black-*": -5
+				},
+				"maxTempByType": {
+					"barbarian-*-polar-*": -9,
+					"barbarian-*-brown-*": 10,
+					"barbarian-*-sun-*": 40,
+					"barbarian-*-panda-*": 33,
+					"barbarian-*-black-*": 20
+				},
+				"minRainByType": {
+					"barbarian-*-polar-*": 0,
+					"barbarian-*-brown-*": 0.1,
+					"barbarian-*-sun-*": 0.6,
+					"barbarian-*-panda-*": 0.5,
+					"*": 0.25
+				},
+				"minForestByType": {
+					"barbarian-*-polar-*": 0,
+					"barbarian-*-brown-*": 0.2,
+					"barbarian-*-black-*": 0.5,
+					"barbarian-*-panda-*": 0.5,
+					"barbarian-*-sun-*": 0.4,
+					"*": 0.4
+				}
+			}
+		}
+	},
+	"sounds": {
+		"hurt": "game:player/hurt",
+		"death": "game:player/death",
+		"swim": "game:player/swim",
+		"eat": "game:player/eat"
+	}
+}

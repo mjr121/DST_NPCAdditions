@@ -3,28 +3,6 @@
 	{
 		"file": "entities/humanoid/bandit.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/0/entityCodes",
-		"value": [
-			"bandit-axe",
-			"bandit-knife",
-			"bandit-spear",
-			"deserter-archer",
-			"deserter-bannerman",
-			"deserter-footman",
-			"hound-feral",
-			"hound-hunting",
-			"looter",
-			"poacher-archer",
-			"poacher-spear",
-			"yeoman-archer"
-		],
-		"dependsOn": [
-			{ "modid": "outlawmod122" }
-		]
-	},
-	{
-		"file": "entities/humanoid/bandit.json",
-		"op": "addmerge",
 		"path": "/server/behaviors/10/aitasks/1/entityCodes",
 		"value": [
 			"bandit-axe",
@@ -47,7 +25,7 @@
 	{
 		"file": "entities/humanoid/bandit.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/5/entityCodes",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
 		"value": [
 			"bandit-axe",
 			"bandit-knife",
@@ -69,7 +47,29 @@
 	{
 		"file": "entities/humanoid/bandit.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"path": "/server/behaviors/10/aitasks/8/entityCodes",
+		"value": [
+			"bandit-axe",
+			"bandit-knife",
+			"bandit-spear",
+			"deserter-archer",
+			"deserter-bannerman",
+			"deserter-footman",
+			"hound-feral",
+			"hound-hunting",
+			"looter",
+			"poacher-archer",
+			"poacher-spear",
+			"yeoman-archer"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/9/entityCodes",
 		"value": [
 			"bandit-axe",
 			"bandit-knife",
@@ -136,7 +136,7 @@
 	{
 		"file": "entities/humanoid/knighterrant.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/7/entityCodes",
+		"path": "/server/behaviors/10/aitasks/5/entityCodes",
 		"value": [
 			"bandit-axe",
 			"bandit-knife",
@@ -158,7 +158,7 @@
 	{
 		"file": "entities/humanoid/knighterrant.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/8/entityCodes",
+		"path": "/server/behaviors/10/aitasks/6/entityCodes",
 		"value": [
 			"bandit-axe",
 			"bandit-knife",
@@ -265,5 +265,96 @@
 		"dependsOn": [
 			{ "modid": "outlawmod122" }
 		]
+	},
+	//Barbarian
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/2/entityCodes",
+		"value": [
+			"bandit-axe",
+			"bandit-knife",
+			"bandit-spear",
+			"deserter-archer",
+			"deserter-bannerman",
+			"deserter-footman",
+			"hound-feral",
+			"hound-hunting",
+			"looter",
+			"poacher-archer",
+			"poacher-spear",
+			"yeoman-archer"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"value": [
+			"bandit-axe",
+			"bandit-knife",
+			"bandit-spear",
+			"deserter-archer",
+			"deserter-bannerman",
+			"deserter-footman",
+			"hound-feral",
+			"hound-hunting",
+			"looter",
+			"poacher-archer",
+			"poacher-spear",
+			"yeoman-archer"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	},
+	//BarbarianBear
+	{
+		"file": "entities/humanoid/barbarian/bear-adult.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/1/entityCodes",
+		"value": [
+			"bandit-axe",
+			"bandit-knife",
+			"bandit-spear",
+			"deserter-archer",
+			"deserter-bannerman",
+			"deserter-footman",
+			"hound-feral",
+			"hound-hunting",
+			"looter",
+			"poacher-archer",
+			"poacher-spear",
+			"yeoman-archer"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/bear-adult.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"value": [
+			"bandit-axe",
+			"bandit-knife",
+			"bandit-spear",
+			"deserter-archer",
+			"deserter-bannerman",
+			"deserter-footman",
+			"hound-feral",
+			"hound-hunting",
+			"looter",
+			"poacher-archer",
+			"poacher-spear",
+			"yeoman-archer"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
 	}
+
 ]

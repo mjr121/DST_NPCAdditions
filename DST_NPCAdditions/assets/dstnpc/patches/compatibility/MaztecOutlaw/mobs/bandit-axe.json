@@ -36,7 +36,9 @@
 		"value": [
 			"bandit-*",
 			"poacher-*",
-			"knighterrant-*"
+			"knighterrant-*",
+			"barbarian-*",
+			"barbarianbear-*"
 		],
 		"dependsOn": [
 			{ "modid": "outlawmod122" }
@@ -49,7 +51,9 @@
 		"value": [
 			"bandit-*",
 			"poacher-*",
-			"knighterrant-*"
+			"knighterrant-*",
+			"barbarian-*",
+			"barbarianbear-*"
 		],
 		"dependsOn": [
 			{ "modid": "outlawmod122" }
@@ -62,7 +66,9 @@
 		"value": [
 			"bandit-*",
 			"poacher-*",
-			"knighterrant-*"
+			"knighterrant-*",
+			"barbarian-*",
+			"barbarianbear-*"
 		],
 		"dependsOn": [
 			{ "modid": "outlawmod122" }

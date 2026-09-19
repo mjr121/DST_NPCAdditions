@@ -49,6 +49,29 @@
 	"dstnpc:item-dead-creature-poacher-male-spear-grunt": "Dead Poacher Spearman",
 	"dstnpc:item-dead-creature-poacher-male-spear-boss": "Dead Poacher Spearman",
 	"dstnpc:item-dead-creature-poacher-male-archer-grunt": "Dead Poacher Archer",
-	"dstnpc:item-dead-creature-poacher-male-archer-boss": "Dead Poacher Archer"
+	"dstnpc:item-dead-creature-poacher-male-archer-boss": "Dead Poacher Archer",
+
+	"dstnpc:item-creature-barbarian-male-*-spear-grunt": "Barbarian Spearman",
+	"dstnpc:item-creature-barbarian-male-*-spear-boss": "Barbarian Spearman",
+	"dstnpc:item-creature-barbarian-male-*-spearshield-grunt": "Barbarian Spearman",
+	"dstnpc:item-creature-barbarian-male-*-spearshield-boss": "Barbarian Spearman",
+	"dstnpc:item-creature-barbarian-male-*-twohandaxe-grunt": "Barbarian Axeman",
+	"dstnpc:item-creature-barbarian-male-*-twohandaxe-boss": "Barbarian Axeman",
+
+	"dstnpc:item-dead-creature-barbarian-male-*-spearshield-grunt": "Dead Barbarian Spearman",
+	"dstnpc:item-dead-creature-barbarian-male-*-spearshield-boss": "Dead Barbarian Spearman",
+	"dstnpc:item-dead-creature-barbarian-male-*-twohandaxe-grunt": "Dead Barbarian Axeman",
+	"dstnpc:item-dead-creature-barbarian-male-*-twohandaxe-boss": "Dead Barbarian Axeman",
+
+	"dstnpc:item-creature-barbarianbear-black-adult-male": "Black Bear (Male)",
+	"dstnpc:item-creature-barbarianbear-brown-adult-male": "Brown Bear (Male)",
+	"dstnpc:item-creature-barbarianbear-sun-adult-male": "Sun Bear (Male)",
+	"dstnpc:item-creature-barbarianbear-panda-adult-male": "Panda Bear (Male)",
+	"dstnpc:item-creature-barbarianbear-polar-adult-male": "Polar Bear (Male)",
+	"dstnpc:item-dead-creature-barbarianbear-black-adult-male": "Dead Black Bear (Male)",
+	"dstnpc:item-dead-creature-barbarianbear-brown-adult-male": "Dead Brown Bear (Male)",
+	"dstnpc:item-dead-creature-barbarianbear-sun-adult-male": "Dead Sun Bear (Male)",
+	"dstnpc:item-dead-creature-barbarianbear-panda-adult-male": "Dead Panda Bear (Male)",
+	"dstnpc:item-dead-creature-barbarianbear-polar-adult-male": "Dead Polar Bear (Male)"
 
 }

@@ -1,0 +1,210 @@
+[
+	{
+		"op": "addmerge",
+		"path": "/server/behaviors/12/dropsByType/*-grunt",
+		"value": [
+			{
+				"type": "item",
+				"code": "game:redmeat-raw",
+				"quantity": {
+					"avg": 9,
+					"var": 1.5
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:heart-raw",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:hide-human-raw-medium",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:fat",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			}
+		],
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"dependsOn": [ { "modid": "cannibalism" } ],
+		"condition": {
+			"when": "CannibalismSwapRawMeatToPale",
+			"isValue": "false"
+		}
+	},
+	{
+		"op": "addmerge",
+		"path": "/server/behaviors/12/dropsByType/*-boss",
+		"value": [
+			{
+				"type": "item",
+				"code": "game:redmeat-raw",
+				"quantity": {
+					"avg": 9,
+					"var": 1.5
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:heart-raw",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:hide-human-raw-medium",
+				"quantity": {
+					"avg": 1.5,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:fat",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			}
+		],
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"dependsOn": [ { "modid": "cannibalism" } ],
+		"condition": {
+			"when": "CannibalismSwapRawMeatToPale",
+			"isValue": "false"
+		}
+	},
+	{
+		"op": "addmerge",
+		"path": "/server/behaviors/12/dropsByType/*-grunt",
+		"value": [
+			{
+				"type": "item",
+				"code": "cannibalism:palemeat-raw",
+				"quantity": {
+					"avg": 9,
+					"var": 1.5
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:heart-raw",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:hide-human-raw-medium",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:fat",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			}
+		],
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"dependsOn": [ { "modid": "cannibalism" } ],
+		"condition": {
+			"when": "CannibalismSwapRawMeatToPale",
+			"isValue": "true"
+		}
+	},
+	{
+		"op": "addmerge",
+		"path": "/server/behaviors/12/dropsByType/*-boss",
+		"value": [
+			{
+				"type": "item",
+				"code": "cannibalism:palemeat-raw",
+				"quantity": {
+					"avg": 9,
+					"var": 1.5
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:heart-raw",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "cannibalism:hide-human-raw-medium",
+				"quantity": {
+					"avg": 1.5,
+					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:fat",
+				"quantity": {
+					"avg": 1,
+					"var": 0
+				}
+			}
+		],
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"dependsOn": [ { "modid": "cannibalism" } ],
+		"condition": {
+			"when": "CannibalismSwapRawMeatToPale",
+			"isValue": "true"
+		}
+	},
+	{
+		"op": "addmerge",
+		"path": "/server/behaviors/-",
+		"value": {
+			"code": "butcherable",
+			"itemByType": {
+				"*-male-*": "cannibalism:deadhuman-villagermale-1-dead",
+				"*-female-*": "cannibalism:deadhuman-villagerfemale-1-dead"
+			}
+		},
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"dependsOn": [
+			{ "modid": "butchering" },
+			{ "modid": "cannibalism" }
+		]
+	},
+	{
+		"op": "addmerge",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "butcherable",
+			"itemByType": {
+				"*-male-*": "cannibalism:deadhuman-villagermale-1-dead",
+				"*-female-*": "cannibalism:deadhuman-villagerfemale-1-dead"
+			}
+		},
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"dependsOn": [
+			{ "modid": "butchering" },
+			{ "modid": "cannibalism" }
+		]
+	}
+]

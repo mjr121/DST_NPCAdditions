@@ -197,8 +197,7 @@
 				],
 				"lowerbody": [
 					{
-						"Code": "lowerbody-pants-guard",
-						"Weight": 5.0
+						"Code": "lowerbody-pants-guard"
 					}
 				],
 				"neck": [
@@ -2495,6 +2494,10 @@
 				"code": "despawn",
 				"minPlayerDistance": 32,
 				"minSeconds": 300
+			},
+			{
+				"code": "harvestable",
+				"duration": 2
 			}
 		],
 		"animations": [
@@ -2622,7 +2625,7 @@
 				"aitasks": [
 					{
 						"code": "stayinrange",
-						"entityCodes": [ "bandit-*", "poacher-*", "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
+						"entityCodes": [ "bandit-*", "poacher-*", "barbarian-*", "barbarianbear-*", "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
 						"enabledByType": {
 							"*-archer-*": true,
 							"*": false
@@ -2638,8 +2641,7 @@
 						"animation": "Run"
 					},
 					{
-						"code": "stayinrange",
-						"entityCodes": [ "player" ],
+						"code": "stayinrangeplayeronly",
 						"enabledByType": {
 							"*-archer-*": true,
 							"*": false
@@ -2657,7 +2659,7 @@
 					},
 					{
 						"code": "bowturretmode",
-						"entityCodes": [ "bandit-*", "drifter-*", "poacher-*", "shiver-*", "bowtorn-*", "locust-*" ],
+						"entityCodes": [ "bandit-*", "drifter-*", "poacher-*", "barbarian-*", "barbarianbear-*", "shiver-*", "bowtorn-*", "locust-*" ],
 						"priority": 2.25,
 						"enabledByType": {
 							"*-archer-*": true,
@@ -2717,8 +2719,7 @@
 						"whenInEmotionState": "aggressiveondamage"
 					},
 					{
-						"code": "meleeattack",
-						"entityCodes": [ "player" ],
+						"code": "attackplayeronly",
 						"priority": 2,
 						"enabledByType": {
 							"*-archer-*": false,
@@ -2761,7 +2762,7 @@
 					},
 					{
 						"code": "meleeattack",
-						"entityCodes": [ "bandit-*", "poacher-*" ],
+						"entityCodes": [ "bandit-*", "poacher-*", "barbarian-*", "barbarianbear-*" ],
 						"priority": 2.25,
 						"enabledByType": {
 							"*-archer-*": false,
@@ -2804,7 +2805,7 @@
 					},
 					{
 						"code": "seekentity",
-						"entityCodes": [ "bandit-*", "poacher-*" ],
+						"entityCodes": [ "bandit-*", "poacher-*", "barbarian-*", "barbarianbear-*" ],
 						"priority": 1.25,
 						"enabledByType": {
 							"*-archer-*": false,
@@ -2868,6 +2869,21 @@
 						"seekingRange": 20,
 						"animationSpeed": 1.75,
 						"animation": "Run"
+					},
+					{
+						"code": "seekplayeronly",
+						"priority": 1.25,
+						"enabledByType": {
+							"*-archer-*": false,
+							"*": true
+						},
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"seekingRange": 20,
+						"animationSpeed": 1.75,
+						"animation": "Run",
+						"whenInEmotionState": "aggressiveondamage"
 					},
 					{
 						"code": "fleeentity",
@@ -3044,7 +3060,92 @@
 					}
 				]
 			},
-			{ "code": "entitystatetags" }
+			{ "code": "entitystatetags" },
+			{
+				"code": "harvestable",
+				"duration": 2,
+				"fixedweight": true,
+				"dropsByType": {
+					"*-grunt": [
+						{
+							"type": "item",
+							"code": "game:poultice-reed-horsetail",
+							"quantity": {
+								"avg": 0.4,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 1,
+								"var": 2
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:nugget-nativecopper",
+							"quantity": {
+								"avg": 0.125,
+								"var": 0
+							}
+						}
+					],
+					"*-boss": [
+						{
+							"type": "item",
+							"code": "game:gear-temporal",
+							"quantity": {
+								"avg": 0.05332,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:poultice-reed-horsetail",
+							"quantity": {
+								"avg": 0.4,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 5,
+								"var": 2.5
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:nugget-nativecopper",
+							"quantity": {
+								"avg": 0.125,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:nugget-nativesilver",
+							"quantity": {
+								"avg": 0.025,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:nugget-nativegold",
+							"quantity": {
+								"avg": 0.005,
+								"var": 0
+							}
+						}
+					]
+				}
+			}	
 		],
 		"spawnconditions": {
 			"worldgen": {
@@ -3076,7 +3177,7 @@
 				"minTemp": -10,
 				"minRain": 0,
 				"companionsByType": {
-					"knighterrant-*-*-boss": [ "knighterrant-{gender}-{type}-grunt", "knighterrant-{gender}-{type}-grunt", "knighterrant-{gender}-{type}-grunt" ],
+					"knighterrant-*-*-boss": [ "knighterrant-{gender}-{gear}-grunt", "knighterrant-{gender}-{gear}-grunt", "knighterrant-{gender}-{gear}-grunt" ],
 					"knighterrant-*-*-grunt": []
 				}
 			},
@@ -3107,7 +3208,7 @@
 				"minTemp": -10,
 				"minRain": 0,
 				"companionsByType": {
-					"knighterrant-*-*-boss": [ "knighterrant-{gender}-{type}-grunt", "knighterrant-{gender}-{type}-grunt", "knighterrant-{gender}-{type}-grunt" ],
+					"knighterrant-*-*-boss": [ "knighterrant-{gender}-{gear}-grunt", "knighterrant-{gender}-{gear}-grunt", "knighterrant-{gender}-{gear}-grunt" ],
 					"knighterrant-*-*-grunt": []
 				}
 			}

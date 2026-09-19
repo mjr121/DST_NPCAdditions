@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"backDropShape": "game:entity/humanoid/villager-female",
+		"backDropShape": "game:entity/humanoid/villager-male",
 		"collapsedPaths": "Root/origin",
 		"allAngles": false,
 		"entityTextureMode": true

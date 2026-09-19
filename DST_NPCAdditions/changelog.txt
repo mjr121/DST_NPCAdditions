@@ -1,4 +1,53 @@
-9/15/2026 - V1.0.2
+9/19/2026 - V1.0.5
+CONFIG VERSION = 1.0.3, will cause the config file to be regenerated.
+Factions
+Barbarian:
+Added Sun and Panda Bear variants with their companion bears.
+
+Fixes:
+Corrected missing Barbarian config options. 
+Corrected Poachers attacking players even though they are supposed to spawn in neutral.
+Corrected Poachers not respecting player placed lighting during spawning.
+Corrected Bandits not respecting player placed lighting during spawning.
+
+Compatability
+Biomes:
+Barbarians and their companion bears now spawn in releveant biomes.
+Wilderlands Rustbound:
+NPCs added by this mod will attack most, if not all the entities from WR. Although due to the way WR has their entity files spread out, WR NPCs will not outright attack but will retaliate. 
+Cannibalism: 
+Added Butchery patch to hang and butcher NPCs from this mod if the Butchery mod is loaded alongside of Cannibalism.
+Fixed harvesting NPCs from this mod not giving Cannibalism items like it was. When I moved some config options to the worldconfig for sync purposes, it wasn't correctly applying those config values.
+
+Config:
+Added faction wide default player hostility value. 0 = hostile, 1 = neutral. With this added, Knight Errants gain the same loot pool as bandits do.
+
+Misc:
+Reorganized some code classes for readability if others wish to look at what I've done/doing.
+Added two new AiTasks for easier modding on my end.
+
+9/16/2026 - V1.0.4
+CONFIG VERSION = 1.0.2
+New Faction: Barbarian
+-Will not flee when low health.
+-Has Wolf or bear companion they fight with, this companion will also not flee when low health. (Need to do wolf)
+-Will both wolf howl when idling, and growl if idling.
+-First faction to take advantage of biome specific spawning. Polar Barbarians will spawn in the colder areas.
+-First dual wielder NPC in the mod with two axes (although two handed anims are a work in progress)
+
+Corrected Knight Errants getting free drops that should have been tied to having the Cannibalism mod loaded.
+Correct Bandit, Knight Errant, and Poacher bosses spawning in without companion mobs.
+Corrected Bandit Bannerman issues: Missing attack animations, Hurt animation missing.
+Corrected Mod Compat config options not being correctly handled. If a mod is loaded (like cannibalism), then removed later, my mod will clean up the unneeded config entries added by this mod.
+
+Compatability
+Cannibalism: 
+Added True/False config option to either use Red Meat, or Pale Meat in the drop tables. This must be manually set as doing a comparison check against Cannibalism is tricky.
+
+Other
+Added another custom AiTask for seeking players only. Should help clarify for future modding by others and be used for other NPCs in the future.
+
+9/15/2026 - V1.0.3
 Correct missing text for Bandit bannerman, how that managed to get through I dont know.
 Corrected Poacher Spearmen dropping copper arrows when killed.
 Changed the way drop tables are being handled. Instead of dropping them to the floor, they will require you to harvest like other creatures. Unless I find/make a different method, this will be how it will be moving forward.
