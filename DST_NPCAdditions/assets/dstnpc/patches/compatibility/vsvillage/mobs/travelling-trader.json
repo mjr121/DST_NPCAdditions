@@ -1,0 +1,16 @@
+[
+	{
+		"file": "vsvillage:entities/travelling-trader.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/0/entityCodes",
+		"value": [
+			"bandit-*",
+			"poacher-*",
+			"barbarian-*",
+			"barbarianbear-*"
+		],
+		"dependsOn": [
+			{ "modid": "vsvillage" }
+		]
+	}
+]

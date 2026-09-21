@@ -1,0 +1,184 @@
+[
+	//Bandits
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/1/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/8/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/9/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	},
+	//Knight Errants
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/0/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "casuariidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/2/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "casuariidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/5/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "casuariidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "casuariidae" }
+		]
+	},
+	//Poacher
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/0/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/1/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/7/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	},
+	//Barbarian
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/2/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	},
+	//BarbarianBear
+	{
+		"file": "entities/humanoid/barbarian/bear-adult.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/1/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/bear-adult.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/3/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	}
+
+]

@@ -2,19 +2,7 @@
   "editor": {
     "editorVersion": "VSMC2v0.5.0",
     "allAngles": true,
-    "backdrops": [],
-    "attachments": [
-      {
-        "shapeFilepath": "held\\item\\tool\\axe\\left\\copper",
-        "opacity": 1.0,
-        "enabled": true
-      },
-      {
-        "shapeFilepath": "held\\item\\tool\\axe\\copper",
-        "opacity": 1.0,
-        "enabled": true
-      }
-    ]
+    "backdrops": []
   },
   "textureWidth": 32,
   "textureHeight": 72,

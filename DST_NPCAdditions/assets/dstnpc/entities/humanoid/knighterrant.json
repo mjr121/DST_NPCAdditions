@@ -3160,7 +3160,8 @@
 					}
 				},
 				"maxQuantity": 1,
-				"minLightLevel": 5,
+				"maxLightLevel": 7,
+				"lightLevelType": "OnlyBlockLight",
 				"groupSizeByType": {
 					"knighterrant-*-*-boss": {
 						"dist": "verynarrowgaussian",
@@ -3191,7 +3192,8 @@
 				"chance": 0.000015,
 				//Chance is equal to what the bear is. this should allow for a lower chance to spawn like it should.
 				"maxQuantity": 1,
-				"minLightLevel": 5,
+				"maxLightLevel": 7,
+				"lightLevelType": "OnlyBlockLight",
 				"groupSizeByType": {
 					"knighterrant-*-*-boss": {
 						"dist": "verynarrowgaussian",

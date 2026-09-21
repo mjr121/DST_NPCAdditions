@@ -1,0 +1,184 @@
+[
+	//Bandits
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/1/entityCodes",
+		"value": [
+			"manidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"value": [
+			"manidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/8/entityCodes",
+		"value": [
+			"manidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/9/entityCodes",
+		"value": [
+			"manidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	//Knight Errants
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/0/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/2/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/5/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	//Poacher
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/0/entityCodes",
+		"value": [
+			"manidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/1/entityCodes",
+		"value": [
+			"manidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"value": [
+			"manidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/7/entityCodes",
+		"value": [
+			"manidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	//Barbarian
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/2/entityCodes",
+		"value": [
+			"manidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"value": [
+			"manidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	//BarbarianBear
+	{
+		"file": "entities/humanoid/barbarian/bear-adult.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/1/entityCodes",
+		"value": [
+			"manidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/bear-adult.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/3/entityCodes",
+		"value": [
+			"manidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "manidae" }
+		]
+	}
+
+]

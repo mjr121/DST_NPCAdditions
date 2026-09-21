@@ -1,0 +1,184 @@
+[
+	//Bandits
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/1/entityCodes",
+		"value": [
+			"sirenia-*"
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"value": [
+			"sirenia-*"
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/8/entityCodes",
+		"value": [
+			"sirenia-*"
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/9/entityCodes",
+		"value": [
+			"sirenia-*"
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	//Knight Errants
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/0/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/2/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/5/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	//Poacher
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/0/entityCodes",
+		"value": [
+			"sirenia-*"
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/1/entityCodes",
+		"value": [
+			"sirenia-*"
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"value": [
+			"sirenia-*"
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/7/entityCodes",
+		"value": [
+			"sirenia-*"
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	//Barbarian
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/2/entityCodes",
+		"value": [
+			"sirenia-*"
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"value": [
+			"sirenia-*"
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	//BarbarianBear
+	{
+		"file": "entities/humanoid/barbarian/bear-adult.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/1/entityCodes",
+		"value": [
+			"sirenia-*"
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/bear-adult.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/3/entityCodes",
+		"value": [
+			"sirenia-*"
+		],
+		"dependsOn": [
+			{ "modid": "sirenia" }
+		]
+	}
+
+]

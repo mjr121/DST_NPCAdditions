@@ -1,0 +1,184 @@
+[
+	//Bandits
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/1/entityCodes",
+		"value": [
+			"rhinocerotidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"value": [
+			"rhinocerotidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/8/entityCodes",
+		"value": [
+			"rhinocerotidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/9/entityCodes",
+		"value": [
+			"rhinocerotidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	//Knight Errants
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/0/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/2/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/5/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"value": [
+
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	//Poacher
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/0/entityCodes",
+		"value": [
+			"rhinocerotidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/1/entityCodes",
+		"value": [
+			"rhinocerotidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"value": [
+			"rhinocerotidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/7/entityCodes",
+		"value": [
+			"rhinocerotidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	//Barbarian
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/2/entityCodes",
+		"value": [
+			"rhinocerotidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"value": [
+			"rhinocerotidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	//BarbarianBear
+	{
+		"file": "entities/humanoid/barbarian/bear-adult.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/1/entityCodes",
+		"value": [
+			"rhinocerotidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/bear-adult.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/3/entityCodes",
+		"value": [
+			"rhinocerotidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "rhinocerotidae" }
+		]
+	}
+
+]

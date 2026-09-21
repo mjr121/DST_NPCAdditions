@@ -1,0 +1,30 @@
+[
+	{
+		"file": "vsvillage:entities/travelling-guard.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/1/entityCodes",
+		"value": [
+			"bandit-*",
+			"poacher-*",
+			"barbarian-*",
+			"barbarianbear-*"
+		],
+		"dependsOn": [
+			{ "modid": "vsvillage" }
+		]
+	},
+	{
+		"file": "vsvillage:entities/travelling-guard.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/2/entityCodes",
+		"value": [
+			"bandit-*",
+			"poacher-*",
+			"barbarian-*",
+			"barbarianbear-*"
+		],
+		"dependsOn": [
+			{ "modid": "vsvillage" }
+		]
+	}
+]

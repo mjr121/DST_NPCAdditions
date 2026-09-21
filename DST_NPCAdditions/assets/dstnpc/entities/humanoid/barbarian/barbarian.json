@@ -3465,8 +3465,8 @@
 					}
 				},
 				"insideBlockCodesByType": {
-					"barbarian-*-panda-*": [ "air", "tallgrass-*", "snowlayer-*", "flower-*", "leaves-*", "bambooleaves-*", "tallfern", "fern-*" ],
-					"barbarian-*": [ "air", "tallgrass-*", "snowlayer-*", "flower-*" ]
+					"barbarian-*-panda-*": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:leaves-*", "game:bambooleaves-*", "game:tallfern", "game:fern-*" ],
+					"barbarian-*": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*" ]
 				},
 				"companionsByType": {
 					"barbarian-*-black-boss": [ "barbarianbear-black-adult-male" ],
@@ -3501,8 +3501,8 @@
 					}
 				},
 				"insideBlockCodesByType": {
-					"barbarian-*-panda-*": [ "air", "tallgrass-*", "snowlayer-*", "flower-*", "leaves-*", "bambooleaves-*", "tallfern", "fern-*" ],
-					"barbarian-*": [ "air", "tallgrass-*", "snowlayer-*", "flower-*" ]
+					"barbarian-*-panda-*": [ "air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:leaves-*", "game:bambooleaves-*", "game:tallfern", "game:fern-*" ],
+					"barbarian-*": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*" ]
 				},
 				"companionsByType": {
 					"barbarian-*-black-boss": [ "barbarianbear-black-adult-male" ],

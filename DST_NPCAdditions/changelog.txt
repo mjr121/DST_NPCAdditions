@@ -1,3 +1,27 @@
+- V1.0.6
+Knight Errants
+Changed spawn requirements to use the same light levels as the rest of the NPCs due to me adding the option to make them hostile outright to the player.
+
+Fixes
+Forgot to add the domain codes to the spawn blocks for the barbarians. Whoops.
+Corrected NPCs showing up with both axe and spear in the same hand.
+
+Compatability
+VS Village:
+Traveling guards will now hunt Poachers, Bandits, and Barbarians. 
+Traveling Traders will flee NPCs from add by this mod, except for knight errants.
+NPCs added by this mod will attack traveling guards and villagers, except for knight errants.
+Fauna of the Stone Age:
+Compatability with Bovinae, Casuariidae Plus Mod, Cervinae, Dinornithiformes Plus, Elephantidae, Felinae, Machairodontinae, Manidae, Rhinocerotidae, Sirenia,
+Spheniscidae, Thylacinidae, Viverridae Plus. NPCs added by this mod will attack mobs from FotSA. FotSA has mechanisms that handle internal targeting stuff, so I haven't patched FotSA files.
+<[Server Error] Exception thrown while trying to resolve entity type felinae:felinae> This is a known error for the FotSA: Felinae mod. The mod author is aware of it, and its not generated via my mod.
+<[Server Error] Exception thrown while trying to resolve entity type viverridae:nandiniidae> This is an error for the FotSA: Viverridae Plus mod and its not generated via my mod.
+
+Other
+Further cleaned up some on the code side of things. Hoping to continue streamlining things as I add/edit more of the mod.
+
+
+
 9/19/2026 - V1.0.5
 CONFIG VERSION = 1.0.3, will cause the config file to be regenerated.
 Factions
