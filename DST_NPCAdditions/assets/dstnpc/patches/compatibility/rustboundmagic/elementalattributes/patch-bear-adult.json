@@ -1,0 +1,69 @@
+[
+  {
+    "op": "addmerge",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "EntityBehaviorElementalDamageModifiersRM"
+    },
+    "file": "entities/humanoid/barbarian/bear-adult.json",
+    "dependsOn": [
+      { "modid": "rustboundmagic" }
+    ]
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/weaknessElement1RM",
+    "value": "none",
+    "file": "entities/humanoid/barbarian/bear-adult.json",
+    "dependsOn": [
+      { "modid": "rustboundmagic" }
+    ]
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/weaknessAmount1RM",
+    "value": 0,
+    "file": "entities/humanoid/barbarian/bear-adult.json",
+    "dependsOn": [
+      { "modid": "rustboundmagic" }
+    ]
+  },
+
+  {
+    "op": "addmerge",
+    "path": "/attributes/resistanceElement1RM",
+    "value": "nature",
+    "file": "entities/humanoid/barbarian/bear-adult.json",
+    "dependsOn": [
+      { "modid": "rustboundmagic" }
+    ]
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/resistanceAmount1RM",
+    "value": 0.5,
+    "file": "entities/humanoid/barbarian/bear-adult.json",
+    "dependsOn": [
+      { "modid": "rustboundmagic" }
+    ]
+  },
+
+  {
+    "op": "addmerge",
+    "path": "/attributes/strengthElement1RM",
+    "value": "none",
+    "file": "entities/humanoid/barbarian/bear-adult.json",
+    "dependsOn": [
+      { "modid": "rustboundmagic" }
+    ]
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/strengthAmount1RM",
+    "value": 0,
+    "file": "entities/humanoid/barbarian/bear-adult.json",
+    "dependsOn": [
+      { "modid": "rustboundmagic" }
+    ]
+  }
+]

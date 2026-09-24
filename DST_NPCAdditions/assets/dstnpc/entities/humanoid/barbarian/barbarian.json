@@ -3125,7 +3125,7 @@
 				"aitasks": [
 					{
 						"code": "meleeattack",
-						"entityCodes": ["knighterrant-*", "bandit-*", "poacher-*" ],
+						"entityCodes": [ "knighterrant-*", "bandit-*", "poacher-*" ],
 						"priority": 2.25,
 						"enabledByType": {
 							"*": true
@@ -3154,7 +3154,7 @@
 					},
 					{
 						"code": "seekentity",
-						"entityCodes": ["knighterrant-*", "bandit-*", "poacher-*" ],
+						"entityCodes": [ "knighterrant-*", "bandit-*", "poacher-*" ],
 						"enabledByType": {
 							"*": true
 						},
@@ -3210,6 +3210,58 @@
 						"animation": "Run"
 					},
 					{
+						"code": "meleeattack",
+						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*", "locust-*", "bandit-*", "poacher-*" ],
+						"priority": 2.5,
+						"enabledByType": {
+							"*-twohandaxe-*": true,
+							"*": false
+						},
+						"damageByType": {
+							"barbarian-*-twohandaxe-grunt": 2,
+							"barbarian-*-twohandaxe-boss": 2.5,
+							"*": 2.75
+						},
+						"minDistByType": {
+							"barbarian-*-twohandaxe-*": 2,
+							"*": 2.5
+						},
+						"mincooldown": 500,
+						"maxcooldown": 1750,
+						"attackDurationMs": 1000,
+						"damagePlayerAtMs": 400,
+						"animationByType": {
+							"barbarian-*-twohandaxe-*": "axe2handedleft"
+						},
+						"animationSpeed": 2
+					},
+					{
+						"code": "meleeattack",
+						"entityCodes": [ "knighterrant-*", "bandit-*", "poacher-*" ],
+						"priority": 2.25,
+						"enabledByType": {
+							"*-twohandaxe-*": true,
+							"*": false
+						},
+						"damageByType": {
+							"barbarian-*-twohandaxe-grunt": 2,
+							"barbarian-*-twohandaxe-boss": 2.5,
+							"*": 2.75
+						},
+						"minDistByType": {
+							"barbarian-*-twohandaxe-*": 2,
+							"*": 2.5
+						},
+						"mincooldown": 500,
+						"maxcooldown": 1750,
+						"attackDurationMs": 1000,
+						"damagePlayerAtMs": 400,
+						"animationByType": {
+							"barbarian-*-twohandaxe-*": "axe2handedleft"
+						},
+						"animationSpeed": 2
+					},
+					{
 						"code": "attackplayeronly",
 						"priority": 2.25,
 						"enabledByType": {
@@ -3234,6 +3286,31 @@
 						"animationByType": {
 							"barbarian-*-spearshield-*": "spear-attack",
 							"barbarian-*-twohandaxe-*": "axe2handedright"
+						},
+						"animationSpeed": 2
+					},
+					{
+						"code": "attackplayeronly",
+						"priority": 2.25,
+						"enabledByType": {
+							"*-twohandaxe-*": true,
+							"*": false
+						},
+						"damageByType": {
+							"barbarian-*-twohandaxe-grunt": 2,
+							"barbarian-*-twohandaxe-boss": 2.5,
+							"*": 2.75
+						},
+						"minDistByType": {
+							"barbarian-*-twohandaxe-*": 2,
+							"*": 2.5
+						},
+						"mincooldown": 500,
+						"maxcooldown": 1750,
+						"attackDurationMs": 1000,
+						"damagePlayerAtMs": 400,
+						"animationByType": {
+							"barbarian-*-twohandaxe-*": "axe2handedleft"
 						},
 						"animationSpeed": 2
 					},
@@ -3382,6 +3459,14 @@
 								"avg": 0.125,
 								"var": 0
 							}
+						},
+						{
+							"type": "item",
+							"code": "game:leather-normal-plain",
+							"quantity": {
+								"avg": 1,
+								"var": 2
+							}
 						}
 					],
 					"*-boss": [
@@ -3432,6 +3517,14 @@
 							"quantity": {
 								"avg": 0.005,
 								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:leather-normal-plain",
+							"quantity": {
+								"avg": 3,
+								"var": 2
 							}
 						}
 					]

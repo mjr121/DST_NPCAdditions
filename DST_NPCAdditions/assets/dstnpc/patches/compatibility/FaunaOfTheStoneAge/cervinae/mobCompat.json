@@ -157,6 +157,17 @@
 			{ "modid": "cervinae" }
 		]
 	},
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/4/entityCodes",
+		"value": [
+			"cervidae-cervini-*"
+		],
+		"dependsOn": [
+			{ "modid": "cervinae" }
+		]
+	},
 	//BarbarianBear
 	{
 		"file": "entities/humanoid/barbarian/bear-adult.json",

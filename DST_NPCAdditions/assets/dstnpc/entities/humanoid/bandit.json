@@ -3003,6 +3003,21 @@
 						"animation": "Run"
 					},
 					{
+						"code": "seekplayeronly",
+						"enabledByType": {
+							"*-bannerman-*": false,
+							"*-archer-*": false,
+							"*": true
+						},
+						"priority": 1.25,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"seekingRange": 20,
+						"animationSpeed": 1.75,
+						"animation": "Run"
+					},
+					{
 						"code": "fleeentity",
 						"entityCodes": [ "player" ],
 						"priority": 1.5,
@@ -3011,6 +3026,15 @@
 						"animation": "Run",
 						"animationSpeed": 1.75,
 						"whenInEmotionState": "fleeondamage"
+					},
+					{
+						"code": "fleeentity",
+						"entityCodes": [],
+						"priority": 1.5,
+						"movespeed": 0.035,
+						"seekingRange": 25,
+						"animation": "Run",
+						"animationSpeed": 1.75
 					},
 					{
 						"code": "idle",
@@ -3295,7 +3319,7 @@
 				"minTemp": -10,
 				"minRain": 0,
 				"companionsByType": {
-					"bandit-*-*-boss": [ "bandit-{gender}-{gear}-grunt", "bandit-{gender}-{gear}-grunt", "bandit-{gender}-{gear}-grunt" ],
+					"bandit-*-*-boss": [ "bandit-{gender}-spear-grunt", "bandit-{gender}-axe-grunt", "bandit-{gender}-archer-grunt" ],
 					"bandit-*-*-grunt": []
 				}
 			},
@@ -3327,7 +3351,7 @@
 				"minTemp": -10,
 				"minRain": 0,
 				"companionsByType": {
-					"bandit-*-*-boss": [ "bandit-{gender}-{gear}-grunt", "bandit-{gender}-{gear}-grunt", "bandit-{gender}-{gear}-grunt" ],
+					"bandit-*-*-boss": [ "bandit-{gender}-spear-grunt", "bandit-{gender}-axe-grunt", "bandit-{gender}-archer-grunt" ],
 					"bandit-*-*-grunt": []
 				}
 			}

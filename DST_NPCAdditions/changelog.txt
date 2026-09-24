@@ -1,3 +1,43 @@
+- V1.0.7
+CONFIG VERSION = 1.4, will cause the config file to be regenerated.
+Config Specific
+Added the ability to add additional drops to faction specific entities. Poacher drops were moved to use this system as examples, outside of gears. The method compares the items you want to add against loaded items in the game. If it doesnt exist, it kicks an error and doesnt add. Preserving game stability. 
+If you want to see this in action, delete the entries within the "additionalDrops" array and kill a poacher in game.
+
+Misc:
+Boss Spawns regardless of faction now comes with a variety of weapon types, rather then spawning in using all the same. Includes at least 1 archer.
+Added proper prefix/suffix tags for NPCs in this mod so player deaths properly mention who/what killed them.
+
+Knight Errants:
+- Added Bannerman player search behavior if Knights are set to be hostile to the player via config.
+- Added Bannerman search radius config option.
+
+Barbarians:
+- Have the chance to drop leather pieces on death. 
+- Dual axe barbarians now have an additional attack anim using the left axe.
+- Corrected Barbarian Companion bear patch files for various mods.
+
+
+Poachers:
+- Corrected Poacher Archers being overly aggressive against players unintended. 
+
+Bandits:
+- Corrected bandits not seeking players correctly.
+
+Ai Tasks / Behaviors
+AiTaskBowTurretMode:
+- Corrected Archer units being overly aggressive against players. This is due to how the behavior was setup in vanilla since I just made a variant for my purposes. This is corrected now.
+- Added additional info to the entity UI card (damage type, tier)
+
+World Generation
+- Small poacher camps can now be found out and about in the world. These small camps spawn at about the same rate as normal surface ruins do, but have a 400~ block distance between them. Eventually this will be a config option in the future.
+
+Compatability
+Temporal Convergence:
+Knight Errants and Barbarians will attack both Eidolon bosses, while poachers and bandits will flee away from them.
+Rustbound Magic:
+Added basic compatability. Added elemental attributes to NPCs where the mod adds them (companions animals etc). My NPCs will enage NPCs from Rustbound Magic.
+
 - V1.0.6
 Knight Errants
 Changed spawn requirements to use the same light levels as the rest of the NPCs due to me adding the option to make them hostile outright to the player.
@@ -19,8 +59,6 @@ Spheniscidae, Thylacinidae, Viverridae Plus. NPCs added by this mod will attack 
 
 Other
 Further cleaned up some on the code side of things. Hoping to continue streamlining things as I add/edit more of the mod.
-
-
 
 9/19/2026 - V1.0.5
 CONFIG VERSION = 1.0.3, will cause the config file to be regenerated.

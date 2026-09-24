@@ -5,7 +5,8 @@
 	"dstnpc:item-creature-knighterrant-*-*-grunt": "Knight Errant",
 	"dstnpc:item-creature-knighterrant-*-bannerman-boss": "Knight Bannerman",
 	"dstnpc:item-creature-knighterrant-*-*-boss": "Knight Sergeant",
-
+	"prefixandcreature-knighterrant-*": "a Knight Errant",
+	"game:deathmsg-knighterrant-male-spear-grunt-1": "The law claimed Player {0}'s life.",
 	"dstnpc:item-dead-creature-knighterrant-*-*-grunt": "Dead Knight Errant",
 	"dstnpc:item-dead-creature-knighterrant-*-bannerman-boss": "Dead Knight Bannerman",
 	"dstnpc:item-dead-creature-knighterrant-*-*-boss": "Dead Knight Sergeant",
@@ -17,6 +18,8 @@
 	"dstnpc:item-creature-bandit-male-archer-grunt": "Bandit Archer",
 	"dstnpc:item-creature-bandit-male-axeshield-grunt": "Bandit Axeman",
 	"dstnpc:item-creature-bandit-male-bannerman-grunt": "Bandit Bannerman",
+	"prefixandcreature-bandit-*": "a Bandit",
+	"game:deathmsg-bandit-*": "Player {0} was slain by bandits.",
 
 	"dstnpc:item-dead-creature-bandit-male-spear-grunt": "Dead Bandit Spearman",
 	"dstnpc:item-dead-creature-bandit-male-sword-grunt": "Dead Bandit Swordsman",
@@ -50,6 +53,8 @@
 	"dstnpc:item-dead-creature-poacher-male-spear-boss": "Dead Poacher Spearman",
 	"dstnpc:item-dead-creature-poacher-male-archer-grunt": "Dead Poacher Archer",
 	"dstnpc:item-dead-creature-poacher-male-archer-boss": "Dead Poacher Archer",
+	"prefixandcreature-poacher-*": "a Poacher",
+	"game:deathmsg-poacher-*-*-*-1": "Player {0} was poached by the poachers.",
 
 	"dstnpc:item-creature-barbarian-male-*-spear-grunt": "Barbarian Spearman",
 	"dstnpc:item-creature-barbarian-male-*-spear-boss": "Barbarian Spearman",
@@ -57,6 +62,8 @@
 	"dstnpc:item-creature-barbarian-male-*-spearshield-boss": "Barbarian Spearman",
 	"dstnpc:item-creature-barbarian-male-*-twohandaxe-grunt": "Barbarian Axeman",
 	"dstnpc:item-creature-barbarian-male-*-twohandaxe-boss": "Barbarian Axeman",
+	"prefixandcreature-barbarian-*": "a Barbarian",
+	"game:deathmsg-barbarian-*-*-*-1": "Player {0} was raged too hard by raging barbarians.",
 
 	"dstnpc:item-dead-creature-barbarian-male-*-spearshield-grunt": "Dead Barbarian Spearman",
 	"dstnpc:item-dead-creature-barbarian-male-*-spearshield-boss": "Dead Barbarian Spearman",
@@ -72,6 +79,12 @@
 	"dstnpc:item-dead-creature-barbarianbear-brown-adult-male": "Dead Brown Bear (Male)",
 	"dstnpc:item-dead-creature-barbarianbear-sun-adult-male": "Dead Sun Bear (Male)",
 	"dstnpc:item-dead-creature-barbarianbear-panda-adult-male": "Dead Panda Bear (Male)",
-	"dstnpc:item-dead-creature-barbarianbear-polar-adult-male": "Dead Polar Bear (Male)"
+	"dstnpc:item-dead-creature-barbarianbear-polar-adult-male": "Dead Polar Bear (Male)",
+	"prefixandcreature-barbarianbear-black-*": "a Black Bear",
+	"prefixandcreature-barbarianbear-brown-*": "a Brown Bear",
+	"prefixandcreature-barbarianbear-sun-*": "a Sun Bear",
+	"prefixandcreature-barbarianbear-panda-*": "a Panda Bear",
+	"prefixandcreature-barbarianbear-polar-*": "a Polar Bear",
+	"game:deathmsg-barbarianbear-*-*-*-1": "Player {0} was torn limb from limb."
 
 }

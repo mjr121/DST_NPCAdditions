@@ -311,11 +311,33 @@
 			{ "modid": "outlawmod122" }
 		]
 	},
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/4/entityCodes",
+		"value": [
+			"bandit-axe",
+			"bandit-knife",
+			"bandit-spear",
+			"deserter-archer",
+			"deserter-bannerman",
+			"deserter-footman",
+			"hound-feral",
+			"hound-hunting",
+			"looter",
+			"poacher-archer",
+			"poacher-spear",
+			"yeoman-archer"
+		],
+		"dependsOn": [
+			{ "modid": "outlawmod122" }
+		]
+	},
 	//BarbarianBear
 	{
 		"file": "entities/humanoid/barbarian/bear-adult.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/1/entityCodes",
+		"path": "/server/behaviors/9/aitasks/1/entityCodes",
 		"value": [
 			"bandit-axe",
 			"bandit-knife",
@@ -337,7 +359,7 @@
 	{
 		"file": "entities/humanoid/barbarian/bear-adult.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"path": "/server/behaviors/9/aitasks/3/entityCodes",
 		"value": [
 			"bandit-axe",
 			"bandit-knife",

@@ -835,918 +835,719 @@
 		"outfitConfigFileNameByType": {
 			"*": "villageraccessories-{gender}"
 		}
+	},
+	"AllowedVariants": [
+		"poacher-male-*"
+	],
+	"client": {
+		"renderer": "Shape",
+		"shapeByType": {
+			"poacher-*": { "base": "entity/humanoid/villager-{gender}" }
 		},
-		"AllowedVariants": [
-			"poacher-male-*"
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.01
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": false
+			},
+			{ "code": "aimingaccuracy" },
+			{ "code": "villagerinventory" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 32,
+				"minSeconds": 300
+			},
+			{
+				"code": "harvestable",
+				"duration": 2
+			}
 		],
-		"client": {
-			"renderer": "Shape",
-			"shapeByType": {
-				"poacher-*": { "base": "entity/humanoid/villager-{gender}" }
+		"animations": [
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "Average",
+				"triggeredBy": { "defaultAnim": true }
 			},
-			"behaviors": [
-				{ "code": "repulseagents" },
-				{
-					"code": "controlledphysics",
-					"stepHeight": 1.01
-				},
-				{ "code": "interpolateposition" },
-				{
-					"code": "floatupwhenstuck",
-					"onlyWhenDead": false
-				},
-				{ "code": "aimingaccuracy" },
-				{ "code": "villagerinventory" },
-				{
-					"code": "despawn",
-					"minPlayerDistance": 32,
-					"minSeconds": 300
-				},
-				{
-					"code": "harvestable",
-					"duration": 2
-				}
-			],
-			"animations": [
-				{
-					"code": "idle",
-					"animation": "idle",
-					"blendMode": "Average",
-					"triggeredBy": { "defaultAnim": true }
-				},
-				{
-					"code": "sleep",
-					"animation": "lie",
-					"blendMode": "Add"
-				},
-				{
-					"code": "die",
-					"animation": "die",
-					"animationSpeed": 1.75,
-					"weight": 10,
-					"blendMode": "AddAverage",
-					"triggeredBy": { "onControls": [ "dead" ] }
-				},
-				{
-					"code": "hurt",
-					"animation": "hurt",
-					"animationSpeed": 2,
-					"blendMode": "AddAverage"
-				},
-				{
-					"code": "bow-load",
-					"animation": "bow-load",
-					"blendMode": "Average"
-				},
-				{
-					"code": "bow-idle",
-					"animation": "bow-idle",
-					"blendMode": "Average"
-				},
-				{
-					"code": "bow-draw",
-					"animation": "bow-draw",
-					"blendMode": "Average"
-				},
-				{
-					"code": "bow-hold",
-					"animation": "bow-hold",
-					"blendMode": "Average"
-				},
-				{
-					"code": "bow-fire",
-					"animation": "bow-fire",
-					"blendMode": "Average"
-				},
-				{
-					"code": "bow-reload",
-					"animation": "bow-reload",
-					"blendMode": "Average"
-				}
-			]
-		},
-		"server": {
-			"attributes": {
-				"pathfinder": {
-					"minTurnAnglePerSec": 720,
-					"maxTurnAnglePerSec": 1440
-				}
+			{
+				"code": "sleep",
+				"animation": "lie",
+				"blendMode": "Add"
 			},
-			"behaviors": [
-				{ "code": "repulseagents" },
-				{
-					"code": "health",
-					"currenthealthByType": {
-						"*-boss": 15,
-						"*-grunt": 10
-					},
-					"maxhealthByType": {
-						"*-boss": 15,
-						"*-grunt": 10
-					}
-				},
-				{
-					"code": "deaddecay",
-					"hoursToDecay": 12
-				},
-				{
-					"code": "despawn",
-					"minPlayerDistance": 32,
-					"minSeconds": 300
-				},
-				{
-					"code": "floatupwhenstuck",
-					"onlyWhenDead": false
-				},
-				{
-					"code": "controlledphysics",
-					"stepHeight": 1.01
-				},
-				{ "code": "aimingaccuracy" },
-				{ "code": "villagerinventory" },
-				{ "code": "breathe" },
-				{
-					"code": "emotionstates",
-					"states": [
-						{
-							"code": "aggressiveondamage",
-							"duration": 6,
-							"chance": 0.6,
-							"slot": 0,
-							"priority": 2,
-							"accumType": "noaccum"
-						},
-						{
-							"code": "fleeondamage",
-							"duration": 10,
-							"chance": 0.4,
-							"slot": 0,
-							"priority": 1,
-							"accumType": "max"
-						}
-					]
-				},
-				{
-					"code": "taskai",
-					"aiCreatureType": "LandCreature",
-					"aitasks": [
-						{
-							"code": "stayinrange",
-							"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*", "drifter-*", "shiver-*", "bowtorn-*" ],
-							"enabledByType": {
-								"*-archer-*": true,
-								"*": false
-							},
-							"priority": 2.3,
-							"mincooldown": 400,
-							"maxcooldown": 800,
-							"movespeed": 0.035,
-							"searchRange": 30,
-							"targetRange": 10,
-							"targetRangeTolerance": 5,
-							"animationSpeed": 1.75,
-							"animation": "Run"
-						},
-						{
-							"code": "bowturretmode",
-							"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*", "drifter-*", "shiver-*", "bowtorn-*" ],
-							"priority": 2.25,
-							"enabledByType": {
-								"*-archer-*": true,
-								"*": false
-							},
-							"projectileDamageByType": {
-								"poacher-*-archer-grunt": 2.75,
-								"poacher-*-archer-boss": 3.25
-							},
-							"projectileDamageTierByType": {
-								"poacher-*-archer-grunt": 0,
-								"poacher-*-archer-boss": 0
-							},
-							"reloadTimeByType": {
-								"poacher-*-archer-grunt": 2.5,
-								"poacher-*-archer-boss": 1.75
-							},
-							"projectileCodeByType": {
-								"poacher-*-archer-grunt": "game:arrow-flint",
-								"poacher-*-archer-boss": "game:arrow-copper"
-							},
-							"priorityForCancel": 3.5,
-							"sensingRange": 25,
-							"firingRangeMin": 5,
-							"firingRangeMax": 24,
-							"abortRange": 5
-						},
-						//Stay in range of hunt target
-						{
-							"code": "stayinrange",
-							"entityCodes": [
-								"wolf-male",
-								"wolf-female",
-								"hyena-male",
-								"hyena-female",
-								"locust-*",
-								"bear-*",
-								"chicken-rooster",
-								"chicken-hen",
-								"chicken-baby",
-								"hare-male",
-								"hare-female",
-								"fox-male-red",
-								"fox-female-red",
-								"fox-male-arctic",
-								"fox-female-arctic",
-								"pig-wild-male",
-								"pig-wild-female",
-								"raccoon-male",
-								"raccoon-female",
-								"sheep-bighorn-male",
-								"sheep-bighorn-female",
-								"deer-*",
-								"goat-*"
-							],
-							"enabledByType": {
-								"*-archer-*": true,
-								"*": false
-							},
-							"priority": 2.21,
-							"mincooldown": 400,
-							"maxcooldown": 800,
-							"movespeed": 0.035,
-							"searchRange": 40,
-							"targetRange": 10,
-							"targetRangeTolerance": 5,
-							"animationSpeed": 1.75,
-							"animation": "Run"
-						},
-						//Seek out game to hunt (archer)
-						{
-							"code": "bowturretmode",
-							"entityCodes": [
-								"wolf-male",
-								"wolf-female",
-								"hyena-male",
-								"hyena-female",
-								"locust-*",
-								"bear-*",
-								"chicken-rooster",
-								"chicken-hen",
-								"chicken-baby",
-								"hare-male",
-								"hare-female",
-								"fox-male-red",
-								"fox-female-red",
-								"fox-male-arctic",
-								"fox-female-arctic",
-								"pig-wild-male",
-								"pig-wild-female",
-								"raccoon-male",
-								"raccoon-female",
-								"sheep-bighorn-male",
-								"sheep-bighorn-female",
-								"deer-*",
-								"goat-*"
-							],
-							"priority": 2.2,
-							"enabledByType": {
-								"*-archer-*": true,
-								"*": false
-							},
-							"projectileDamageByType": {
-								"poacher-*-archer-grunt": 2.75,
-								"poacher-*-archer-boss": 3.25
-							},
-							"projectileDamageTierByType": {
-								"poacher-*-archer-grunt": 0,
-								"poacher-*-archer-boss": 0
-							},
-							"reloadTimeByType": {
-								"poacher-*-archer-grunt": 2.5,
-								"poacher-*-archer-boss": 1.75
-							},
-							"projectileCodeByType": {
-								"poacher-*-archer-grunt": "game:arrow-flint",
-								"poacher-*-archer-boss": "game:arrow-copper"
-							},
-							"priorityForCancel": 3.5,
-							"sensingRange": 25,
-							"firingRangeMin": 5,
-							"firingRangeMax": 24,
-							"abortRange": 5
-						},
-						{
-							"code": "meleeattack",
-							"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*" ],
-							"priority": 2.25,
-							"enabledByType": {
-								"*-archer-*": false,
-								"*": true
-							},
-							"damageByType": {
-								"poacher-*-spear-grunt": 2.75,
-								"poacher-*-spear-boss": 3.25,
-								"*": 2.75
-							},
-							"minDistByType": {
-								"poacher-*-spear-*": 3.5,
-								"*": 2.5
-							},
-							"mincooldown": 500,
-							"maxcooldown": 1750,
-							"attackDurationMs": 1000,
-							"damagePlayerAtMs": 400,
-							"animationByType": {
-								"poacher-*-spear-*": "spear-attack"
-							},
-							"animationSpeed": 2
-						},
-						{
-							"code": "seekentity",
-							"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*" ],
-							"enabledByType": {
-								"*-archer-*": false,
-								"*": true
-							},
-							"priority": 1.25,
-							"mincooldown": 400,
-							"maxcooldown": 800,
-							"movespeed": 0.035,
-							"seekingRange": 20,
-							"animationSpeed": 1.75,
-							"animation": "Run"
-						},
-						{
-							"code": "meleeattack",
-							"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
-							"priority": 2.5,
-							"enabledByType": {
-								"*-archer-*": false,
-								"*": true
-							},
-							"damageByType": {
-								"poacher-*-spear-grunt": 2.75,
-								"poacher-*-spear-boss": 3.25,
-								"*": 2.75
-							},
-							"minDistByType": {
-								"poacher-*-spear-*": 3.5,
-								"*": 2.5
-							},
-							"mincooldown": 500,
-							"maxcooldown": 1750,
-							"attackDurationMs": 1000,
-							"damagePlayerAtMs": 400,
-							"animationByType": {
-								"poacher-*-spear-*": "spear-attack"
-							},
-							"animationSpeed": 2
-						},
-						{
-							"code": "seekentity",
-							"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
-							"enabledByType": {
-								"*-archer-*": false,
-								"*": true
-							},
-							"priority": 1.5,
-							"mincooldown": 400,
-							"maxcooldown": 800,
-							"movespeed": 0.035,
-							"seekingRange": 20,
-							"animationSpeed": 1.75,
-							"animation": "Run"
-						},
-						{
-							"code": "attackplayeronly",
-							"priority": 2.25,
-							"enabledByType": {
-								"*-archer-*": false,
-								"*": true
-							},
-							"damageByType": {
-								"poacher-*-spear-grunt": 2.75,
-								"poacher-*-spear-boss": 3.25,
-								"*": 2.75
-							},
-							"minDistByType": {
-								"poacher-*-spear-*": 3.5,
-								"*": 2.5
-							},
-							"mincooldown": 500,
-							"maxcooldown": 1750,
-							"attackDurationMs": 1000,
-							"damagePlayerAtMs": 400,
-							"animationByType": {
-								"poacher-*-spear-*": "spear-attack"
-							},
-							"animationSpeed": 2,
-							"whenInEmotionState": "aggressiveondamage"
-						},
-						{
-							"code": "seekplayeronly",
-							"enabledByType": {
-								"*-archer-*": false,
-								"*": true
-							},
-							"priority": 1.25,
-							"mincooldown": 400,
-							"maxcooldown": 800,
-							"movespeed": 0.035,
-							"seekingRange": 20,
-							"animationSpeed": 1.75,
-							"animation": "Run",
-							"whenInEmotionState": "aggressiveondamage"
-						},
-						{
-							"code": "stayinrangeplayeronly",
-							"entityCodes": [ "player" ],
-							"enabledByType": {
-								"*-archer-*": true,
-								"*": false
-							},
-							"priority": 2.3,
-							"mincooldown": 400,
-							"maxcooldown": 800,
-							"movespeed": 0.035,
-							"searchRange": 30,
-							"targetRange": 10,
-							"targetRangeTolerance": 5,
-							"animationSpeed": 1.75,
-							"animation": "Run",
-							"whenInEmotionState": "aggressiveondamage"
-						},
-						{
-							"code": "bowturretmode",
-							"entityCodes": [ "player" ],
-							"priority": 2.25,
-							"enabledByType": {
-								"*-archer-*": true,
-								"*": false
-							},
-							"projectileDamageByType": {
-								"poacher-*-archer-grunt": 2.75,
-								"poacher-*-archer-boss": 3.25
-							},
-							"projectileDamageTierByType": {
-								"poacher-*-archer-grunt": 0,
-								"poacher-*-archer-boss": 0
-							},
-							"reloadTimeByType": {
-								"poacher-*-archer-grunt": 2.5,
-								"poacher-*-archer-boss": 1.75
-							},
-							"projectileCodeByType": {
-								"poacher-*-archer-grunt": "game:arrow-flint",
-								"poacher-*-archer-boss": "game:arrow-copper"
-							},
-							"priorityForCancel": 3.5,
-							"sensingRange": 25,
-							"firingRangeMin": 5,
-							"firingRangeMax": 24,
-							"abortRange": 5,
-							"whenInEmotionState": "aggressiveondamage"
-						},
-						{
-							"code": "fleeentity",
-							"entityCodes": [ "player" ],
-							"priority": 1.5,
-							"movespeed": 0.035,
-							"seekingRange": 12,
-							"animation": "Run",
-							"animationSpeed": 1.75,
-							"whenInEmotionState": "fleeondamage"
-						},
-						{
-							"code": "idle",
-							"priority": 1.2,
-							"minduration": 2500,
-							"maxduration": 2500,
-							"mincooldown": 2000,
-							"maxcooldown": 10000,
-							"animation": "idle"
-						},
-						{
-							"code": "wander",
-							"priority": 1.0,
-							"movespeed": 0.01,
-							"animation": "Walk",
-							"executionChance": 0.005,
-							"maxDistanceToSpawn": 15,
-							"wanderRangeMin": 5,
-							"wanderRangeMax": 30
-						},
-						{
-							"code": "lookaround",
-							"priority": 0.5
-						},
-						{
-							"code": "stayclosetoentity",
-							"enabledByType": {
-								"*-grunt": true,
-								"*": false
-							},
-							"priority": 1.207,
-							"entityCode": "poacher-male-archer-boss",
-							"movespeed": 0.035,
-							"animationSpeed": 1.75,
-							"maxDistance": 5,
-							"searchRange": 50,
-							"animation": "Run"
-						},
-						{
-							"code": "stayclosetoentity",
-							"enabledByType": {
-								"*-grunt": true,
-								"*": false
-							},
-							"priority": 1.206,
-							"entityCode": "poacher-male-spear-boss",
-							"movespeed": 0.035,
-							"animationSpeed": 1.75,
-							"maxDistance": 5,
-							"searchRange": 50,
-							"animation": "Run"
-						},
-						{
-							"code": "stayclosetoentity",
-							"enabledByType": {
-								"*-grunt": true,
-								"*": false
-							},
-							"priority": 1.204,
-							"entityCode": "poacher-male-archer-grunt",
-							"movespeed": 0.035,
-							"animationSpeed": 1.75,
-							"maxDistance": 5,
-							"searchRange": 50,
-							"animation": "Run"
-						},
-						{
-							"code": "stayclosetoentity",
-							"enabledByType": {
-								"*-grunt": true,
-								"*": false
-							},
-							"priority": 1.203,
-							"entityCode": "poacher-male-spear-grunt",
-							"movespeed": 0.035,
-							"animationSpeed": 1.75,
-							"maxDistance": 5,
-							"searchRange": 50,
-							"animation": "Run"
-						}
-					]
-				},
-				{ "code": "entitystatetags" },
-				{
-					"code": "harvestable",
-					"duration": 2,
-					"fixedweight": true,
-					"dropsByType": {
-						"*-spear-grunt": [
-							{
-								"type": "item",
-								"code": "game:gear-rusty",
-								"dropModbyStat": "rustyGearDropRate",
-								"quantity": {
-									"avg": 1,
-									"var": 2
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:hide-raw-small",
-								"quantity": {
-									"avg": 1.5,
-									"var": 0.5
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:hide-raw-medium",
-								"quantity": {
-									"avg": 0.5,
-									"var": 0.5
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:hide-raw-large",
-								"quantity": {
-									"avg": 0.125,
-									"var": 0
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:bushmeat-raw",
-								"quantity": {
-									"avg": 2,
-									"var": 1
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:redmeat-raw",
-								"quantity": {
-									"avg": 3,
-									"var": 1
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:fat",
-								"quantity": {
-									"avg": 1,
-									"var": 0.25
-								}
-							}
-						],
-						"*-spear-boss": [
-							{
-								"type": "item",
-								"code": "game:gear-temporal",
-								"quantity": {
-									"avg": 0.05332,
-									"var": 0
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:gear-rusty",
-								"dropModbyStat": "rustyGearDropRate",
-								"quantity": {
-									"avg": 5,
-									"var": 2.5
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:hide-raw-small",
-								"quantity": {
-									"avg": 1.5,
-									"var": 0.5
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:hide-raw-medium",
-								"quantity": {
-									"avg": 0.5,
-									"var": 0.5
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:hide-raw-large",
-								"quantity": {
-									"avg": 0.125,
-									"var": 0
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:bushmeat-raw",
-								"quantity": {
-									"avg": 2,
-									"var": 1
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:redmeat-raw",
-								"quantity": {
-									"avg": 3,
-									"var": 1
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:fat",
-								"quantity": {
-									"avg": 1,
-									"var": 0.25
-								}
-							}
-						],
-						"*-archer-grunt": [
-							{
-								"type": "item",
-								"code": "game:gear-rusty",
-								"dropModbyStat": "rustyGearDropRate",
-								"quantity": {
-									"avg": 1,
-									"var": 2
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:hide-raw-small",
-								"quantity": {
-									"avg": 1.5,
-									"var": 0.5
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:hide-raw-medium",
-								"quantity": {
-									"avg": 0.5,
-									"var": 0.5
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:hide-raw-large",
-								"quantity": {
-									"avg": 0.125,
-									"var": 0
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:bushmeat-raw",
-								"quantity": {
-									"avg": 2,
-									"var": 1
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:redmeat-raw",
-								"quantity": {
-									"avg": 3,
-									"var": 1
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:fat",
-								"quantity": {
-									"avg": 1,
-									"var": 0.25
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:arrow-copper",
-								"quantity": {
-									"avg": 1,
-									"var": 2
-								}
-							}
-						],
-						"*-archer-boss": [
-							{
-								"type": "item",
-								"code": "game:gear-temporal",
-								"quantity": {
-									"avg": 0.05332,
-									"var": 0
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:gear-rusty",
-								"dropModbyStat": "rustyGearDropRate",
-								"quantity": {
-									"avg": 5,
-									"var": 2.5
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:hide-raw-small",
-								"quantity": {
-									"avg": 1.5,
-									"var": 0.5
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:hide-raw-medium",
-								"quantity": {
-									"avg": 0.5,
-									"var": 0.5
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:hide-raw-large",
-								"quantity": {
-									"avg": 0.125,
-									"var": 0
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:bushmeat-raw",
-								"quantity": {
-									"avg": 2,
-									"var": 1
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:redmeat-raw",
-								"quantity": {
-									"avg": 3,
-									"var": 1
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:fat",
-								"quantity": {
-									"avg": 1,
-									"var": 0.25
-								}
-							},
-							{
-								"type": "item",
-								"code": "game:arrow-copper",
-								"quantity": {
-									"avg": 1,
-									"var": 2
-								}
-							}
-						]
-					}
-				}
-			],
-			"spawnconditions": {
-				"worldgen": {
-					"TriesPerChunkByType": {
-						"poacher-*-*-boss": {
-							"avg": 0.000015,
-							"var": 0
-						},
-						"poacher-*-*-grunt": {
-							"avg": 0.000015,
-							"var": 0
-						}
-					},
-					"maxQuantity": 1,
-					"maxLightLevel": 7,
-					"lightLevelType": "OnlyBlockLight",
-					"groupSizeByType": {
-						"poacher-*-*-boss": {
-							"dist": "verynarrowgaussian",
-							"avg": 3,
-							"var": 2
-						},
-						"poacher-*-*-grunt": {
-							"dist": "verynarrowgaussian",
-							"avg": 3,
-							"var": 2
-						}
-					},
-					"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:fern-*", "game:tallfern", "game:leaves-*", "game:wildvine-*", "game:mushroom-*", "game:crop-*", "game:loosestones-*", "game:looseboulders-*", "game:loosestick-*" ],
-					"minTemp": -10,
-					"minRain": 0,
-					"companionsByType": {
-						"poacher-*-*-boss": [ "poacher-{gender}-{type}-grunt", "poacher-{gender}-{type}-grunt", "poacher-{gender}-{type}-grunt" ],
-						"poacher-*-*-grunt": []
-					}
-				},
-				"runtime": {
-					"group": "neutral",
-					"tryOnlySurface": true,
-					"maxQuantityByType": {
-						"*-boss": 1,
-						"*-grunt": 1
-					},
-					"chance": 0.000015,
-					//Chance is equal to what the bear is. this should allow for a lower chance to spawn like it should.
-					"maxQuantity": 1,
-					"maxLightLevel": 7,
-					"lightLevelType": "OnlyBlockLight",
-					"groupSizeByType": {
-						"poacher-*-*-boss": {
-							"dist": "verynarrowgaussian",
-							"avg": 3,
-							"var": 2
-						},
-						"poacher-*-*-grunt": {
-							"dist": "verynarrowgaussian",
-							"avg": 3,
-							"var": 2
-						}
-					},
-					"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:fern-*", "game:tallfern", "game:leaves-*", "game:wildvine-*", "game:mushroom-*", "game:crop-*", "game:loosestones-*", "game:looseboulders-*", "game:loosestick-*" ],
-					"minTemp": -10,
-					"minRain": 0,
-					"companionsByType": {
-						"poacher-*-*-boss": [ "poacher-{gender}-{gear}-grunt" ],
-						"poacher-*-*-grunt": []
-					}
-				}
+			{
+				"code": "die",
+				"animation": "die",
+				"animationSpeed": 1.75,
+				"weight": 10,
+				"blendMode": "AddAverage",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "hurt",
+				"animation": "hurt",
+				"animationSpeed": 2,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "bow-load",
+				"animation": "bow-load",
+				"blendMode": "Average"
+			},
+			{
+				"code": "bow-idle",
+				"animation": "bow-idle",
+				"blendMode": "Average"
+			},
+			{
+				"code": "bow-draw",
+				"animation": "bow-draw",
+				"blendMode": "Average"
+			},
+			{
+				"code": "bow-hold",
+				"animation": "bow-hold",
+				"blendMode": "Average"
+			},
+			{
+				"code": "bow-fire",
+				"animation": "bow-fire",
+				"blendMode": "Average"
+			},
+			{
+				"code": "bow-reload",
+				"animation": "bow-reload",
+				"blendMode": "Average"
+			}
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 720,
+				"maxTurnAnglePerSec": 1440
 			}
 		},
-		"sounds": {
-			"hurt": "game:player/hurt",
-			"death": "game:player/death",
-			"swim": "game:player/swim",
-			"eat": "game:player/eat"
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "health",
+				"currenthealthByType": {
+					"*-boss": 15,
+					"*-grunt": 10
+				},
+				"maxhealthByType": {
+					"*-boss": 15,
+					"*-grunt": 10
+				}
+			},
+			{
+				"code": "deaddecay",
+				"hoursToDecay": 12
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 32,
+				"minSeconds": 300
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": false
+			},
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.01
+			},
+			{ "code": "aimingaccuracy" },
+			{ "code": "villagerinventory" },
+			{ "code": "breathe" },
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "aggressiveondamage",
+						"duration": 6,
+						"chance": 0.6,
+						"slot": 0,
+						"priority": 2,
+						"accumType": "noaccum"
+					},
+					{
+						"code": "fleeondamage",
+						"duration": 10,
+						"chance": 0.4,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "max"
+					}
+				]
+			},
+			{
+				"code": "taskai",
+				"aiCreatureType": "LandCreature",
+				"aitasks": [
+					{
+						"code": "stayinrange",
+						"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*", "drifter-*", "shiver-*", "bowtorn-*" ],
+						"enabledByType": {
+							"*-archer-*": true,
+							"*": false
+						},
+						"priority": 2.3,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"searchRange": 30,
+						"targetRange": 10,
+						"targetRangeTolerance": 5,
+						"animationSpeed": 1.75,
+						"animation": "Run"
+					},
+					{
+						"code": "bowturretmode",
+						"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*", "drifter-*", "shiver-*", "bowtorn-*" ],
+						"priority": 2.25,
+						"enabledByType": {
+							"*-archer-*": true,
+							"*": false
+						},
+						"projectileDamageByType": {
+							"poacher-*-archer-grunt": 2.75,
+							"poacher-*-archer-boss": 3.25
+						},
+						"projectileDamageTierByType": {
+							"poacher-*-archer-grunt": 0,
+							"poacher-*-archer-boss": 0
+						},
+						"reloadTimeByType": {
+							"poacher-*-archer-grunt": 2.5,
+							"poacher-*-archer-boss": 1.75
+						},
+						"projectileCodeByType": {
+							"poacher-*-archer-grunt": "game:arrow-flint",
+							"poacher-*-archer-boss": "game:arrow-copper"
+						},
+						"priorityForCancel": 3.5,
+						"sensingRange": 25,
+						"firingRangeMin": 5,
+						"firingRangeMax": 24,
+						"abortRange": 5
+					},
+					//Stay in range of hunt target
+					{
+						"code": "stayinrange",
+						"entityCodes": [
+							"wolf-male",
+							"wolf-female",
+							"hyena-male",
+							"hyena-female",
+							"locust-*",
+							"bear-*",
+							"chicken-rooster",
+							"chicken-hen",
+							"chicken-baby",
+							"hare-male",
+							"hare-female",
+							"fox-male-red",
+							"fox-female-red",
+							"fox-male-arctic",
+							"fox-female-arctic",
+							"pig-wild-male",
+							"pig-wild-female",
+							"raccoon-male",
+							"raccoon-female",
+							"sheep-bighorn-male",
+							"sheep-bighorn-female",
+							"deer-*",
+							"goat-*"
+						],
+						"enabledByType": {
+							"*-archer-*": true,
+							"*": false
+						},
+						"priority": 2.21,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"searchRange": 40,
+						"targetRange": 10,
+						"targetRangeTolerance": 5,
+						"animationSpeed": 1.75,
+						"animation": "Run"
+					},
+					//Seek out game to hunt (archer)
+					{
+						"code": "bowturretmode",
+						"entityCodes": [
+							"wolf-male",
+							"wolf-female",
+							"hyena-male",
+							"hyena-female",
+							"locust-*",
+							"bear-*",
+							"chicken-rooster",
+							"chicken-hen",
+							"chicken-baby",
+							"hare-male",
+							"hare-female",
+							"fox-male-red",
+							"fox-female-red",
+							"fox-male-arctic",
+							"fox-female-arctic",
+							"pig-wild-male",
+							"pig-wild-female",
+							"raccoon-male",
+							"raccoon-female",
+							"sheep-bighorn-male",
+							"sheep-bighorn-female",
+							"deer-*",
+							"goat-*"
+						],
+						"priority": 2.2,
+						"enabledByType": {
+							"*-archer-*": true,
+							"*": false
+						},
+						"projectileDamageByType": {
+							"poacher-*-archer-grunt": 2.75,
+							"poacher-*-archer-boss": 3.25
+						},
+						"projectileDamageTierByType": {
+							"poacher-*-archer-grunt": 0,
+							"poacher-*-archer-boss": 0
+						},
+						"reloadTimeByType": {
+							"poacher-*-archer-grunt": 2.5,
+							"poacher-*-archer-boss": 1.75
+						},
+						"projectileCodeByType": {
+							"poacher-*-archer-grunt": "game:arrow-flint",
+							"poacher-*-archer-boss": "game:arrow-copper"
+						},
+						"priorityForCancel": 3.5,
+						"sensingRange": 25,
+						"firingRangeMin": 5,
+						"firingRangeMax": 24,
+						"abortRange": 5
+					},
+					{
+						"code": "meleeattack",
+						"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*" ],
+						"priority": 2.25,
+						"enabledByType": {
+							"*-archer-*": false,
+							"*": true
+						},
+						"damageByType": {
+							"poacher-*-spear-grunt": 2.75,
+							"poacher-*-spear-boss": 3.25,
+							"*": 2.75
+						},
+						"minDistByType": {
+							"poacher-*-spear-*": 3.5,
+							"*": 2.5
+						},
+						"mincooldown": 500,
+						"maxcooldown": 1750,
+						"attackDurationMs": 1000,
+						"damagePlayerAtMs": 400,
+						"animationByType": {
+							"poacher-*-spear-*": "spear-attack"
+						},
+						"animationSpeed": 2
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "knighterrant-*", "barbarian-*", "barbarianbear-*" ],
+						"enabledByType": {
+							"*-archer-*": false,
+							"*": true
+						},
+						"priority": 1.25,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"seekingRange": 20,
+						"animationSpeed": 1.75,
+						"animation": "Run"
+					},
+					{
+						"code": "meleeattack",
+						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
+						"priority": 2.5,
+						"enabledByType": {
+							"*-archer-*": false,
+							"*": true
+						},
+						"damageByType": {
+							"poacher-*-spear-grunt": 2.75,
+							"poacher-*-spear-boss": 3.25,
+							"*": 2.75
+						},
+						"minDistByType": {
+							"poacher-*-spear-*": 3.5,
+							"*": 2.5
+						},
+						"mincooldown": 500,
+						"maxcooldown": 1750,
+						"attackDurationMs": 1000,
+						"damagePlayerAtMs": 400,
+						"animationByType": {
+							"poacher-*-spear-*": "spear-attack"
+						},
+						"animationSpeed": 2
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "drifter-*", "shiver-*", "bowtorn-*", "locust-*" ],
+						"enabledByType": {
+							"*-archer-*": false,
+							"*": true
+						},
+						"priority": 1.5,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"seekingRange": 20,
+						"animationSpeed": 1.75,
+						"animation": "Run"
+					},
+					{
+						"code": "attackplayeronly",
+						"priority": 2.25,
+						"enabledByType": {
+							"*-archer-*": false,
+							"*": true
+						},
+						"damageByType": {
+							"poacher-*-spear-grunt": 2.75,
+							"poacher-*-spear-boss": 3.25,
+							"*": 2.75
+						},
+						"minDistByType": {
+							"poacher-*-spear-*": 3.5,
+							"*": 2.5
+						},
+						"mincooldown": 500,
+						"maxcooldown": 1750,
+						"attackDurationMs": 1000,
+						"damagePlayerAtMs": 400,
+						"animationByType": {
+							"poacher-*-spear-*": "spear-attack"
+						},
+						"animationSpeed": 2,
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "seekplayeronly",
+						"enabledByType": {
+							"*-archer-*": false,
+							"*": true
+						},
+						"priority": 1.25,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"seekingRange": 20,
+						"animationSpeed": 1.75,
+						"animation": "Run",
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "stayinrangeplayeronly",
+						"entityCodes": [ "player" ],
+						"enabledByType": {
+							"*-archer-*": true,
+							"*": false
+						},
+						"priority": 2.3,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.035,
+						"searchRange": 30,
+						"targetRange": 10,
+						"targetRangeTolerance": 5,
+						"animationSpeed": 1.75,
+						"animation": "Run",
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "bowturretmode",
+						"entityCodes": [ "player" ],
+						"priority": 2.25,
+						"enabledByType": {
+							"*-archer-*": true,
+							"*": false
+						},
+						"projectileDamageByType": {
+							"poacher-*-archer-grunt": 2.75,
+							"poacher-*-archer-boss": 3.25
+						},
+						"projectileDamageTierByType": {
+							"poacher-*-archer-grunt": 0,
+							"poacher-*-archer-boss": 0
+						},
+						"reloadTimeByType": {
+							"poacher-*-archer-grunt": 2.5,
+							"poacher-*-archer-boss": 1.75
+						},
+						"projectileCodeByType": {
+							"poacher-*-archer-grunt": "game:arrow-flint",
+							"poacher-*-archer-boss": "game:arrow-copper"
+						},
+						"priorityForCancel": 3.5,
+						"sensingRange": 25,
+						"firingRangeMin": 5,
+						"firingRangeMax": 24,
+						"abortRange": 5,
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player" ],
+						"priority": 1.5,
+						"movespeed": 0.035,
+						"seekingRange": 12,
+						"animation": "Run",
+						"animationSpeed": 1.75,
+						"whenInEmotionState": "fleeondamage"
+					},
+					{
+						"code": "fleeentity",
+						"entityCodes": [],
+						"priority": 1.5,
+						"movespeed": 0.035,
+						"seekingRange": 25,
+						"animation": "Run",
+						"animationSpeed": 1.75
+					},
+					{
+						"code": "idle",
+						"priority": 1.2,
+						"minduration": 2500,
+						"maxduration": 2500,
+						"mincooldown": 2000,
+						"maxcooldown": 10000,
+						"animation": "idle"
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"movespeed": 0.01,
+						"animation": "Walk",
+						"executionChance": 0.005,
+						"maxDistanceToSpawn": 15,
+						"wanderRangeMin": 5,
+						"wanderRangeMax": 30
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"*-grunt": true,
+							"*": false
+						},
+						"priority": 1.207,
+						"entityCode": "poacher-male-archer-boss",
+						"movespeed": 0.035,
+						"animationSpeed": 1.75,
+						"maxDistance": 5,
+						"searchRange": 50,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"*-grunt": true,
+							"*": false
+						},
+						"priority": 1.206,
+						"entityCode": "poacher-male-spear-boss",
+						"movespeed": 0.035,
+						"animationSpeed": 1.75,
+						"maxDistance": 5,
+						"searchRange": 50,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"*-grunt": true,
+							"*": false
+						},
+						"priority": 1.204,
+						"entityCode": "poacher-male-archer-grunt",
+						"movespeed": 0.035,
+						"animationSpeed": 1.75,
+						"maxDistance": 5,
+						"searchRange": 50,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"*-grunt": true,
+							"*": false
+						},
+						"priority": 1.203,
+						"entityCode": "poacher-male-spear-grunt",
+						"movespeed": 0.035,
+						"animationSpeed": 1.75,
+						"maxDistance": 5,
+						"searchRange": 50,
+						"animation": "Run"
+					}
+				]
+			},
+			{ "code": "entitystatetags" },
+			{
+				"code": "harvestable",
+				"duration": 2,
+				"fixedweight": true,
+				"dropsByType": {
+					"*-spear-grunt": [
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 1,
+								"var": 2
+							}
+						}
+					],
+					"*-spear-boss": [
+						{
+							"type": "item",
+							"code": "game:gear-temporal",
+							"quantity": {
+								"avg": 0.05332,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 5,
+								"var": 2.5
+							}
+						}
+					],
+					"*-archer-grunt": [
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 1,
+								"var": 2
+							}
+						}
+					],
+					"*-archer-boss": [
+						{
+							"type": "item",
+							"code": "game:gear-temporal",
+							"quantity": {
+								"avg": 0.05332,
+								"var": 0
+							}
+						},
+						{
+							"type": "item",
+							"code": "game:gear-rusty",
+							"dropModbyStat": "rustyGearDropRate",
+							"quantity": {
+								"avg": 5,
+								"var": 2.5
+							}
+						}
+					]
+				}
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunkByType": {
+					"poacher-*-*-boss": {
+						"avg": 0.000015,
+						"var": 0
+					},
+					"poacher-*-*-grunt": {
+						"avg": 0.000015,
+						"var": 0
+					}
+				},
+				"maxQuantity": 1,
+				"maxLightLevel": 7,
+				"lightLevelType": "OnlyBlockLight",
+				"groupSizeByType": {
+					"poacher-*-*-boss": {
+						"dist": "verynarrowgaussian",
+						"avg": 3,
+						"var": 2
+					},
+					"poacher-*-*-grunt": {
+						"dist": "verynarrowgaussian",
+						"avg": 3,
+						"var": 2
+					}
+				},
+				"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:fern-*", "game:tallfern", "game:leaves-*", "game:wildvine-*", "game:mushroom-*", "game:crop-*", "game:loosestones-*", "game:looseboulders-*", "game:loosestick-*" ],
+				"minTemp": -10,
+				"minRain": 0,
+				"companionsByType": {
+					"poacher-*-*-boss": [ "poacher-{gender}-archer-grunt" ],
+					"poacher-*-*-grunt": []
+				}
+			},
+			"runtime": {
+				"group": "neutral",
+				"tryOnlySurface": true,
+				"maxQuantityByType": {
+					"*-boss": 1,
+					"*-grunt": 1
+				},
+				"chance": 0.000015,
+				//Chance is equal to what the bear is. this should allow for a lower chance to spawn like it should.
+				"maxQuantity": 1,
+				"maxLightLevel": 7,
+				"lightLevelType": "OnlyBlockLight",
+				"groupSizeByType": {
+					"poacher-*-*-boss": {
+						"dist": "verynarrowgaussian",
+						"avg": 3,
+						"var": 2
+					},
+					"poacher-*-*-grunt": {
+						"dist": "verynarrowgaussian",
+						"avg": 3,
+						"var": 2
+					}
+				},
+				"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:fern-*", "game:tallfern", "game:leaves-*", "game:wildvine-*", "game:mushroom-*", "game:crop-*", "game:loosestones-*", "game:looseboulders-*", "game:loosestick-*" ],
+				"minTemp": -10,
+				"minRain": 0,
+				"companionsByType": {
+					"poacher-*-*-boss": [ "poacher-{gender}-archer-grunt" ],
+					"poacher-*-*-grunt": []
+				}
+			}
 		}
+	},
+	"sounds": {
+		"hurt": "game:player/hurt",
+		"death": "game:player/death",
+		"swim": "game:player/swim",
+		"eat": "game:player/eat"
 	}
+}

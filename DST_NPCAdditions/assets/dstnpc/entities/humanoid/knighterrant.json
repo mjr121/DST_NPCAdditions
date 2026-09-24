@@ -2886,6 +2886,21 @@
 						"whenInEmotionState": "aggressiveondamage"
 					},
 					{
+						"code": "seekplayeronly",
+						"enabledByType": {
+							"*-bannerman-*": true,
+							"*": false
+						},
+						"priority": 1.25,
+						"mincooldown": 400,
+						"maxcooldown": 800,
+						"movespeed": 0.01,
+						"seekingRange": 150,
+						"animationSpeed": 1,
+						"animation": "Walk",
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
 						"code": "fleeentity",
 						"entityCodes": [ "player" ],
 						"priority": 1.5,
@@ -3178,7 +3193,7 @@
 				"minTemp": -10,
 				"minRain": 0,
 				"companionsByType": {
-					"knighterrant-*-*-boss": [ "knighterrant-{gender}-{gear}-grunt", "knighterrant-{gender}-{gear}-grunt", "knighterrant-{gender}-{gear}-grunt" ],
+					"knighterrant-*-*-boss": [ "knighterrant-{gender}-sword-grunt", "knighterrant-{gender}-axeshield-grunt", "knighterrant-{gender}-archer-grunt" ],
 					"knighterrant-*-*-grunt": []
 				}
 			},
@@ -3210,7 +3225,7 @@
 				"minTemp": -10,
 				"minRain": 0,
 				"companionsByType": {
-					"knighterrant-*-*-boss": [ "knighterrant-{gender}-{gear}-grunt", "knighterrant-{gender}-{gear}-grunt", "knighterrant-{gender}-{gear}-grunt" ],
+					"knighterrant-*-*-boss": [ "knighterrant-{gender}-sword-grunt", "knighterrant-{gender}-axeshield-grunt", "knighterrant-{gender}-archer-grunt" ],
 					"knighterrant-*-*-grunt": []
 				}
 			}

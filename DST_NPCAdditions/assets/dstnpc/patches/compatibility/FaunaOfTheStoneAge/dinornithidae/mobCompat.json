@@ -247,6 +247,26 @@
 			{ "modid": "dinornithidae" }
 		]
 	},
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/4/entityCodes",
+		"value": [
+			"acanthisittidae-*",
+			"aegothelidae-*",
+			"anatidae-*",
+			"apterygidae-*",
+			"aptornithidae-*",
+			"dinornithidae-*",
+			"emeidae-*",
+			"megalapterygidae-*",
+			"rallidae-*",
+			"strigopidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "dinornithidae" }
+		]
+	},
 	//BarbarianBear
 	{
 		"file": "entities/humanoid/barbarian/bear-adult.json",

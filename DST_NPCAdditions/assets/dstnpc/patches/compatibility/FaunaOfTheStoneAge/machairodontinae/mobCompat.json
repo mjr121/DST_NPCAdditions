@@ -157,6 +157,17 @@
 			{ "modid": "machairodontinae" }
 		]
 	},
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/4/entityCodes",
+		"value": [
+			"machairodontinae-*"
+		],
+		"dependsOn": [
+			{ "modid": "machairodontinae" }
+		]
+	},
 	//BarbarianBear
 	{
 		"file": "entities/humanoid/barbarian/bear-adult.json",

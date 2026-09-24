@@ -167,6 +167,18 @@
 			{ "modid": "viverridae" }
 		]
 	},
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/4/entityCodes",
+		"value": [
+			"viverridae-*",
+			"nandiniidae-*"
+		],
+		"dependsOn": [
+			{ "modid": "viverridae" }
+		]
+	},
 	//BarbarianBear
 	{
 		"file": "entities/humanoid/barbarian/bear-adult.json",

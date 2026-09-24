@@ -1,0 +1,56 @@
+[
+  {
+    "op": "add",
+    "path": "/structures/-",
+    "value": {
+      "code": "dstpoachercampsmall",
+      "name": "Poacher Camp Small / Surface",
+      "chance": 0.03,
+      "group": "dstpoachercampsmall",
+      "minGroupDistance": 400,
+      "schematics": [
+        "factioncamps/poacher/poachercamp-small"
+      ],
+      "placement": "surface",
+      "offsetY": -1
+    },
+    "file": "game:worldgen/structures.json",
+    "side": "Server"
+  }
+  //{
+  //  "op": "add",
+  //  "path": "/structures/-",
+  //  "value": {
+  //    "code": "dstpoachercampmedium",
+  //    "name": "Poacher Camp Medium / Surface",
+  //    "chance": 1.0,
+  //    "group": "dstpoachercampmedium",
+  //    "minGroupDistance": 10,
+  //    "schematics": [
+  //      "factioncamps/poacher/*-medium"
+  //    ],
+  //    "placement": "surface",
+  //    "offsetY": -1
+  //  },
+  //  "file": "game:worldgen/structures.json",
+  //  "side": "Server"
+  //},
+  //{
+  //  "op": "add",
+  //  "path": "/structures/-",
+  //  "value": {
+  //    "code": "dstpoachercamplarge",
+  //    "name": "Poacher Camp Large / Surface",
+  //    "chance": 1.0,
+  //    "group": "dstpoachercamplarge",
+  //    "minGroupDistance": 10,
+  //    "schematics": [
+  //      "factioncamps/poacher/*-large"
+  //    ],
+  //    "placement": "surface",
+  //    "offsetY": -1
+  //  },
+  //  "file": "game:worldgen/structures.json",
+  //  "side": "Server"
+  //}
+]
