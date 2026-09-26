@@ -1,3 +1,28 @@
+- V1.0.8
+CONFIG VERSION = 1.5, will cause the config file to be regenerated.
+
+Global Changes
+Increased damage tier for all boss units from 0 to 1. Grunt units have no change.
+Added new config option to manually set health values for NPCs. Defaults are added.
+Moved remaining drop tables to config. Allowing players to modify at will.
+Ranged Human units:
+- Staying in Range from 30 to 45, target range from 30 +/-10 to 25 +/- 5.
+- Shoot sensing Range from 25 to 50, firing min/max from 5/24 to 5/45
+
+Bandits:
+Increased grunt health from 10 to 12, while boss health increases from 15 to 16.
+Corrected around randomly.
+
+Knight Errants:
+Corrected running around randomly.
+
+Poachers:
+Corrected running around randomly.
+Added medium ( 4 person) and large (8 Person) camps.
+
+Misc:
+Further clean up of code files, moving repeat code to shared files and entries etc.
+
 - V1.0.7
 CONFIG VERSION = 1.4, will cause the config file to be regenerated.
 Config Specific
@@ -17,7 +42,6 @@ Barbarians:
 - Dual axe barbarians now have an additional attack anim using the left axe.
 - Corrected Barbarian Companion bear patch files for various mods.
 
-
 Poachers:
 - Corrected Poacher Archers being overly aggressive against players unintended. 
 
@@ -36,7 +60,7 @@ Compatability
 Temporal Convergence:
 Knight Errants and Barbarians will attack both Eidolon bosses, while poachers and bandits will flee away from them.
 Rustbound Magic:
-Added basic compatability. Added elemental attributes to NPCs where the mod adds them (companions animals etc). My NPCs will enage NPCs from Rustbound Magic.
+Added basic compatibility. Added elemental attributes to NPCs where the mod adds them (companions animals etc). My NPCs will enage NPCs from Rustbound Magic.
 
 - V1.0.6
 Knight Errants

@@ -2605,7 +2605,7 @@
 						"code": "aggressiveondamage",
 						"duration": 6,
 						"chance": 0.6,
-						"slot": 0,
+						"slot": 1,
 						"priority": 2,
 						"accumType": "noaccum"
 					},
@@ -2614,6 +2614,13 @@
 						"duration": 10,
 						"chance": 0.4,
 						"slot": 0,
+						"priority": 1,
+						"accumType": "max"
+					},
+					{
+						"code": "alarmherdondamage",
+						"chance": 1,
+						"slot": 1,
 						"priority": 1,
 						"accumType": "max"
 					}
@@ -2634,8 +2641,8 @@
 						"mincooldown": 400,
 						"maxcooldown": 800,
 						"movespeed": 0.035,
-						"searchRange": 30,
-						"targetRange": 10,
+						"searchRange": 45,
+						"targetRange": 25,
 						"targetRangeTolerance": 5,
 						"animationSpeed": 1.75,
 						"animation": "Run"
@@ -2650,8 +2657,8 @@
 						"mincooldown": 400,
 						"maxcooldown": 800,
 						"movespeed": 0.035,
-						"searchRange": 30,
-						"targetRange": 10,
+						"searchRange": 45,
+						"targetRange": 25,
 						"targetRangeTolerance": 5,
 						"animationSpeed": 1.75,
 						"animation": "Run",
@@ -2671,7 +2678,7 @@
 						},
 						"projectileDamageTierByType": {
 							"knighterrant-*-archer-grunt": 0,
-							"knighterrant-*-archer-boss": 0
+							"knighterrant-*-archer-boss": 1
 						},
 						"reloadTimeByType": {
 							"knighterrant-*-archer-grunt": 2.5,
@@ -2682,9 +2689,9 @@
 							"knighterrant-*-archer-boss": "game:arrow-copper"
 						},
 						"priorityForCancel": 3.5,
-						"sensingRange": 25,
+						"sensingRange": 50,
 						"firingRangeMin": 5,
-						"firingRangeMax": 24,
+						"firingRangeMax": 45,
 						"abortRange": 5
 					},
 					{
@@ -2701,7 +2708,7 @@
 						},
 						"projectileDamageTierByType": {
 							"knighterrant-*-archer-grunt": 0,
-							"knighterrant-*-archer-boss": 0
+							"knighterrant-*-archer-boss": 1
 						},
 						"reloadTimeByType": {
 							"knighterrant-*-archer-grunt": 2.5,
@@ -2712,9 +2719,9 @@
 							"knighterrant-*-archer-boss": "game:arrow-copper"
 						},
 						"priorityForCancel": 3.5,
-						"sensingRange": 25,
+						"sensingRange": 50,
 						"firingRangeMin": 5,
-						"firingRangeMax": 24,
+						"firingRangeMax": 45,
 						"abortRange": 5,
 						"whenInEmotionState": "aggressiveondamage"
 					},
@@ -2737,6 +2744,10 @@
 							"knighterrant-*-axeshield-grunt": 2,
 							"knighterrant-*-axeshield-boss": 2.5,
 							"*": 2.75
+						},
+						"damageTierByType": {
+							"*-grunt": 0,
+							"*-boss": 1
 						},
 						"minDistByType": {
 							"knighterrant-*-spear-*": 3.5,
@@ -2789,6 +2800,10 @@
 							"knighterrant-*-axeshield-*": 2,
 							"*": 2.5
 						},
+						"damageTierByType": {
+							"*-grunt": 0,
+							"*-boss": 1
+						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
 						"attackDurationMs": 1000,
@@ -2840,6 +2855,10 @@
 							"knighterrant-*-spear-*": 3.5,
 							"knighterrant-*-sword-*": 2.5,
 							"*": 2.5
+						},
+						"damageTierByType": {
+							"*-grunt": 0,
+							"*-boss": 1
 						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
@@ -3084,27 +3103,11 @@
 					"*-grunt": [
 						{
 							"type": "item",
-							"code": "game:poultice-reed-horsetail",
-							"quantity": {
-								"avg": 0.4,
-								"var": 0
-							}
-						},
-						{
-							"type": "item",
 							"code": "game:gear-rusty",
 							"dropModbyStat": "rustyGearDropRate",
 							"quantity": {
 								"avg": 1,
 								"var": 2
-							}
-						},
-						{
-							"type": "item",
-							"code": "game:nugget-nativecopper",
-							"quantity": {
-								"avg": 0.125,
-								"var": 0
 							}
 						}
 					],
@@ -3119,43 +3122,11 @@
 						},
 						{
 							"type": "item",
-							"code": "game:poultice-reed-horsetail",
-							"quantity": {
-								"avg": 0.4,
-								"var": 0
-							}
-						},
-						{
-							"type": "item",
 							"code": "game:gear-rusty",
 							"dropModbyStat": "rustyGearDropRate",
 							"quantity": {
 								"avg": 5,
 								"var": 2.5
-							}
-						},
-						{
-							"type": "item",
-							"code": "game:nugget-nativecopper",
-							"quantity": {
-								"avg": 0.125,
-								"var": 0
-							}
-						},
-						{
-							"type": "item",
-							"code": "game:nugget-nativesilver",
-							"quantity": {
-								"avg": 0.025,
-								"var": 0
-							}
-						},
-						{
-							"type": "item",
-							"code": "game:nugget-nativegold",
-							"quantity": {
-								"avg": 0.005,
-								"var": 0
 							}
 						}
 					]

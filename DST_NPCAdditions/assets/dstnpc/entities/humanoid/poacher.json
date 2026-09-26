@@ -972,7 +972,7 @@
 						"code": "aggressiveondamage",
 						"duration": 6,
 						"chance": 0.6,
-						"slot": 0,
+						"slot": 1,
 						"priority": 2,
 						"accumType": "noaccum"
 					},
@@ -981,6 +981,13 @@
 						"duration": 10,
 						"chance": 0.4,
 						"slot": 0,
+						"priority": 1,
+						"accumType": "max"
+					},
+					{
+						"code": "alarmherdondamage",
+						"chance": 1,
+						"slot": 1,
 						"priority": 1,
 						"accumType": "max"
 					}
@@ -1001,8 +1008,8 @@
 						"mincooldown": 400,
 						"maxcooldown": 800,
 						"movespeed": 0.035,
-						"searchRange": 30,
-						"targetRange": 10,
+						"searchRange": 45,
+						"targetRange": 25,
 						"targetRangeTolerance": 5,
 						"animationSpeed": 1.75,
 						"animation": "Run"
@@ -1021,7 +1028,7 @@
 						},
 						"projectileDamageTierByType": {
 							"poacher-*-archer-grunt": 0,
-							"poacher-*-archer-boss": 0
+							"poacher-*-archer-boss": 1
 						},
 						"reloadTimeByType": {
 							"poacher-*-archer-grunt": 2.5,
@@ -1032,9 +1039,9 @@
 							"poacher-*-archer-boss": "game:arrow-copper"
 						},
 						"priorityForCancel": 3.5,
-						"sensingRange": 25,
+						"sensingRange": 50,
 						"firingRangeMin": 5,
-						"firingRangeMax": 24,
+						"firingRangeMax": 45,
 						"abortRange": 5
 					},
 					//Stay in range of hunt target
@@ -1073,8 +1080,8 @@
 						"mincooldown": 400,
 						"maxcooldown": 800,
 						"movespeed": 0.035,
-						"searchRange": 40,
-						"targetRange": 10,
+						"searchRange": 45,
+						"targetRange": 25,
 						"targetRangeTolerance": 5,
 						"animationSpeed": 1.75,
 						"animation": "Run"
@@ -1118,7 +1125,7 @@
 						},
 						"projectileDamageTierByType": {
 							"poacher-*-archer-grunt": 0,
-							"poacher-*-archer-boss": 0
+							"poacher-*-archer-boss": 1
 						},
 						"reloadTimeByType": {
 							"poacher-*-archer-grunt": 2.5,
@@ -1129,9 +1136,9 @@
 							"poacher-*-archer-boss": "game:arrow-copper"
 						},
 						"priorityForCancel": 3.5,
-						"sensingRange": 25,
+						"sensingRange": 50,
 						"firingRangeMin": 5,
-						"firingRangeMax": 24,
+						"firingRangeMax": 45,
 						"abortRange": 5
 					},
 					{
@@ -1150,6 +1157,10 @@
 						"minDistByType": {
 							"poacher-*-spear-*": 3.5,
 							"*": 2.5
+						},
+						"damageTierByType": {
+							"*-grunt": 0,
+							"*-boss": 1
 						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
@@ -1192,6 +1203,10 @@
 							"poacher-*-spear-*": 3.5,
 							"*": 2.5
 						},
+						"damageTierByType": {
+							"*-grunt": 0,
+							"*-boss": 1
+						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
 						"attackDurationMs": 1000,
@@ -1231,6 +1246,10 @@
 						"minDistByType": {
 							"poacher-*-spear-*": 3.5,
 							"*": 2.5
+						},
+						"damageTierByType": {
+							"*-grunt": 0,
+							"*-boss": 1
 						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
@@ -1289,7 +1308,7 @@
 						},
 						"projectileDamageTierByType": {
 							"poacher-*-archer-grunt": 0,
-							"poacher-*-archer-boss": 0
+							"poacher-*-archer-boss": 1
 						},
 						"reloadTimeByType": {
 							"poacher-*-archer-grunt": 2.5,
@@ -1323,7 +1342,8 @@
 						"movespeed": 0.035,
 						"seekingRange": 25,
 						"animation": "Run",
-						"animationSpeed": 1.75
+						"animationSpeed": 1.75,
+						"whenInEmotionState": "fleeondamage"
 					},
 					{
 						"code": "idle",

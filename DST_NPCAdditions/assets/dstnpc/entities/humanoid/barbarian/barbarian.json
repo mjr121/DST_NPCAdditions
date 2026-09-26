@@ -3105,7 +3105,7 @@
 						"code": "aggressiveondamage",
 						"duration": 6,
 						"chance": 0.6,
-						"slot": 0,
+						"slot": 1,
 						"priority": 2,
 						"accumType": "noaccum"
 					},
@@ -3114,6 +3114,13 @@
 						"duration": 10,
 						"chance": 0.4,
 						"slot": 0,
+						"priority": 1,
+						"accumType": "max"
+					},
+					{
+						"code": "alarmherdondamage",
+						"chance": 1,
+						"slot": 1,
 						"priority": 1,
 						"accumType": "max"
 					}
@@ -3141,6 +3148,10 @@
 							"barbarian-*-spearshield-*": 3.5,
 							"barbarian-*-twohandaxe-*": 2,
 							"*": 2.5
+						},
+						"damageTierByType": {
+							"*-grunt": 0,
+							"*-boss": 1
 						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
@@ -3185,6 +3196,10 @@
 							"barbarian-*-twohandaxe-*": 2,
 							"*": 2.5
 						},
+						"damageTierByType": {
+							"*-grunt": 0,
+							"*-boss": 1
+						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
 						"attackDurationMs": 1000,
@@ -3226,6 +3241,10 @@
 							"barbarian-*-twohandaxe-*": 2,
 							"*": 2.5
 						},
+						"damageTierByType": {
+							"*-grunt": 0,
+							"*-boss": 1
+						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
 						"attackDurationMs": 1000,
@@ -3251,6 +3270,10 @@
 						"minDistByType": {
 							"barbarian-*-twohandaxe-*": 2,
 							"*": 2.5
+						},
+						"damageTierByType": {
+							"*-grunt": 0,
+							"*-boss": 1
 						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
@@ -3279,6 +3302,10 @@
 							"barbarian-*-twohandaxe-*": 2,
 							"*": 2.5
 						},
+						"damageTierByType": {
+							"*-grunt": 0,
+							"*-boss": 1
+						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
 						"attackDurationMs": 1000,
@@ -3304,6 +3331,10 @@
 						"minDistByType": {
 							"barbarian-*-twohandaxe-*": 2,
 							"*": 2.5
+						},
+						"damageTierByType": {
+							"*-grunt": 0,
+							"*-boss": 1
 						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
@@ -3437,32 +3468,8 @@
 					"*-grunt": [
 						{
 							"type": "item",
-							"code": "game:poultice-reed-horsetail",
-							"quantity": {
-								"avg": 0.4,
-								"var": 0
-							}
-						},
-						{
-							"type": "item",
 							"code": "game:gear-rusty",
 							"dropModbyStat": "rustyGearDropRate",
-							"quantity": {
-								"avg": 1,
-								"var": 2
-							}
-						},
-						{
-							"type": "item",
-							"code": "game:nugget-nativecopper",
-							"quantity": {
-								"avg": 0.125,
-								"var": 0
-							}
-						},
-						{
-							"type": "item",
-							"code": "game:leather-normal-plain",
 							"quantity": {
 								"avg": 1,
 								"var": 2
@@ -3480,51 +3487,11 @@
 						},
 						{
 							"type": "item",
-							"code": "game:poultice-reed-horsetail",
-							"quantity": {
-								"avg": 0.4,
-								"var": 0
-							}
-						},
-						{
-							"type": "item",
 							"code": "game:gear-rusty",
 							"dropModbyStat": "rustyGearDropRate",
 							"quantity": {
 								"avg": 5,
 								"var": 2.5
-							}
-						},
-						{
-							"type": "item",
-							"code": "game:nugget-nativecopper",
-							"quantity": {
-								"avg": 0.125,
-								"var": 0
-							}
-						},
-						{
-							"type": "item",
-							"code": "game:nugget-nativesilver",
-							"quantity": {
-								"avg": 0.025,
-								"var": 0
-							}
-						},
-						{
-							"type": "item",
-							"code": "game:nugget-nativegold",
-							"quantity": {
-								"avg": 0.005,
-								"var": 0
-							}
-						},
-						{
-							"type": "item",
-							"code": "game:leather-normal-plain",
-							"quantity": {
-								"avg": 3,
-								"var": 2
 							}
 						}
 					]
