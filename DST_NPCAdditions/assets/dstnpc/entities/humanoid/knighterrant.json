@@ -2605,7 +2605,7 @@
 						"code": "aggressiveondamage",
 						"duration": 6,
 						"chance": 0.6,
-						"slot": 1,
+						"slot": 0,
 						"priority": 2,
 						"accumType": "noaccum"
 					},
@@ -2642,8 +2642,8 @@
 						"maxcooldown": 800,
 						"movespeed": 0.035,
 						"searchRange": 45,
-						"targetRange": 25,
-						"targetRangeTolerance": 5,
+						"targetRange": 30,
+						"targetRangeTolerance": 10,
 						"animationSpeed": 1.75,
 						"animation": "Run"
 					},
@@ -2658,8 +2658,8 @@
 						"maxcooldown": 800,
 						"movespeed": 0.035,
 						"searchRange": 45,
-						"targetRange": 25,
-						"targetRangeTolerance": 5,
+						"targetRange": 30,
+						"targetRangeTolerance": 10,
 						"animationSpeed": 1.75,
 						"animation": "Run",
 						"whenInEmotionState": "aggressiveondamage"
@@ -2690,13 +2690,12 @@
 						},
 						"priorityForCancel": 3.5,
 						"sensingRange": 50,
-						"firingRangeMin": 5,
+						"firingRangeMin": 10,
 						"firingRangeMax": 45,
-						"abortRange": 5
+						"abortRange": 10
 					},
 					{
-						"code": "bowturretmode",
-						"entityCodes": [ "player" ],
+						"code": "bowturretmodeplayeronly",
 						"priority": 2.23,
 						"enabledByType": {
 							"*-archer-*": true,
@@ -2720,9 +2719,9 @@
 						},
 						"priorityForCancel": 3.5,
 						"sensingRange": 50,
-						"firingRangeMin": 5,
+						"firingRangeMin": 10,
 						"firingRangeMax": 45,
-						"abortRange": 5,
+						"abortRange": 10,
 						"whenInEmotionState": "aggressiveondamage"
 					},
 					{

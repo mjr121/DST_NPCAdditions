@@ -2711,7 +2711,7 @@
 						"code": "aggressiveondamage",
 						"duration": 6,
 						"chance": 0.6,
-						"slot": 1,
+						"slot": 0,
 						"priority": 2,
 						"accumType": "noaccum"
 					},
@@ -2738,18 +2738,15 @@
 				"aitasks": [
 					{
 						"code": "stayinrangeplayeronly",
-						"entityCodes": [ "player" ],
 						"enabledByType": {
 							"*-archer-*": true,
 							"*": false
 						},
 						"priority": 2.3,
-						"mincooldown": 400,
-						"maxcooldown": 800,
 						"movespeed": 0.035,
 						"searchRange": 45,
-						"targetRange": 25,
-						"targetRangeTolerance": 5,
+						"targetRange": 30,
+						"targetRangeTolerance": 10,
 						"animationSpeed": 1.75,
 						"animation": "Run"
 					},
@@ -2761,18 +2758,15 @@
 							"*": false
 						},
 						"priority": 2.3,
-						"mincooldown": 400,
-						"maxcooldown": 800,
 						"movespeed": 0.035,
 						"searchRange": 45,
-						"targetRange": 25,
-						"targetRangeTolerance": 5,
+						"targetRange": 30,
+						"targetRangeTolerance": 10,
 						"animationSpeed": 1.75,
 						"animation": "Run"
 					},
 					{
-						"code": "bowturretmode",
-						"entityCodes": [ "player" ],
+						"code": "bowturretmodeplayeronly",
 						"priority": 2.25,
 						"enabledByType": {
 							"*-archer-*": true,
@@ -2796,9 +2790,9 @@
 						},
 						"priorityForCancel": 3.5,
 						"sensingRange": 50,
-						"firingRangeMin": 5,
+						"firingRangeMin": 10,
 						"firingRangeMax": 45,
-						"abortRange": 5
+						"abortRange": 10
 					},
 					{
 						"code": "bowturretmode",
@@ -2826,9 +2820,9 @@
 						},
 						"priorityForCancel": 3.5,
 						"sensingRange": 50,
-						"firingRangeMin": 5,
+						"firingRangeMin": 10,
 						"firingRangeMax": 45,
-						"abortRange": 5
+						"abortRange": 10
 					},
 					{
 						"code": "meleeattack",

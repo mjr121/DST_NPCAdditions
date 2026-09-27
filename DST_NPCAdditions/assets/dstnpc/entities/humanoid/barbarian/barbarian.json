@@ -3105,7 +3105,7 @@
 						"code": "aggressiveondamage",
 						"duration": 6,
 						"chance": 0.6,
-						"slot": 1,
+						"slot": 0,
 						"priority": 2,
 						"accumType": "noaccum"
 					},

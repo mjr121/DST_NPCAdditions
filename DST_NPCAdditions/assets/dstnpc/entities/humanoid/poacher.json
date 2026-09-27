@@ -972,7 +972,7 @@
 						"code": "aggressiveondamage",
 						"duration": 6,
 						"chance": 0.6,
-						"slot": 1,
+						"slot": 0,
 						"priority": 2,
 						"accumType": "noaccum"
 					},
@@ -1009,8 +1009,8 @@
 						"maxcooldown": 800,
 						"movespeed": 0.035,
 						"searchRange": 45,
-						"targetRange": 25,
-						"targetRangeTolerance": 5,
+						"targetRange": 30,
+						"targetRangeTolerance": 10,
 						"animationSpeed": 1.75,
 						"animation": "Run"
 					},
@@ -1040,9 +1040,9 @@
 						},
 						"priorityForCancel": 3.5,
 						"sensingRange": 50,
-						"firingRangeMin": 5,
+						"firingRangeMin": 10,
 						"firingRangeMax": 45,
-						"abortRange": 5
+						"abortRange": 10
 					},
 					//Stay in range of hunt target
 					{
@@ -1278,7 +1278,6 @@
 					},
 					{
 						"code": "stayinrangeplayeronly",
-						"entityCodes": [ "player" ],
 						"enabledByType": {
 							"*-archer-*": true,
 							"*": false
@@ -1287,16 +1286,15 @@
 						"mincooldown": 400,
 						"maxcooldown": 800,
 						"movespeed": 0.035,
-						"searchRange": 30,
-						"targetRange": 10,
-						"targetRangeTolerance": 5,
+						"searchRange": 45,
+						"targetRange": 30,
+						"targetRangeTolerance": 10,
 						"animationSpeed": 1.75,
 						"animation": "Run",
 						"whenInEmotionState": "aggressiveondamage"
 					},
 					{
-						"code": "bowturretmode",
-						"entityCodes": [ "player" ],
+						"code": "bowturretmodeplayeronly",
 						"priority": 2.25,
 						"enabledByType": {
 							"*-archer-*": true,
@@ -1319,10 +1317,10 @@
 							"poacher-*-archer-boss": "game:arrow-copper"
 						},
 						"priorityForCancel": 3.5,
-						"sensingRange": 25,
-						"firingRangeMin": 5,
-						"firingRangeMax": 24,
-						"abortRange": 5,
+						"sensingRange": 50,
+						"firingRangeMin": 10,
+						"firingRangeMax": 45,
+						"abortRange": 10,
 						"whenInEmotionState": "aggressiveondamage"
 					},
 					{

@@ -1,3 +1,20 @@
+- V1.0.9
+Global Changes
+Ranged Human units:
+- firing min/max from 5/45 to 10/45, abort range from 5 to 10.
+
+
+Compatability
+Combat Overhaul: Fork
+Added compatability where needed for companion animals. Human NPCs use Player mechanics from CO, so it should be fairly similar to players.
+
+Ai Tasks / Behaviors
+AiTaskStayInRangePlayerOnly: Used by ranged units to stay within range of players only.
+Corrrected Task not correctly starting/ending causing the weird archer bug of running to the player but not shooting.
+AiTaskBowTurretModePlayerOnly: Used by ranged units to shoot projectiles at players only.
+New task, used mainly for code based editing from config options.
+
+
 - V1.0.8
 CONFIG VERSION = 1.5, will cause the config file to be regenerated.
 
@@ -11,7 +28,7 @@ Ranged Human units:
 
 Bandits:
 Increased grunt health from 10 to 12, while boss health increases from 15 to 16.
-Corrected around randomly.
+Corrected running around randomly.
 
 Knight Errants:
 Corrected running around randomly.
