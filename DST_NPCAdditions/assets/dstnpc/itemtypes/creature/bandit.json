@@ -18,11 +18,12 @@
 				"bandit-male-axeshield-boss",
 				"bandit-male-archer-grunt",
 				"bandit-male-archer-boss",
+				"bandit-male-bannerman-grunt",
 				"bandit-male-bannerman-boss"
 			]
 		}
 	],
-	attributes: {
+	"attributes": {
 		setGuardedEntityAttributeByType: {},
 		disableElementsByType: {
 			"creature-bandit-male-*": ["breasts"]

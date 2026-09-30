@@ -194,6 +194,10 @@
 				"belowLightLevel": 8,
 				"minSeconds": 300,
 				"afterDays": 14
+			},
+			{
+				"code": "addtoherd",
+				"entityCodePrefix": "barbarian-"
 			}
 		],
 		"animations": [
@@ -546,7 +550,7 @@
 					{
 						"code": "meleeattack",
 						"priority": 1.65,
-						"entityCodes": ["knighterrant-*", "bandit-*", "poacher-*", "chicken-*", "hare-*", "fox-*", "raccoon-*", "pig-*", "sheep-*", "deer-*", "goat-*" ],
+						"entityCodes": [ "knighterrant-*", "bandit-*", "poacher-*", "chicken-*", "hare-*", "fox-*", "raccoon-*", "pig-*", "sheep-*", "deer-*", "goat-*" ],
 						"damageByType": {
 							"barbarianbear-black-*": 10,
 							"barbarianbear-brown-*": 12,
@@ -603,7 +607,7 @@
 					{
 						"code": "seekentity",
 						"priority": 1.6,
-						"entityCodes": ["knighterrant-*", "bandit-*", "poacher-*", "chicken-*", "hare-*", "fox-*", "raccoon-*", "pig-*", "sheep-*", "deer-*", "goat-*" ],
+						"entityCodes": [ "knighterrant-*", "bandit-*", "poacher-*", "chicken-*", "hare-*", "fox-*", "raccoon-*", "pig-*", "sheep-*", "deer-*", "goat-*" ],
 						"skipEntityCodesByType": {
 							"barbarianbear-brown-*": [ "chicken-baby", "hare-*-baby-*" ],
 							"barbarianbear-polar-*": [ "chicken-baby", "hare-*-baby-*" ]
@@ -1055,7 +1059,11 @@
 					}
 				]
 			},
-			{ "code": "entitystatetags" }
+			{ "code": "entitystatetags" },
+			{
+				"code": "addtoherd",
+				"entityCodePrefix": "barbarian-"
+			}
 		]
 	},
 	"sounds": {

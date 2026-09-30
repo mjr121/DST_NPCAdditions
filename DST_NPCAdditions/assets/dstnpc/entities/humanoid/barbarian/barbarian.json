@@ -3023,7 +3023,14 @@
 				"minPlayerDistance": 32,
 				"minSeconds": 300
 			},
-			{ "code": "harvestable", "duration": 2 }
+			{
+				"code": "harvestable",
+				"duration": 2
+			},
+			{
+				"code": "addtoherd",
+				"entityCodePrefix": "barbarian-"
+			}
 		],
 		"animations": [
 			{
@@ -3460,10 +3467,10 @@
 				]
 			},
 			{ "code": "entitystatetags" },
-			{ 
-				"code": "harvestable", 
-				"duration": 2, 
-				"fixedweight": true, 
+			{
+				"code": "harvestable",
+				"duration": 2,
+				"fixedweight": true,
 				"dropsByType": {
 					"*-grunt": [
 						{
@@ -3496,7 +3503,11 @@
 						}
 					]
 				}
-			}			
+			},
+			{
+				"code": "addtoherd",
+				"entityCodePrefix": "barbarian-"
+			}
 		],
 		"spawnconditions": {
 			"worldgen": {

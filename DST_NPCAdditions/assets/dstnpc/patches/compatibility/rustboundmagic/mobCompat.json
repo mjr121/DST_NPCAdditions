@@ -3,25 +3,6 @@
 	{
 		"file": "entities/humanoid/bandit.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/0/entityCodes",
-		"value": [
-			"elementaldrone-*",
-			"elementalsentry-*",
-			"elementalravager-*",
-			"elementalsentinel-*",
-			"elementalcolossus-*",
-			"elementaltitan-*",
-			"entityfamiliar-*",
-			"companion-*",
-			"polymorphedentity-*"
-		],
-		"dependsOn": [
-			{ "modid": "rustboundmagic" }
-		]
-	},
-	{
-		"file": "entities/humanoid/bandit.json",
-		"op": "addmerge",
 		"path": "/server/behaviors/10/aitasks/1/entityCodes",
 		"value": [
 			"elementaldrone-*",
@@ -41,7 +22,7 @@
 	{
 		"file": "entities/humanoid/bandit.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/5/entityCodes",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
 		"value": [
 			"elementaldrone-*",
 			"elementalsentry-*",
@@ -60,7 +41,26 @@
 	{
 		"file": "entities/humanoid/bandit.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"path": "/server/behaviors/10/aitasks/4/entityCodes",
+		"value": [
+			"elementaldrone-*",
+			"elementalsentry-*",
+			"elementalravager-*",
+			"elementalsentinel-*",
+			"elementalcolossus-*",
+			"elementaltitan-*",
+			"entityfamiliar-*",
+			"companion-*",
+			"polymorphedentity-*"
+		],
+		"dependsOn": [
+			{ "modid": "rustboundmagic" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/5/entityCodes",
 		"value": [
 			"elementaldrone-*",
 			"elementalsentry-*",
@@ -142,22 +142,6 @@
 		]
 	},
 	//Poacher
-	{
-		"file": "entities/humanoid/poacher.json",
-		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/13/entityCodes",
-		"value": [
-			"elementaldrone-*",
-			"elementalsentry-*",
-			"elementalravager-*",
-			"elementalsentinel-*",
-			"elementalcolossus-*",
-			"elementaltitan-*"
-		],
-		"dependsOn": [
-			{ "modid": "rustboundmagic" }
-		]
-	},
 	//Barbarian
 	{
 		"file": "entities/humanoid/barbarian/barbarian.json",
@@ -239,7 +223,7 @@
 	{
 		"file": "entities/humanoid/barbarian/bear-adult.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/9/aitasks/2/entityCodes",
+		"path": "/server/behaviors/9/aitasks/3/entityCodes",
 		"value": [
 			"elementaldrone-*",
 			"elementalsentry-*",

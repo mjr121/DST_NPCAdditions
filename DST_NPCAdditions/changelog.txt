@@ -1,8 +1,36 @@
+V1.1.2
+Hopefully fixed the Bannerman equipment issues by adding a missing equipment list.
+
+Bandits:
+Corrected Fleeentity task being fired incorrectly.
+
+Knight Errants:
+Corrected Fleeentity task being fired incorrectly.
+
+Other
+BehaviorAddToHerd:
+Designed to make entities that come together group up into proper groupings. Hopefulling sharing proper combat data and targets. Entities that share a prefix faction will share the same group ID, although the UI element for them won't update unless you reload the save. This is a vanilla issue that I can't correct.
+
+Compatability
+Fantasy Creatures (Kiptrix) / Fantasy Creatures Reborn (Swiftthistle)
+Bandits, Poachers, Knight Errants will attack  Goblins (All Types), Orks, Skeletons (All Types) and Slimes. Barbarians and their companion bears will attack everything added, including dragons.
+Rustbound Magic:
+Correct patch files targeting wrong AI Tasks due to updating task list in earlier updates.
+VS Village:
+Correct patch files targeting wrong AI Tasks due to updating task list in earlier updates.
+
+- V1.1.1
+HOTFIX FOR THE HOTFIX
+Forgot some entries as today has been such a CF.
+
+- V1.1.0
+HOTFIX
+Updated CO compatability. Looks like I can't use what I did for the Humanoid NPCs. Reverted that change, all other changes working.
+
 - V1.0.9
 Global Changes
 Ranged Human units:
 - firing min/max from 5/45 to 10/45, abort range from 5 to 10.
-
 
 Compatability
 Combat Overhaul: Fork
@@ -10,10 +38,9 @@ Added compatability where needed for companion animals. Human NPCs use Player me
 
 Ai Tasks / Behaviors
 AiTaskStayInRangePlayerOnly: Used by ranged units to stay within range of players only.
-Corrrected Task not correctly starting/ending causing the weird archer bug of running to the player but not shooting.
+Corrrected Task not correctly starting/ending causing the weird archer bug of running to the player but not shooting, along with not attempting to stay away from players.
 AiTaskBowTurretModePlayerOnly: Used by ranged units to shoot projectiles at players only.
 New task, used mainly for code based editing from config options.
-
 
 - V1.0.8
 CONFIG VERSION = 1.5, will cause the config file to be regenerated.

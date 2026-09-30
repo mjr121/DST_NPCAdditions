@@ -865,6 +865,10 @@
 			{
 				"code": "harvestable",
 				"duration": 2
+			},
+			{
+				"code": "addtoherd",
+				"entityCodePrefix": "poacher-"
 			}
 		],
 		"animations": [
@@ -982,7 +986,8 @@
 						"chance": 0.4,
 						"slot": 0,
 						"priority": 1,
-						"accumType": "max"
+						"accumType": "max",
+						"whenHealthRelBelow": 0.3
 					},
 					{
 						"code": "alarmherdondamage",
@@ -1324,26 +1329,6 @@
 						"whenInEmotionState": "aggressiveondamage"
 					},
 					{
-						"code": "fleeentity",
-						"entityCodes": [ "player" ],
-						"priority": 1.5,
-						"movespeed": 0.035,
-						"seekingRange": 12,
-						"animation": "Run",
-						"animationSpeed": 1.75,
-						"whenInEmotionState": "fleeondamage"
-					},
-					{
-						"code": "fleeentity",
-						"entityCodes": [],
-						"priority": 1.5,
-						"movespeed": 0.035,
-						"seekingRange": 25,
-						"animation": "Run",
-						"animationSpeed": 1.75,
-						"whenInEmotionState": "fleeondamage"
-					},
-					{
 						"code": "idle",
 						"priority": 1.2,
 						"minduration": 2500,
@@ -1491,6 +1476,10 @@
 						}
 					]
 				}
+			},
+			{
+				"code": "addtoherd",
+				"entityCodePrefix": "poacher-"
 			}
 		],
 		"spawnconditions": {

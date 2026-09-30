@@ -1,0 +1,356 @@
+[
+	//Bandits
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/1/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/4/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	{
+		"file": "entities/humanoid/bandit.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/5/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	//Knight Errants
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/0/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/2/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/7/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	{
+		"file": "entities/humanoid/knighterrant.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/8/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	//Poacher
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/0/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/1/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	{
+		"file": "entities/humanoid/poacher.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/7/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	//Barbarian
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/2/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*",
+			"dragon-*",
+			"dragon-flying-*",
+			"dragon-*",
+			"ent-shepherd-*",
+			"treant-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/3/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*",
+			"dragon-*",
+			"dragon-flying-*",
+			"dragon-*",
+			"ent-shepherd-*",
+			"treant-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/barbarian.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/10/aitasks/4/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*",
+			"dragon-*",
+			"dragon-flying-*",
+			"dragon-*",
+			"ent-shepherd-*",
+			"treant-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	//BarbarianBear
+	{
+		"file": "entities/humanoid/barbarian/bear-adult.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/1/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*",
+			"dragon-*",
+			"dragon-flying-*",
+			"dragon-*",
+			"ent-shepherd-*",
+			"treant-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	},
+	{
+		"file": "entities/humanoid/barbarian/bear-adult.json",
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/3/entityCodes",
+		"value": [
+			"cavegoblin-*",
+			"lonehuntergoblin-*",
+			"ork-*",
+			"skeleton-*",
+			"skeletonblkgrd-*",
+			"skeleton-deserter-*",
+			"slime-*",
+			"surface_skeleton-*",
+			"surfacegoblin-*",
+			"dragon-*",
+			"dragon-flying-*",
+			"dragon-*",
+			"ent-shepherd-*",
+			"treant-*"
+		],
+		"dependsOn": [
+			{ "modid": "fantasycreaturesupdate" }
+		]
+	}
+
+]

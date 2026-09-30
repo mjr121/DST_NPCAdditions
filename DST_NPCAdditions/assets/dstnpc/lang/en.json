@@ -3,12 +3,12 @@
 
 
 	"dstnpc:item-creature-knighterrant-*-*-grunt": "Knight Errant",
-	"dstnpc:item-creature-knighterrant-*-bannerman-boss": "Knight Bannerman",
+	"dstnpc:item-creature-knighterrant-*-bannerman-*": "Knight Bannerman",
 	"dstnpc:item-creature-knighterrant-*-*-boss": "Knight Sergeant",
 	"prefixandcreature-knighterrant-*": "a Knight Errant",
 	"game:deathmsg-knighterrant-male-spear-grunt-1": "The law claimed Player {0}'s life.",
 	"dstnpc:item-dead-creature-knighterrant-*-*-grunt": "Dead Knight Errant",
-	"dstnpc:item-dead-creature-knighterrant-*-bannerman-boss": "Dead Knight Bannerman",
+	"dstnpc:item-dead-creature-knighterrant-*-bannerman-*": "Dead Knight Bannerman",
 	"dstnpc:item-dead-creature-knighterrant-*-*-boss": "Dead Knight Sergeant",
 
 	"dstnpc:item-creature-bandit-male-spear-grunt": "Bandit Spearman",
@@ -17,7 +17,7 @@
 	"dstnpc:item-creature-bandit-male-axe-grunt": "Bandit Axeman",
 	"dstnpc:item-creature-bandit-male-archer-grunt": "Bandit Archer",
 	"dstnpc:item-creature-bandit-male-axeshield-grunt": "Bandit Axeman",
-	"dstnpc:item-creature-bandit-male-bannerman-grunt": "Bandit Bannerman",
+	"dstnpc:item-creature-bandit-male-bannerman-*": "Bandit Bannerman",
 	"prefixandcreature-bandit-*": "a Bandit",
 	"game:deathmsg-bandit-*": "Player {0} was slain by bandits.",
 
@@ -27,7 +27,7 @@
 	"dstnpc:item-dead-creature-bandit-male-axe-grunt": "Dead Bandit Axeman",
 	"dstnpc:item-dead-creature-bandit-male-archer-grunt": "Dead Bandit Archer",
 	"dstnpc:item-dead-creature-bandit-male-axeshield-grunt": "Dead Bandit Axeman",
-	"dstnpc:item-dead-creature-bandit-male-bannerman-grunt": "Dead Bandit Bannerman",
+	"dstnpc:item-dead-creature-bandit-male-bannerman-*": "Dead Bandit Bannerman",
 
 	"dstnpc:item-creature-bandit-male-spear-boss": "Bandit Spearman",
 	"dstnpc:item-creature-bandit-male-sword-boss": "Bandit Swordsman",
@@ -35,7 +35,6 @@
 	"dstnpc:item-creature-bandit-male-axe-boss": "Bandit Axeman",
 	"dstnpc:item-creature-bandit-male-archer-boss": "Bandit Archer",
 	"dstnpc:item-creature-bandit-male-axeshield-boss": "Bandit Axeman",
-	"dstnpc:item-creature-bandit-male-bannerman-boss": "Bandit Bannerman",
 
 	"dstnpc:item-dead-creature-bandit-male-spear-boss": "Dead Bandit Spearman",
 	"dstnpc:item-dead-creature-bandit-male-sword-boss": "Dead Bandit Swordsman",
@@ -43,7 +42,6 @@
 	"dstnpc:item-dead-creature-bandit-male-axe-boss": "Dead Bandit Axeman",
 	"dstnpc:item-dead-creature-bandit-male-archer-boss": "Dead Bandit Archer",
 	"dstnpc:item-dead-creature-bandit-male-axeshield-boss": "Dead Bandit Axeman",
-	"dstnpc:item-dead-creature-bandit-male-bannerman-boss": "Dead Bandit Bannerman",
 
 	"dstnpc:item-creature-poacher-male-spear-grunt": "Poacher Spearman",
 	"dstnpc:item-creature-poacher-male-spear-boss": "Poacher Spearman",

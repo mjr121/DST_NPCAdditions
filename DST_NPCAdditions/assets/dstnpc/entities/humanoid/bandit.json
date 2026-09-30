@@ -2362,6 +2362,202 @@
 				"equipBody": [ { "Code": "equipBody-leather-body" } ],
 				"equipLegs": [ { "Code": "equipLegs-leather-legs" } ]
 			},
+			"bandit-*-bannerman-grunt": {
+				"skin-face": [
+					{ "Code": "skin-face-normal1" },
+					{ "Code": "skin-face-normal2" },
+					{ "Code": "skin-face-normal5" }
+				],
+				"hair-base2": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"hair-base3": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"iris": [
+					{
+						"Code": "iris-24",
+						"Weight": 1.0
+					}
+				],
+				"eyebrows": [
+					{
+						"Code": "eyebrows-normal5",
+						"Weight": 1.0
+					}
+				],
+				"lips": [
+					{
+						"Code": "lips-normal4",
+						"Weight": 1.0
+					}
+				],
+				"sclera": [
+					{
+						"Code": "lips-normal3",
+						"Weight": 1.0
+					}
+				],
+				"tatoo": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"scar": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"bodyskin": [
+					{ "Code": "bodyskin-1" },
+					{ "Code": "bodyskin-2" },
+					{ "Code": "bodyskin-3" },
+					{ "Code": "bodyskin-4" },
+					{ "Code": "bodyskin-5" },
+					{ "Code": "bodyskin-6" },
+					{ "Code": "bodyskin-7" },
+					{ "Code": "bodyskin-8" },
+					{ "Code": "bodyskin-9" },
+					{ "Code": "bodyskin-10" },
+					{ "Code": "bodyskin-11" },
+					{ "Code": "bodyskin-12" },
+					{ "Code": "bodyskin-13" },
+					{ "Code": "bodyskin-14" },
+					{ "Code": "bodyskin-15" },
+					{ "Code": "bodyskin-16" },
+					{ "Code": "bodyskin-17" },
+					{ "Code": "bodyskin-18" },
+					{ "Code": "bodyskin-19" },
+					{ "Code": "bodyskin-20" },
+					{ "Code": "bodyskin-27" },
+					{ "Code": "bodyskin-28" },
+					{ "Code": "bodyskin-29" }
+				],
+				"hair-base": [ { "Code": "hair-short-sideshave" } ],
+				"beard": [
+					{
+						"Code": "nothing",
+						"Weight": 16.0
+					},
+					{ "Code": "beard-1" },
+					{ "Code": "beard-2" },
+					{ "Code": "beard-3" },
+					{ "Code": "beard-4" },
+					{ "Code": "beard-5" },
+					{ "Code": "beard-6" },
+					{ "Code": "beard-7" },
+					{ "Code": "beard-8" },
+					{ "Code": "beard-full1" },
+					{ "Code": "beard-full2" },
+					{ "Code": "beard-full3" },
+					{ "Code": "beard-full4" },
+					{ "Code": "beard-full5" },
+					{ "Code": "beard-full6" },
+					{ "Code": "beard-full7" },
+					{ "Code": "beard-full8" }
+				],
+				"mustache": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					},
+					{ "Code": "mustache-1" },
+					{ "Code": "mustache-2" },
+					{ "Code": "mustache-3" },
+					{ "Code": "mustache-4" },
+					{ "Code": "mustache-5" }
+				],
+				"arm": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"face": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"foot": [
+					{
+						"Code": "foot-hunter",
+						"Weight": 5.0
+					}
+				],
+				"hand": [
+					{
+						"Code": "hand-blacksmith",
+						"Weight": 5.0
+					}
+				],
+				"head": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"lowerbody": [
+					{
+						"Code": "lowerbody-pants-hunter",
+						"Weight": 5.0
+					}
+				],
+				"neck": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
+				"shoulder": [
+					{
+						"Code": "shoulder-male-longsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbody": [
+					{
+						"Code": "upperbody-male-shortsleeve-hunter",
+						"Weight": 5.0
+					}
+				],
+				"upperbodyover": [
+					{
+						"Code": "upperbodyover-male-longsleeve-coat-long",
+						"Weight": 5.0
+					}
+				],
+				"waist": [
+					{
+						"Code": "waist-guard",
+						"Weight": 5.0
+					}
+				],
+				"heldr": [
+					{
+						"Code": "heldr-axe-bismuthbronze",
+						"Weight": 5.0
+					}
+				],
+				"heldl": [
+					{ "Code": "heldl-bannerfish" },
+					{ "Code": "heldl-bannerkeys" },
+					{ "Code": "heldl-bannerlargefish" },
+					{ "Code": "heldl-bannership" },
+					{ "Code": "heldl-bannertown" }
+				],
+				"equipHead": [ { "Code": "equipHead-leather-head" } ],
+				"equipBody": [ { "Code": "equipBody-leather-body" } ],
+				"equipLegs": [ { "Code": "equipLegs-leather-legs" } ]
+			},
 			"bandit-*-bannerman-boss": {
 				"skin-face": [
 					{ "Code": "skin-face-normal1" },
@@ -2604,7 +2800,14 @@
 				"minPlayerDistance": 32,
 				"minSeconds": 300
 			},
-			{ "code": "harvestable", "duration": 2 }
+			{
+				"code": "harvestable",
+				"duration": 2
+			},
+			{
+				"code": "addtoherd",
+				"entityCodePrefix": "bandit-"
+			}
 		],
 		"animations": [
 			{
@@ -2721,7 +2924,8 @@
 						"chance": 0.4,
 						"slot": 0,
 						"priority": 1,
-						"accumType": "max"
+						"accumType": "max",
+						"whenHealthRelBelow": 0.3
 					},
 					{
 						"code": "alarmherdondamage",
@@ -3031,26 +3235,6 @@
 						"animation": "Run"
 					},
 					{
-						"code": "fleeentity",
-						"entityCodes": [ "player" ],
-						"priority": 1.5,
-						"movespeed": 0.035,
-						"seekingRange": 12,
-						"animation": "Run",
-						"animationSpeed": 1.75,
-						"whenInEmotionState": "fleeondamage"
-					},
-					{
-						"code": "fleeentity",
-						"entityCodes": [],
-						"priority": 1.5,
-						"movespeed": 0.035,
-						"seekingRange": 25,
-						"animation": "Run",
-						"animationSpeed": 1.75,
-						"whenInEmotionState": "fleeondamage"
-					},
-					{
 						"code": "idle",
 						"priority": 1.2,
 						"minduration": 2500,
@@ -3079,8 +3263,22 @@
 							"*-bannerman-*": false,
 							"*": true
 						},
-						"priority": 1.209,
+						"priority": 1.21,
 						"entityCode": "bandit-male-bannerman-boss",
+						"movespeed": 0.035,
+						"animationSpeed": 1.75,
+						"maxDistance": 5,
+						"searchRange": 150,
+						"animation": "Run"
+					},
+					{
+						"code": "stayclosetoentity",
+						"enabledByType": {
+							"*-bannerman-*": false,
+							"*": true
+						},
+						"priority": 1.209,
+						"entityCode": "bandit-male-bannerman-grunt",
 						"movespeed": 0.035,
 						"animationSpeed": 1.75,
 						"maxDistance": 5,
@@ -3216,10 +3414,10 @@
 				]
 			},
 			{ "code": "entitystatetags" },
-			{ 
-				"code": "harvestable", 
-				"duration": 2, 
-				"fixedweight": true, 
+			{
+				"code": "harvestable",
+				"duration": 2,
+				"fixedweight": true,
 				"dropsByType": {
 					"*-grunt": [
 						{
@@ -3252,7 +3450,11 @@
 						}
 					]
 				}
-			}			
+			},
+			{
+				"code": "addtoherd",
+				"entityCodePrefix": "bandit-"
+			}	
 		],
 		"spawnconditions": {
 			"worldgen": {
