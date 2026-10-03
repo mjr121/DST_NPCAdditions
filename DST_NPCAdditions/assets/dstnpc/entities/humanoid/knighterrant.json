@@ -2948,6 +2948,10 @@
 							"knighterrant-*-axeshield-*": 2,
 							"*": 2.5
 						},
+						"damageTypeByType": {
+							"*-spear-*": "PiercingAttack",
+							"*": "SlashingAttack"
+						},
 						"mincooldown": 2500,
 						"maxcooldown": 3500,
 						"attackDurationMs": 900,
@@ -2995,6 +2999,10 @@
 						"damageTierByType": {
 							"*-grunt": 0,
 							"*-boss": 1
+						},
+						"damageTypeByType": {
+							"*-spear-*": "PiercingAttack",
+							"*": "SlashingAttack"
 						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
@@ -3051,6 +3059,10 @@
 						"damageTierByType": {
 							"*-grunt": 0,
 							"*-boss": 1
+						},
+						"damageTypeByType": {
+							"*-spear-*": "PiercingAttack",
+							"*": "SlashingAttack"
 						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
@@ -3351,13 +3363,13 @@
 				"groupSizeByType": {
 					"knighterrant-*-*-boss": {
 						"dist": "verynarrowgaussian",
-						"avg": 3,
-						"var": 2
+						"avg": 1,
+						"var": 0
 					},
 					"knighterrant-*-*-grunt": {
 						"dist": "verynarrowgaussian",
-						"avg": 3,
-						"var": 2
+						"avg": 1,
+						"var": 0
 					}
 				},
 				"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:fern-*", "game:tallfern", "game:leaves-*", "game:wildvine-*", "game:mushroom-*", "game:crop-*", "game:loosestones-*", "game:looseboulders-*", "game:loosestick-*" ],
@@ -3383,13 +3395,13 @@
 				"groupSizeByType": {
 					"knighterrant-*-*-boss": {
 						"dist": "verynarrowgaussian",
-						"avg": 3,
-						"var": 2
+						"avg": 1,
+						"var": 0
 					},
 					"knighterrant-*-*-grunt": {
 						"dist": "verynarrowgaussian",
-						"avg": 3,
-						"var": 2
+						"avg": 1,
+						"var": 0
 					}
 				},
 				"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*", "game:fern-*", "game:tallfern", "game:leaves-*", "game:wildvine-*", "game:mushroom-*", "game:crop-*", "game:loosestones-*", "game:looseboulders-*", "game:loosestick-*" ],

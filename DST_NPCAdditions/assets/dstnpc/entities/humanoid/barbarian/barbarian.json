@@ -3160,6 +3160,11 @@
 							"*-grunt": 0,
 							"*-boss": 1
 						},
+						"damageTypeByType": {
+							"*-spear-*": "PiercingAttack",
+							"*-spearshield-*": "PiercingAttack",
+							"*": "SlashingAttack"
+						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
 						"attackDurationMs": 1000,
@@ -3199,6 +3204,7 @@
 							"*": 2.75
 						},
 						"minDistByType": {
+							"barbarian-*-spear-*": 3.5,
 							"barbarian-*-spearshield-*": 3.5,
 							"barbarian-*-twohandaxe-*": 2,
 							"*": 2.5
@@ -3206,6 +3212,11 @@
 						"damageTierByType": {
 							"*-grunt": 0,
 							"*-boss": 1
+						},
+						"damageTypeByType": {
+							"*-spear-*": "PiercingAttack",
+							"*-spearshield-*": "PiercingAttack",
+							"*": "SlashingAttack"
 						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
@@ -3252,6 +3263,11 @@
 							"*-grunt": 0,
 							"*-boss": 1
 						},
+						"damageTypeByType": {
+							"*-spear-*": "PiercingAttack",
+							"*-spearshield-*": "PiercingAttack",
+							"*": "SlashingAttack"
+						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
 						"attackDurationMs": 1000,
@@ -3281,6 +3297,11 @@
 						"damageTierByType": {
 							"*-grunt": 0,
 							"*-boss": 1
+						},
+						"damageTypeByType": {
+							"*-spear-*": "PiercingAttack",
+							"*-spearshield-*": "PiercingAttack",
+							"*": "SlashingAttack"
 						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
@@ -3313,6 +3334,11 @@
 							"*-grunt": 0,
 							"*-boss": 1
 						},
+						"damageTypeByType": {
+							"*-spear-*": "PiercingAttack",
+							"*-spearshield-*": "PiercingAttack",
+							"*": "SlashingAttack"
+						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
 						"attackDurationMs": 1000,
@@ -3342,6 +3368,11 @@
 						"damageTierByType": {
 							"*-grunt": 0,
 							"*-boss": 1
+						},
+						"damageTypeByType": {
+							"*-spear-*": "PiercingAttack",
+							"*-spearshield-*": "PiercingAttack",
+							"*": "SlashingAttack"
 						},
 						"mincooldown": 500,
 						"maxcooldown": 1750,
@@ -3526,13 +3557,13 @@
 				"groupSizeByType": {
 					"barbarian-*-*-*-boss": {
 						"dist": "verynarrowgaussian",
-						"avg": 3,
-						"var": 2
+						"avg": 1,
+						"var": 0
 					},
 					"barbarian-*-*-*-grunt": {
 						"dist": "verynarrowgaussian",
-						"avg": 3,
-						"var": 2
+						"avg": 1,
+						"var": 0
 					}
 				},
 				"insideBlockCodesByType": {
@@ -3562,13 +3593,13 @@
 				"groupSizeByType": {
 					"barbarian-*-*-*-boss": {
 						"dist": "verynarrowgaussian",
-						"avg": 3,
-						"var": 2
+						"avg": 1,
+						"var": 0
 					},
 					"barbarian-*-*-*-grunt": {
 						"dist": "verynarrowgaussian",
-						"avg": 3,
-						"var": 2
+						"avg": 1,
+						"var": 0
 					}
 				},
 				"insideBlockCodesByType": {

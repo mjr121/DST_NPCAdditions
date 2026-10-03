@@ -1,3 +1,22 @@
+V1.1.3
+Global
+Corrected spawn amounts back to 1 per runtime and 1 per world gen. Values got negated due to updating json code to be more in line with vanilla standards.
+Fixed Damage types for NPC attack tasks, no more of every attack being blunt. Swords, Axes are slashing damage. Spears are piercing damage.
+
+Language/Text
+Knight Errants:
+Spearmen, Axemen and  are now Footmen, with their boss units being Footmen Sergeants.
+Sword, Axemen with Shields and Sword with Shields are now Squires, with their boss units being Knights.
+Archers are now Yeomen for both types.
+Bannerman are now Squire/Knight bannerman for their respective units.
+
+Bandit:
+Bannermen are now called Bandit Captains, to better reflect their purpose.
+
+Compatability
+Fauna of the Stone Age: Moschidae:
+Poacher NPCs will hunt Moschidae, barbarians and their companion bears will also hunt Moschidae.
+
 V1.1.2
 Hopefully fixed the Bannerman equipment issues by adding a missing equipment list.
 
