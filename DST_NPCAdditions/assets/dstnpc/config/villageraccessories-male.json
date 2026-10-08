@@ -1681,7 +1681,7 @@
     "equipHead-gambeson-head": {
       "base": "game:entity/humanoid/seraph/armor/gambeson/head",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "Bangs", "hair-base-Hair-Lower", "hair-base-Ponytail-Low", "beard-hidefacialhair" ]
     },
     "equipLegs-gambeson-legs": {
       "base": "game:entity/humanoid/seraph/armor/gambeson/legs",
@@ -1704,7 +1704,7 @@
     "equipHead-lamellar-head": {
       "base": "game:entity/humanoid/seraph/armor/lamellar/head",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-lamellar-legs": {
       "base": "game:entity/humanoid/seraph/armor/lamellar/legs",
@@ -1718,7 +1718,7 @@
     "equipHead-leather-head": {
       "base": "game:entity/humanoid/seraph/armor/leather/head",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-leather-legs": {
       "base": "game:entity/humanoid/seraph/armor/leather/legs",
@@ -1741,27 +1741,27 @@
     "equipHead-plate-bronze": {
       "base": "game:entity/humanoid/seraph/armor/plate/head-bronze",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-plate-copper": {
       "base": "game:entity/humanoid/seraph/armor/plate/head-copper",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-plate-iron": {
       "base": "game:entity/humanoid/seraph/armor/plate/head-iron",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-plate-meteoriciron": {
       "base": "game:entity/humanoid/seraph/armor/plate/head-meteoriciron",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-plate-steel": {
       "base": "game:entity/humanoid/seraph/armor/plate/head-steel",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-plate-legs": {
       "base": "game:entity/humanoid/seraph/armor/plate/legs",
@@ -1775,27 +1775,27 @@
     "equipHead-scale-bronze": {
       "base": "game:entity/humanoid/seraph/armor/scale/head-bronze",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-scale-copper": {
       "base": "game:entity/humanoid/seraph/armor/scale/head-copper",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-scale-iron": {
       "base": "game:entity/humanoid/seraph/armor/scale/head-iron",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-scale-meteoriciron": {
       "base": "game:entity/humanoid/seraph/armor/scale/head-meteoriciron",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipHead-scale-steel": {
       "base": "game:entity/humanoid/seraph/armor/scale/head-steel",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-scale-legs": {
       "base": "game:entity/humanoid/seraph/armor/scale/legs",
@@ -1809,7 +1809,7 @@
     "equipHead-hide-blackbear-head": {
       "base": "entity/humanoid/armor/hide/bear/black/head",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-hide-blackbear-legs": {
       "base": "entity/humanoid/armor/hide/bear/black/legs",
@@ -1822,7 +1822,7 @@
     "equipHead-hide-brownbear-head": {
       "base": "entity/humanoid/armor/hide/bear/brown/head",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-hide-brownbear-legs": {
       "base": "entity/humanoid/armor/hide/bear/brown/legs",
@@ -1835,7 +1835,7 @@
     "equipHead-hide-polarbear-head": {
       "base": "entity/humanoid/armor/hide/bear/polar/head",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-hide-polarbear-legs": {
       "base": "entity/humanoid/armor/hide/bear/polar/legs",
@@ -1848,7 +1848,7 @@
     "equipHead-hide-pandabear-head": {
       "base": "entity/humanoid/armor/hide/bear/panda/head",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-hide-pandabear-legs": {
       "base": "entity/humanoid/armor/hide/bear/panda/legs",
@@ -1861,7 +1861,7 @@
     "equipHead-hide-sunbear-head": {
       "base": "entity/humanoid/armor/hide/bear/sun/head",
       "weight": 1,
-      "disableElements": [ "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
+      "disableElements": [ "hair-base-Hair-Base", "hair-base-Hair-Upper", "hair-base-Hair-Lower", "hair-base-Ponytail-Low" ]
     },
     "equipLegs-hide-sunbear-legs": {
       "base": "entity/humanoid/armor/hide/bear/sun/legs",
@@ -1921,7 +1921,7 @@
         },
         {
             "code": "hair-base",
-            "variants": [ "hair-00", "hair-01", "hair-02", "hair-03", "hair-04", "hair-05", "hair-06", "hair-07", "hair-08", "hair-09", "hair-10", "hair-11", "hair-12", "hair-13", "hair-14", "hair-15", "hair-16", "hair-17", "hair-18", "hair-19", "hair-20", "hair-21", "hair-22", "hair-23", "hair-bald-horseshoe", "hair-bald-iroquis", "hair-bald-none", "hair-bald-tonsure", "hair-bald-topknot", "hair-long-braid1", "hair-long-braid2", "hair-long-combed", "hair-long-dreads", "hair-long-dreads2", "hair-long-loose", "hair-long-strands", "hair-medium-afro", "hair-medium-basic", "hair-medium-layered", "hair-medium-pigtails", "hair-medium-ponytail", "hair-medium-snood", "hair-medium-spiky", "hair-short-bangs", "hair-short-braidedup", "hair-short-indigenousbalding", "hair-short-sidebraids1", "hair-short-sideshave", "hair-short-topbun", "hair-short-trimmed" ]
+            "variants": [ "nothing", "hair-00", "hair-01", "hair-02", "hair-03", "hair-04", "hair-05", "hair-06", "hair-07", "hair-08", "hair-09", "hair-10", "hair-11", "hair-12", "hair-13", "hair-14", "hair-15", "hair-16", "hair-17", "hair-18", "hair-19", "hair-20", "hair-21", "hair-22", "hair-23", "hair-bald-horseshoe", "hair-bald-iroquis", "hair-bald-none", "hair-bald-tonsure", "hair-bald-topknot", "hair-long-braid1", "hair-long-braid2", "hair-long-combed", "hair-long-dreads", "hair-long-dreads2", "hair-long-loose", "hair-long-strands", "hair-medium-afro", "hair-medium-basic", "hair-medium-layered", "hair-medium-pigtails", "hair-medium-ponytail", "hair-medium-snood", "hair-medium-spiky", "hair-short-bangs", "hair-short-braidedup", "hair-short-indigenousbalding", "hair-short-sidebraids1", "hair-short-sideshave", "hair-short-topbun", "hair-short-trimmed" ]
         },
         {
             "code": "hair-base2",

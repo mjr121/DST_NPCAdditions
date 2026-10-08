@@ -34,6 +34,16 @@
 					"avg": 1,
 					"var": 0
 				}
+			},
+			{
+				"type": "item",
+				"code": "game:clutter-skull/humanoid",
+				"quantityByType": {
+					"*": {
+						"avg": 1,
+						"var": 0
+					}
+				}
 			}
 		],
 		"file": "entities/humanoid/poacher.json",
@@ -77,6 +87,16 @@
 				"quantity": {
 					"avg": 1,
 					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:clutter-skull/humanoid",
+				"quantityByType": {
+					"*": {
+						"avg": 1,
+						"var": 0
+					}
 				}
 			}
 		],
@@ -122,6 +142,16 @@
 					"avg": 1,
 					"var": 0
 				}
+			},
+			{
+				"type": "item",
+				"code": "game:clutter-skull/humanoid",
+				"quantityByType": {
+					"*": {
+						"avg": 1,
+						"var": 0
+					}
+				}
 			}
 		],
 		"file": "entities/humanoid/poacher.json",
@@ -165,6 +195,16 @@
 				"quantity": {
 					"avg": 1,
 					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:clutter-skull/humanoid",
+				"quantityByType": {
+					"*": {
+						"avg": 1,
+						"var": 0
+					}
 				}
 			}
 		],
@@ -211,6 +251,16 @@
 					"avg": 1,
 					"var": 0
 				}
+			},
+			{
+				"type": "item",
+				"code": "game:clutter-skull/humanoid",
+				"quantityByType": {
+					"*": {
+						"avg": 1,
+						"var": 0
+					}
+				}
 			}
 		],
 		"file": "entities/humanoid/poacher.json",
@@ -254,6 +304,16 @@
 				"quantity": {
 					"avg": 1,
 					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:clutter-skull/humanoid",
+				"quantityByType": {
+					"*": {
+						"avg": 1,
+						"var": 0
+					}
 				}
 			}
 		],
@@ -299,6 +359,16 @@
 					"avg": 1,
 					"var": 0
 				}
+			},
+			{
+				"type": "item",
+				"code": "game:clutter-skull/humanoid",
+				"quantityByType": {
+					"*": {
+						"avg": 1,
+						"var": 0
+					}
+				}
 			}
 		],
 		"file": "entities/humanoid/poacher.json",
@@ -342,6 +412,16 @@
 				"quantity": {
 					"avg": 1,
 					"var": 0
+				}
+			},
+			{
+				"type": "item",
+				"code": "game:clutter-skull/humanoid",
+				"quantityByType": {
+					"*": {
+						"avg": 1,
+						"var": 0
+					}
 				}
 			}
 		],

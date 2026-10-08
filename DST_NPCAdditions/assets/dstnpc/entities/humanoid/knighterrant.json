@@ -139,7 +139,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -197,7 +202,8 @@
 				],
 				"lowerbody": [
 					{
-						"Code": "lowerbody-pants-guard"
+						"Code": "lowerbody-pants-guard",
+						"Weight": 5.0
 					}
 				],
 				"neck": [
@@ -238,7 +244,7 @@
 				],
 				"heldl": [],
 				"equipHead": [ { "Code": "equipHead-gambeson-head" } ],
-				"equipBody": [ { "Code": "equipHead-brigandine-iron" } ],
+				"equipBody": [ { "Code": "equipBody-brigandine-iron" } ],
 				"equipLegs": [ { "Code": "equipLegs-brigandine-legs" } ]
 			},
 			"knighterrant-*-spear-boss": {
@@ -320,7 +326,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -502,7 +513,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -602,7 +618,7 @@
 				],
 				"heldl": [],
 				"equipHead": [ { "Code": "equipHead-gambeson-head" } ],
-				"equipBody": [ { "Code": "equipHead-brigandine-iron" } ],
+				"equipBody": [ { "Code": "equipBody-brigandine-iron" } ],
 				"equipLegs": [ { "Code": "equipLegs-brigandine-legs" } ]
 			},
 			"knighterrant-*-sword-boss": {
@@ -684,7 +700,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -866,7 +887,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -971,7 +997,7 @@
 					}
 				],
 				"equipHead": [ { "Code": "equipHead-gambeson-head" } ],
-				"equipBody": [ { "Code": "equipHead-brigandine-iron" } ],
+				"equipBody": [ { "Code": "equipBody-brigandine-iron" } ],
 				"equipLegs": [ { "Code": "equipLegs-brigandine-legs" } ]
 			},
 			"knighterrant-*-swordshield-boss": {
@@ -1053,7 +1079,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -1240,7 +1271,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -1340,7 +1376,7 @@
 				],
 				"heldl": [],
 				"equipHead": [ { "Code": "equipHead-gambeson-head" } ],
-				"equipBody": [ { "Code": "equipHead-brigandine-iron" } ],
+				"equipBody": [ { "Code": "equipBody-brigandine-iron" } ],
 				"equipLegs": [ { "Code": "equipLegs-brigandine-legs" } ]
 			},
 			"knighterrant-*-axe-boss": {
@@ -1422,7 +1458,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -1604,7 +1645,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -1709,7 +1755,7 @@
 					}
 				],
 				"equipHead": [ { "Code": "equipHead-gambeson-head" } ],
-				"equipBody": [ { "Code": "equipHead-brigandine-iron" } ],
+				"equipBody": [ { "Code": "equipBody-brigandine-iron" } ],
 				"equipLegs": [ { "Code": "equipLegs-brigandine-legs" } ]
 			},
 			"knighterrant-*-axeshield-boss": {
@@ -1791,7 +1837,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -1978,7 +2029,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -2077,7 +2133,7 @@
 					{ "Code": "heldl-bow-crude" }
 				],
 				"equipHead": [ { "Code": "equipHead-gambeson-head" } ],
-				"equipBody": [ { "Code": "equipHead-brigandine-iron" } ],
+				"equipBody": [ { "Code": "equipBody-brigandine-iron" } ],
 				"equipLegs": [ { "Code": "equipLegs-brigandine-legs" } ]
 			},
 			"knighterrant-*-archer-boss": {
@@ -2159,7 +2215,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -2258,7 +2319,7 @@
 					{ "Code": "heldl-bow-crude" }
 				],
 				"equipHead": [ { "Code": "equipHead-gambeson-head" } ],
-				"equipBody": [ { "Code": "equipHead-brigandine-iron" } ],
+				"equipBody": [ { "Code": "equipBody-brigandine-iron" } ],
 				"equipLegs": [ { "Code": "equipLegs-brigandine-legs" } ]
 			},
 			"knighterrant-*-bannerman-grunt": {
@@ -2340,7 +2401,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",
@@ -2528,7 +2594,12 @@
 					{ "Code": "bodyskin-28" },
 					{ "Code": "bodyskin-29" }
 				],
-				"hair-base": [ { "Code": "nothing" } ],
+				"hair-base": [
+					{
+						"Code": "nothing",
+						"Weight": 5.0
+					}
+				],
 				"beard": [
 					{
 						"Code": "nothing",

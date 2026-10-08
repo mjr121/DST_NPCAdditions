@@ -1,3 +1,21 @@
+V1.1.4
+CONFIG VERSION = 1.6, will cause the config file to be regenerated.
+Global
+Swapped spawn chances to a more readable method for clarity. 
+Hopefully corrected some issues using AutoConfigLib.
+
+Models
+Knight Errants:
+Fixed the Z-Fighting with the Gambeson Helmets, and grunts missing their chest pieces.
+
+Language/Text
+Knight Errants:
+Fixed Incorrect name scheme
+
+Compatibility
+Cannibalism:
+Added Skulls to loot tables after killing NPCs from this mod.
+
 V1.1.3
 Global
 Corrected spawn amounts back to 1 per runtime and 1 per world gen. Values got negated due to updating json code to be more in line with vanilla standards.
@@ -13,7 +31,7 @@ Bannerman are now Squire/Knight bannerman for their respective units.
 Bandit:
 Bannermen are now called Bandit Captains, to better reflect their purpose.
 
-Compatability
+Compatibility
 Fauna of the Stone Age: Moschidae:
 Poacher NPCs will hunt Moschidae, barbarians and their companion bears will also hunt Moschidae.
 

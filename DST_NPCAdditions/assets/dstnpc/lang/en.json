@@ -2,8 +2,8 @@
 	"game:tabname-dstedits-npc": "DST NPCs",
 
 
-	"dstnpc:item-creature-knighterrant-*-spearman-grunt": "Footman",
-	"dstnpc:item-creature-knighterrant-*-spearman-boss": "Footman Sergeant",
+	"dstnpc:item-creature-knighterrant-*-spear-grunt": "Footman",
+	"dstnpc:item-creature-knighterrant-*-spear-boss": "Footman Sergeant",
 	"dstnpc:item-creature-knighterrant-*-axe-grunt": "Footman",
 	"dstnpc:item-creature-knighterrant-*-axe-boss": "Footman Sergeant",
 	"dstnpc:item-creature-knighterrant-*-axeshield-grunt": "Squire",
@@ -16,8 +16,8 @@
 	"dstnpc:item-creature-knighterrant-*-bannerman-grunt": "Squire Bannerman",
 	"dstnpc:item-creature-knighterrant-*-bannerman-boss": "Knight Bannerman",
 	"prefixandcreature-knighterrant-*": "a Knight Errant",
-	"dstnpc:item-dead-creature-knighterrant-*-spearman-grunt": "Dead Footman",
-	"dstnpc:item-dead-creature-knighterrant-*-spearman-boss": "Dead Footman Sergeant",
+	"dstnpc:item-dead-creature-knighterrant-*-spear-grunt": "Dead Footman",
+	"dstnpc:item-dead-creature-knighterrant-*-spear-boss": "Dead Footman Sergeant",
 	"dstnpc:item-dead-creature-knighterrant-*-axe-grunt": "Dead Footman",
 	"dstnpc:item-dead-creature-knighterrant-*-axe-boss": "Dead Footman Sergeant",
 	"dstnpc:item-dead-creature-knighterrant-*-axeshield-grunt": "Dead Squire",
