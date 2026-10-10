@@ -31,7 +31,7 @@
 	{
 		"file": "entities/humanoid/bandit.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/8/entityCodes",
+		"path": "/server/behaviors/10/aitasks/4/entityCodes",
 		"value": [
 			"anatidae-*",
 			"casuariidae-*",
@@ -45,7 +45,7 @@
 	{
 		"file": "entities/humanoid/bandit.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/9/entityCodes",
+		"path": "/server/behaviors/10/aitasks/5/entityCodes",
 		"value": [
 			"anatidae-*",
 			"casuariidae-*",
@@ -82,7 +82,7 @@
 	{
 		"file": "entities/humanoid/knighterrant.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/5/entityCodes",
+		"path": "/server/behaviors/10/aitasks/7/entityCodes",
 		"value": [
 
 		],
@@ -93,7 +93,7 @@
 	{
 		"file": "entities/humanoid/knighterrant.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"path": "/server/behaviors/10/aitasks/8/entityCodes",
 		"value": [
 
 		],

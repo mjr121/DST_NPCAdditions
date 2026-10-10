@@ -1,3 +1,7 @@
+V1.1.15
+Compatibility
+General corrections done across all compat files. Due to me doing changes to AiTasks, it caused the earlier patches to fail silently. 
+
 V1.1.4
 CONFIG VERSION = 1.6, will cause the config file to be regenerated.
 Global

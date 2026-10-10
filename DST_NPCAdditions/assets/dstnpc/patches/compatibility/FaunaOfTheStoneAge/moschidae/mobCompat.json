@@ -21,7 +21,7 @@
 	{
 		"file": "entities/humanoid/bandit.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/8/entityCodes",
+		"path": "/server/behaviors/10/aitasks/4/entityCodes",
 		"value": [],
 		"dependsOn": [
 			{ "modid": "moschidae" }
@@ -30,7 +30,7 @@
 	{
 		"file": "entities/humanoid/bandit.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/9/entityCodes",
+		"path": "/server/behaviors/10/aitasks/5/entityCodes",
 		"value": [],
 		"dependsOn": [
 			{ "modid": "moschidae" }
@@ -58,7 +58,7 @@
 	{
 		"file": "entities/humanoid/knighterrant.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/5/entityCodes",
+		"path": "/server/behaviors/10/aitasks/7/entityCodes",
 		"value": [],
 		"dependsOn": [
 			{ "modid": "moschidae" }
@@ -67,7 +67,7 @@
 	{
 		"file": "entities/humanoid/knighterrant.json",
 		"op": "addmerge",
-		"path": "/server/behaviors/10/aitasks/6/entityCodes",
+		"path": "/server/behaviors/10/aitasks/8/entityCodes",
 		"value": [],
 		"dependsOn": [
 			{ "modid": "moschidae" }
