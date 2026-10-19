@@ -3480,7 +3480,6 @@
 						"var": 0
 					}
 				},
-				"maxQuantity": 1,
 				"maxLightLevel": 7,
 				"lightLevelType": "OnlyBlockLight",
 				"groupSizeByType": {
@@ -3512,7 +3511,6 @@
 				},
 				"chance": 0.000015,
 				//Chance is equal to what the bear is. this should allow for a lower chance to spawn like it should.
-				"maxQuantity": 1,
 				"maxLightLevel": 7,
 				"lightLevelType": "OnlyBlockLight",
 				"groupSizeByType": {

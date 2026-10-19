@@ -3428,7 +3428,6 @@
 						"var": 0
 					}
 				},
-				"maxQuantity": 1,
 				"maxLightLevel": 7,
 				"lightLevelType": "OnlyBlockLight",
 				"groupSizeByType": {

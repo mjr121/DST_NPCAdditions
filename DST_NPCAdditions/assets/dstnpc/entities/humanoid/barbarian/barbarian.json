@@ -3552,7 +3552,6 @@
 						"var": 0
 					}
 				},
-				"maxQuantity": 1,
 				"maxLightLevel": 7,
 				"groupSizeByType": {
 					"barbarian-*-*-*-boss": {
@@ -3571,11 +3570,11 @@
 					"barbarian-*": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*" ]
 				},
 				"companionsByType": {
-					"barbarian-*-black-boss": [ "barbarianbear-black-adult-male" ],
-					"barbarian-*-brown-boss": [ "barbarianbear-brown-adult-male" ],
-					"barbarian-*-sun-boss": [ "barbarianbear-sun-adult-male" ],
-					"barbarian-*-panda-boss": [ "barbarianbear-panda-adult-male" ],
-					"barbarian-*-polar-boss": [ "barbarianbear-polar-adult-male" ]
+					"barbarian-*-*-black-boss": [ "barbarianbear-black-adult-male" ],
+					"barbarian-*-*-brown-boss": [ "barbarianbear-brown-adult-male" ],
+					"barbarian-*-*-sun-boss": [ "barbarianbear-sun-adult-male" ],
+					"barbarian-*-*-panda-boss": [ "barbarianbear-panda-adult-male" ],
+					"barbarian-*-*-polar-boss": [ "barbarianbear-polar-adult-male" ]
 				}
 			},
 			"runtime": {
@@ -3607,11 +3606,11 @@
 					"barbarian-*": [ "game:air", "game:tallgrass-*", "game:snowlayer-*", "game:flower-*" ]
 				},
 				"companionsByType": {
-					"barbarian-*-black-boss": [ "barbarianbear-black-adult-male" ],
-					"barbarian-*-brown-boss": [ "barbarianbear-brown-adult-male" ],
-					"barbarian-*-sun-boss": [ "barbarianbear-sun-adult-male" ],
-					"barbarian-*-panda-boss": [ "barbarianbear-panda-adult-male" ],
-					"barbarian-*-polar-boss": [ "barbarianbear-polar-adult-male" ]
+					"barbarian-*-*-black-boss": [ "barbarianbear-black-adult-male" ],
+					"barbarian-*-*-brown-boss": [ "barbarianbear-brown-adult-male" ],
+					"barbarian-*-*-sun-boss": [ "barbarianbear-sun-adult-male" ],
+					"barbarian-*-*-panda-boss": [ "barbarianbear-panda-adult-male" ],
+					"barbarian-*-*-polar-boss": [ "barbarianbear-polar-adult-male" ]
 				}
 			},
 			"climate": {

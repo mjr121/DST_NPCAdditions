@@ -1,3 +1,18 @@
+V1.1.16
+CONFIG VERSION = 1.7
+Added config entries for Spawning Group Size and Size Variable numbers, moved Spawn Chance config values to where the other spawn related config options are. 
+Clarified some config text strings.
+
+Other
+Fix max spawning rate for all NPCs during WorldGen.
+
+Barbarians
+Corrected Barbarians not always spawning in with their companion bears.
+
+Compatibility
+Combat Overhaul Fork:
+Updated Damage resistances to be Blunt 3, Slasting 2, Piercing 0 across the board. Knights are 3/2/1, while barbarians are 4/3/2. Ill keep an eye on these values and see what happens.
+
 V1.1.15
 Compatibility
 General corrections done across all compat files. Due to me doing changes to AiTasks, it caused the earlier patches to fail silently. 
